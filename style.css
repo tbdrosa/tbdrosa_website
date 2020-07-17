@@ -9,6 +9,7 @@ footer{
 body{
     line-height: 1;
     margin: 0;
+    background-color: #fafaf9;
 }
 
 .container{
@@ -29,7 +30,7 @@ topNavigation{
 }
 
 nav ul{
-    background-color: #77716D;
+    background-color: #fafaf9;
     
 }
 ul.topNavigation li{
