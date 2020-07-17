@@ -5,3 +5,16 @@ header,
 footer{
     display: block;
 }
+
+/*######## Navigation Bar ########*/
+
+ul.topNavigation li{
+    list-style: none;
+    float: left;
+    
+}
+
+ul.topNavigation li.topNavigation-right{
+    float: right;
+}
+
