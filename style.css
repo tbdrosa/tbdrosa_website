@@ -23,11 +23,15 @@ body{
 /*######## Navigation Bar ########*/
 
 nav,
-{
+topNavigation{
     width: 100%;
     margin: 0;
 }
 
+nav ul{
+    background-color: #77716D;
+    
+}
 ul.topNavigation li{
     list-style: none;
     float: left;
