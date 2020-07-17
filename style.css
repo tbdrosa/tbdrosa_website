@@ -9,7 +9,7 @@ footer{
 body{
     line-height: 1;
     margin: 0;
-    background-color: #F8F5F4;
+    background-color: #F5F3F2;
 }
 
 .container{
@@ -30,7 +30,7 @@ topNavigation{
 }
 
 nav ul{
-    background-color: #F8F5F4;
+    background-color: #F5F3F2;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -39,12 +39,26 @@ nav ul{
 ul.topNavigation li{
     list-style: none;
     float: left;
-    
 }
 
 ul.topNavigation li.topNavigation-right{
     float: right;
 }
+
+ul.topNavigation li a{
+    display: block;
+}
+
+/*######## Custom Styles ########*/
+
+/*
+#section-1-backgroundImage{
+    background-image: url(walking_away.jpg);
+    background-image: -webkit- url(walking_away.jpg);
+    background-image: -o- url(walking_away.jpg);
+    background-image: -moz- url(walking_away.jpg);  
+}
+*/
 
 
 
