@@ -60,6 +60,10 @@ ul.topNavigation li a{
     text-transform: uppercase;
 }
 
+.topNavigation li a:hover{
+    color: #f4a482;
+}
+
 
 /*######## Custom Styles ########*/
 
