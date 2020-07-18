@@ -47,7 +47,18 @@ ul.topNavigation li.topNavigation-right{
 
 ul.topNavigation li a{
     display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 30px 30px;
+    color: #656565;
 }
+
+.topNavigation-left{
+    padding-left: 90px;
+    text-transform: uppercase;
+}
+
 
 /*######## Custom Styles ########*/
 
