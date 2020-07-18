@@ -52,6 +52,7 @@ ul.topNavigation li a{
     text-align: center;
     padding: 30px 30px;
     color: #656565;
+    text-transform: uppercase;
 }
 
 .topNavigation-left{
