@@ -42,8 +42,8 @@ ul.topNavigation li{
     float: left;
 }
 
-ul.topNavigation li.topNavigation-right,
-ul.topNavigation li.socialMedia_icon-right{
+ul.topNavigation li.topNavigation-right, /*this is the styling label for the rest of the navigation bar contents */
+ul.topNavigation li.socialMedia_icon-right/* this is the styling label for the twitter and instagram icons */{
     float: right;
     font-size: 15px;
     padding-right: 10px;
