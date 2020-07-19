@@ -43,6 +43,7 @@ ul.topNavigation li{
 
 ul.topNavigation li.topNavigation-right{
     float: right;
+    font-size: 15px;
 }
 
 ul.topNavigation li a{
@@ -50,7 +51,7 @@ ul.topNavigation li a{
     text-decoration: none;
     min-height: 16px;
     text-align: center;
-    padding: 30px 30px;
+    padding: 20px;
     color: #656565;
     text-transform: uppercase;
 }
