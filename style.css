@@ -42,7 +42,8 @@ ul.topNavigation li{
     float: left;
 }
 
-ul.topNavigation li.topNavigation-right{
+ul.topNavigation li.topNavigation-right,
+ul.topNavigation li.socialMedia_icon-right{
     float: right;
     font-size: 15px;
     padding-right: 10px;
@@ -84,6 +85,8 @@ ul li a{
     background-image: -moz- url(walking_away.jpg);  
 }
 */
+
+
 
 
 
