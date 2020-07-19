@@ -44,6 +44,7 @@ ul.topNavigation li{
 ul.topNavigation li.topNavigation-right{
     float: right;
     font-size: 15px;
+    padding-right: 10px;
 }
 
 ul.topNavigation li a{
