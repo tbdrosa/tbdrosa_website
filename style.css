@@ -14,8 +14,6 @@ body{
     line-height: 1;
     margin: 0;
     background: #F5F3F2;
-    background-image: url(../img/walking_.jpg);
-    background-repeat: none;
 }
 
 .container{
@@ -24,6 +22,7 @@ body{
     padding-top: 10%;
     padding-bottom: 5%;
     text-align: center;
+    background-image: url(../img/walking_.jpg)
     
 }
 
