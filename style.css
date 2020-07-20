@@ -31,7 +31,8 @@ body{
 nav,
 topNavigation{
     background: #F5F3F2;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
     width: 100%;
     margin: 0;
 }
