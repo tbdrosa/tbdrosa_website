@@ -1,15 +1,18 @@
 /*######## Defaults ########*/
-
+html{
+    background-color: #F5F3F2;
+}
 nav,
 header,
 footer{
     display: block;
+    background: #F5F3F2;
 }
 
 body{
     line-height: 1;
     margin: 0;
-    background-color: #F5F3F2;
+    background: #F5F3F2;
 }
 
 .container{
@@ -26,6 +29,8 @@ body{
 
 nav,
 topNavigation{
+    background: #F5F3F2;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     margin: 0;
 }
