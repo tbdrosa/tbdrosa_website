@@ -15,6 +15,7 @@ body{
     margin: 0;
     background: #F5F3F2;
     background-image: url(../img/walking_.jpg);
+    background-repeat: none;
 }
 
 .container{
