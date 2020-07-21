@@ -90,15 +90,15 @@ img{
     max-width: 100%;
     display: block;
     margin: auto;
+    grid-row-gap: 20px;
 }
 
-.portfolio-Column{
+.portfolio-Column img{
     display: block;
     max-width: 535px;
     padding: 20px;
-    padding-bottom: 20px;
     margin: auto;
-    
+    grid-row-gap: 20px;
 }
 
 /*######## Custom Styles ########*/
