@@ -95,7 +95,7 @@ img{
 
 .portfolio-Column img{
     display: block;
-    max-width: 535px;
+    max-width: 530px;
     padding: 20px;
     margin: auto;
     grid-row-gap: 20px;
