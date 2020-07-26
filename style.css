@@ -109,7 +109,19 @@ img,
     margin: auto;
     grid-row-gap: 20px;
 }
-p{
+
+p.aboutText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin: 14px 50px 14px;
+    text-align: center;
+    
+}
+p.copyright{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.6em;
@@ -128,6 +140,7 @@ p{
     background-image: -moz- url(walking_away.jpg);  
 }
 */
+
 
 
 
