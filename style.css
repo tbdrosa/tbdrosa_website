@@ -141,6 +141,15 @@ p.copyright {
     margin: 15px 50px 15px;
 }
 
+footer {
+    background-color: #2e3438;
+    color: #fff;
+}
+
+.footerSocialMedia_icon {
+    color: #fff;
+}
+
 
 /*######## Custom Styles ########*/
 
