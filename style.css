@@ -44,7 +44,10 @@
         padding: 0;
         overflow: hidden;
     }
+ul.topNavigation{
+    margin: 0 auto;
     
+}
     ul.topNavigation li {
         list-style: none;
         float: left;
@@ -81,7 +84,7 @@
     }
     
     .social-part .fa {
-        padding-right: 20px;
+        padding-right: 90px;
     }
     
     ul li a {
