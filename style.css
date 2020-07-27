@@ -167,6 +167,10 @@
         font-family: 'Asap', sans-serif;
         font-size: 11.2px;
     }
+    
+    p.copyright a:hover {
+        color: #f4a482;
+    }
     /*######## Custom Styles ########*/
     /*
 #section-1-backgroundImage{
