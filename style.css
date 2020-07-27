@@ -1,4 +1,4 @@
-/*######## Defaults ########*/
+    /*######## Defaults ########*/
 
 html {
     background-color: #f7f7f7;
@@ -146,15 +146,19 @@ footer {
     color: #fff;
 }
 
-.footerSocialMedia_icon {
+ul.bottomFooter li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
     color: #fff;
+    text-transform: uppercase;
 }
 
-
-/*######## Custom Styles ########*/
-
-
-/*
+ul.bottomFooter li {
+    list-style: none;
+    float: right;
+    /*######## Custom Styles ########*/
+    /*
 #section-1-backgroundImage{
     background-image: url(walking_away.jpg);
     background-image: -webkit- url(walking_away.jpg);
