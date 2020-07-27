@@ -44,10 +44,11 @@
         padding: 0;
         overflow: hidden;
     }
-ul.topNavigation{
-    margin: 0 auto;
     
-}
+    ul.topNavigation {
+        margin: 0 auto;
+    }
+    
     ul.topNavigation li {
         list-style: none;
         float: left;
