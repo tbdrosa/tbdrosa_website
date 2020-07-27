@@ -159,6 +159,14 @@
     ul.bottomFooter li a:hover {
         color: #f4a482;
     }
+    
+    p.copyright a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Asap', sans-serif;
+        font-size: 11.2px;
+    }
     /*######## Custom Styles ########*/
     /*
 #section-1-backgroundImage{
