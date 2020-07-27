@@ -1,35 +1,38 @@
 /*######## Defaults ########*/
-html{
+
+html {
     background-color: #f7f7f7;
     letter-spacing: 1.7px;
 }
+
 nav,
-header{
+header {
     display: block;
     background: #f3f3f3;
 }
 
-body{
+body {
     line-height: 1;
     margin: 0;
     background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
 }
 
-.container{
+.container {
     margin: auto;
     width: 100%;
     padding-top: 10%;
     padding-bottom: 5%;
     text-align: center;
     background-image: url(../img/walking_.jpg)
-    
 }
+
 
 /*######## Navigation Bar ########*/
 
-
 nav,
-topNavigation{
+topNavigation {
     background: #f3f3f3;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
@@ -37,25 +40,31 @@ topNavigation{
     margin: 0;
 }
 
-nav ul{
+nav ul {
     background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
 }
-ul.topNavigation li{
+
+ul.topNavigation li {
     list-style: none;
     float: left;
 }
 
-ul.topNavigation li.topNavigation-right, /*this is the styling label for the rest of the navigation bar contents */
-ul.topNavigation li.socialMedia_icon-right/* this is the styling label for the twitter and instagram icons */{
+ul.topNavigation li.topNavigation-right,
+
+/*this is the styling label for the rest of the navigation bar contents */
+
+ul.topNavigation li.socialMedia_icon-right
+/* this is the styling label for the twitter and instagram icons */
+
+{
     float: right;
     font-size: 15px;
 }
 
-ul.topNavigation li a{
+ul.topNavigation li a {
     display: block;
     text-decoration: none;
     min-height: 16px;
@@ -65,36 +74,38 @@ ul.topNavigation li a{
     text-transform: uppercase;
 }
 
-.topNavigation-left{
+.topNavigation-left {
     padding-left: 90px;
     text-transform: uppercase;
 }
 
-.topNavigation li a:hover{
+.topNavigation li a:hover {
     color: #f4a482;
 }
 
-.social-part .fa{
-    padding-right:20px;
+.social-part .fa {
+    padding-right: 20px;
 }
-ul li a{
-    margin-right: 20px;  
-    
+
+ul li a {
+    margin-right: 20px;
 }
+
 .container,
-.aboutContainer{
+.aboutContainer {
     padding: 0;
     margin: 0;
 }
+
 img,
-.aboutProfile{
+.aboutProfile {
     max-width: 100%;
     display: block;
     margin: auto;
     grid-row-gap: 20px;
 }
 
-.portfolio-Column img{
+.portfolio-Column img {
     display: block;
     max-width: 530px;
     padding: 20px;
@@ -102,7 +113,7 @@ img,
     grid-row-gap: 20px;
 }
 
-.aboutContainer{
+.aboutContainer {
     display: block;
     max-width: 530px;
     padding: 36px 20px;
@@ -110,18 +121,19 @@ img,
     grid-row-gap: 20px;
 }
 
-p.aboutText{
+p.aboutText {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1.6em;
     text-transform: none;
     letter-spacing: 0px;
-    margin: 14px 50px 14px;
+    margin: 14px 50px 40px;
     text-align: center;
-    
+    color: #000a17;
 }
-p.copyright{
+
+p.copyright {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.6em;
@@ -132,6 +144,7 @@ p.copyright{
 
 /*######## Custom Styles ########*/
 
+
 /*
 #section-1-backgroundImage{
     background-image: url(walking_away.jpg);
@@ -140,23 +153,3 @@ p.copyright{
     background-image: -moz- url(walking_away.jpg);  
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
