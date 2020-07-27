@@ -93,6 +93,7 @@
         padding: 0;
         margin: 0;
     }
+    /*######## image styling: how big they show on the screen  ########*/
     
     img,
     .aboutProfile {
@@ -101,6 +102,7 @@
         margin: auto;
         grid-row-gap: 20px;
     }
+    /*######## image position: how they are centered in the screen and equal padding########*/
     
     .portfolio-Column img {
         display: block;
@@ -109,6 +111,7 @@
         margin: auto;
         grid-row-gap: 20px;
     }
+    /*######## aboutText paragraph positions  ########*/
     
     .aboutContainer {
         display: block;
@@ -117,6 +120,7 @@
         margin: auto;
         grid-row-gap: 20px;
     }
+    /*######## aboutText font style: includes colors, text style ########*/
     
     p.aboutText {
         font-family: 'Montserrat', sans-serif;
@@ -137,11 +141,13 @@
         text-align: center;
         margin: 15px 50px 15px;
     }
+    /*######## footer background color and font color ########*/
     
     footer {
         background-color: #2e3438;
         color: #fff;
     }
+    /*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
     
     ul.bottomFooter li a {
         display: block;
@@ -150,15 +156,18 @@
         color: #fff;
         text-transform: uppercase;
     }
+    /*######## socialMediaIcon positioning ########*/
     
     ul.bottomFooter li {
         list-style: none;
         float: right;
     }
+    /*######## socialMediaIcon hover effect ########*/
     
     ul.bottomFooter li a:hover {
         color: #f4a482;
     }
+    /*######## copyright font styling ########*/
     
     p.copyright a {
         color: #fff;
@@ -167,6 +176,7 @@
         font-family: 'Asap', sans-serif;
         font-size: 11.2px;
     }
+    /*######## copyright hover effect ########*/
     
     p.copyright a:hover {
         color: #f4a482;
