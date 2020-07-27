@@ -1,162 +1,164 @@
     /*######## Defaults ########*/
-
-html {
-    background-color: #f7f7f7;
-    letter-spacing: 1.7px;
-}
-
-nav,
-header {
-    display: block;
-    background: #f3f3f3;
-}
-
-body {
-    line-height: 1;
-    margin: 0;
-    background: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    margin: auto;
-    width: 100%;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    text-align: center;
-    background-image: url(../img/walking_.jpg)
-}
-
-
-/*######## Navigation Bar ########*/
-
-nav,
-topNavigation {
-    background: #f3f3f3;
-    font-family: 'Asap', sans-serif;
-    font-weight: 400;
-    width: 100%;
-    margin: 0;
-}
-
-nav ul {
-    background-color: #f3f3f3;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-ul.topNavigation li {
-    list-style: none;
-    float: left;
-}
-
-ul.topNavigation li.topNavigation-right,
-
-/*this is the styling label for the rest of the navigation bar contents */
-
-ul.topNavigation li.socialMedia_icon-right
-/* this is the styling label for the twitter and instagram icons */
-
-{
-    float: right;
-    font-size: 15px;
-}
-
-ul.topNavigation li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding: 20px;
-    color: #656565;
-    text-transform: uppercase;
-}
-
-.topNavigation-left {
-    padding-left: 90px;
-    text-transform: uppercase;
-}
-
-.topNavigation li a:hover {
-    color: #f4a482;
-}
-
-.social-part .fa {
-    padding-right: 20px;
-}
-
-ul li a {
-    margin-right: 20px;
-}
-
-.container,
-.aboutContainer {
-    padding: 0;
-    margin: 0;
-}
-
-img,
-.aboutProfile {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-
-.portfolio-Column img {
-    display: block;
-    max-width: 530px;
-    padding: 20px;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-
-.aboutContainer {
-    display: block;
-    max-width: 530px;
-    padding: 36px 20px;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-
-p.aboutText {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.6em;
-    text-transform: none;
-    letter-spacing: 0px;
-    margin: 14px 50px 40px;
-    text-align: center;
-    color: #656565;
-}
-
-p.copyright {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 1.6em;
-    text-align: center;
-    margin: 15px 50px 15px;
-}
-
-footer {
-    background-color: #2e3438;
-    color: #fff;
-}
-
-ul.bottomFooter li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-ul.bottomFooter li {
-    list-style: none;
-    float: right;
+    
+    html {
+        background-color: #f7f7f7;
+        letter-spacing: 1.7px;
+    }
+    
+    nav,
+    header {
+        display: block;
+        background: #f3f3f3;
+    }
+    
+    body {
+        line-height: 1;
+        margin: 0;
+        background: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        margin: auto;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+        background-image: url(../img/walking_.jpg)
+    }
+    /*######## Navigation Bar ########*/
+    
+    nav,
+    topNavigation {
+        background: #f3f3f3;
+        font-family: 'Asap', sans-serif;
+        font-weight: 400;
+        width: 100%;
+        margin: 0;
+    }
+    
+    nav ul {
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    ul.topNavigation li {
+        list-style: none;
+        float: left;
+    }
+    
+    ul.topNavigation li.topNavigation-right,
+    /*this is the styling label for the rest of the navigation bar contents */
+    
+    ul.topNavigation li.socialMedia_icon-right
+    /* this is the styling label for the twitter and instagram icons */
+    
+    {
+        float: right;
+        font-size: 15px;
+    }
+    
+    ul.topNavigation li a {
+        display: block;
+        text-decoration: none;
+        min-height: 16px;
+        text-align: center;
+        padding: 20px;
+        color: #656565;
+        text-transform: uppercase;
+    }
+    
+    .topNavigation-left {
+        padding-left: 90px;
+        text-transform: uppercase;
+    }
+    
+    .topNavigation li a:hover {
+        color: #f4a482;
+    }
+    
+    .social-part .fa {
+        padding-right: 20px;
+    }
+    
+    ul li a {
+        margin-right: 20px;
+    }
+    
+    .container,
+    .aboutContainer {
+        padding: 0;
+        margin: 0;
+    }
+    
+    img,
+    .aboutProfile {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        grid-row-gap: 20px;
+    }
+    
+    .portfolio-Column img {
+        display: block;
+        max-width: 530px;
+        padding: 20px;
+        margin: auto;
+        grid-row-gap: 20px;
+    }
+    
+    .aboutContainer {
+        display: block;
+        max-width: 530px;
+        padding: 36px 20px;
+        margin: auto;
+        grid-row-gap: 20px;
+    }
+    
+    p.aboutText {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.6em;
+        text-transform: none;
+        letter-spacing: 0px;
+        margin: 14px 50px 40px;
+        text-align: center;
+        color: #656565;
+    }
+    
+    p.copyright {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        line-height: 1.6em;
+        text-align: center;
+        margin: 15px 50px 15px;
+    }
+    
+    footer {
+        background-color: #2e3438;
+        color: #fff;
+    }
+    
+    ul.bottomFooter li a {
+        display: block;
+        text-decoration: none;
+        min-height: 16px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    ul.bottomFooter li {
+        list-style: none;
+        float: right;
+    }
+    
+    ul.bottomFooter li a:hover {
+        color: #f4a482;
+    }
     /*######## Custom Styles ########*/
     /*
 #section-1-backgroundImage{
