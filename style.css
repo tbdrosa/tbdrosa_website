@@ -176,21 +176,6 @@
     ul.bottomFooter li a:hover {
         color: #f4a482;
     }
-    /*######## copyright font styling ########*/
-    
-    p.copyright a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Asap', sans-serif;
-        font-size: 11.2px;
-        margin: auto;
-    }
-    /*######## copyright hover effect ########*/
-    
-    p.copyright a:hover {
-        color: #f4a482;
-    }
 
 .footerGrid{
     display: grid;
@@ -236,18 +221,64 @@ p.newsletterMessage{
     font-size: 11.4px;
 }
 /*######## this is the footer list styling ########*/
-.footer-list a{
+
+.footer-mainMenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11.4px;
+}
+
+.footer-mainMenu ul a{
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
     text-decoration: none;
+    color: #fff;
+    padding-bottom: 11px;
+}
+
+.footer-mainMenu ul li{    
+    padding-bottom: 11px;
+}
+
+.footer-mainMenu ul a:hover{
+      color: #f4a482;
+}
+
+ /*######## copyright font styling ########*/
+    
+    p.copyright a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Asap', sans-serif;
+        font-size: 11.2px;
+        margin: auto;
+    }
+
+p.social-media-footer{
+     display: flex;
+    justify-content: center;
+}
+    /*######## copyright hover effect ########*/
+    
+    p.copyright a:hover {
+        color: #f4a482;
+    }
+
+p.social-media-footer a:hover{
+    color: #f4a482;
+}
+
+/*text-decoration: none;
     display: block;
    padding-bottom: 11px;
     text-transform: uppercase;
     font-family: 'Asap', sans-serif;
     font-size: 11.4px;
     color: #fff;
-}
-
 .footer-list a:hover{
-     color: #f4a482;
+     color: #f4a482;*/
 }
 
 p.social-media-footer{
@@ -261,9 +292,6 @@ p.social-media-footer a{
     min-height: 20px;
 }
 
-p.social-media-footer a:hover{
-    color: #f4a482;
-}
     /*######## Custom Styles ########*/
     /*
 #section-1-backgroundImage{
