@@ -196,6 +196,18 @@
     padding: 60px 30px 15px
 }
 
+p.mainMenu{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 40px;
+    width: 95%;
+}
+
+p.footer-Newsletter{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 40px;
+    width: 95%;
+}
+
 .footer-mainMenu{
     grid-area: footer-mainMenu;
 }
