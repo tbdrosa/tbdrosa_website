@@ -195,9 +195,9 @@
 .footerGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "footer-mainMenu footer-newsletter";  
-    margin: auto;
-    padding: 60px 30px 15px
+    grid-template-areas: "footer-mainMenu footer-newsletter";
+    margin: 0 auto;
+    padding: 60px 115px 15px
 }
 
 p.mainMenu{
