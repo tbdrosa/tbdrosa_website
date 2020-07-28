@@ -217,6 +217,18 @@ p.footer-Newsletter{
 .footer-newsletter{
     grid-area: footer-newsletter;
 }
+/*######## this is the footer list styling ########*/
+.footer-list a{
+    text-decoration: none;
+    display: block;
+    margin: 0px 0px 11px;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    
+    
+}
 
 
 
