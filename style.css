@@ -186,6 +186,25 @@
     p.copyright a:hover {
         color: #f4a482;
     }
+
+.footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "footer-mainMenu footer-newsletter";  
+}
+
+.footer-mainMenu{
+    grid-area: footer-mainMenu;
+}
+
+.footer-newsletter{
+    grid-area: footer-newsletter;
+}
+
+
+
+
+
     /*######## Custom Styles ########*/
     /*
 #section-1-backgroundImage{
