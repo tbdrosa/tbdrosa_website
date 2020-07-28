@@ -250,9 +250,11 @@ p.newsletterMessage{
      color: #f4a482;
 }
 
-
-
-
+.fa_custom{
+    color: #fff;
+    letter-spacing: 15px;
+    margin: auto;
+}
 
     /*######## Custom Styles ########*/
     /*
