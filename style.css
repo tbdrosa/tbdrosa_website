@@ -151,6 +151,8 @@
         background-color: #2e3438;
         color: #fff;
         display: block;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     /*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
     
@@ -199,13 +201,13 @@
 p.mainMenu{
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     line-height: 40px;
-    width: 95%;
+    width: 90%;
 }
 
 p.footer-Newsletter{
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     line-height: 40px;
-    width: 95%;
+    width: 90%;
 }
 
 .footer-mainMenu{
