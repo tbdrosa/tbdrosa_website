@@ -219,7 +219,13 @@ p.footer-Newsletter{
 }
 p.mainMenu{
     font-family: 'Asap', sans-serif;
-    font-size: 15px;
+    font-size: 16.2px;
+    font-weight: bold
+}
+
+p.footer-Newsletter{
+    font-family: 'Asap', sans-serif;
+    font-size: 16.2px;
     font-weight: bold
 }
 /*######## this is the footer list styling ########*/
@@ -231,8 +237,6 @@ p.mainMenu{
     font-family: 'Asap', sans-serif;
     font-size: 11.4px;
     color: #fff;
-    
-    
 }
 
 
