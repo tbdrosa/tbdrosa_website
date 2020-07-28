@@ -220,7 +220,17 @@ p.newsletterMessage{
     font-family: 'Libre Baskerville', serif;
     font-size: 11.4px;
 }
-/*######## this is the footer list styling ########*/
+
+/*email input box */
+input[type="email"]{
+    font-family: 'Libre Baskerville', serif;
+    padding: 8px 10px;
+    font-size: 11.2px;
+    width: 425px;
+    min-width: 100px
+}
+
+/*######## this is the footer list  ########*/
 
 .footer-mainMenu ul{
     margin: 0;
