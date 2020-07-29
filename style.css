@@ -223,19 +223,19 @@ p.newsletterMessage{
 
 /*email input box */
 
-#mce-EMAIL {
+#emailSubscriber-input{
     padding: 10.5px 10px;
     width: 475px;
     border: none;
     border-radius: 2.4px;
     position: absolute;
+    font-family: 'Libre Baskerville', serif; 
 }
 
 /* input button css */
-#mc-embedded-subscribe {
+#joinSubscriber-button {
     padding: 8px 10px;
-    margin-top: 4.5px;
-    transform: translateY(25.5%);
+    margin: 4px;
     transform: translateX(1010%);
     border: none;
     border-radius: 2.7px;
@@ -247,7 +247,7 @@ p.newsletterMessage{
     font-family: 'Asap', sans-serif;
 }
 
-#mc-embedded-subscribe:hover{
+#joinSubscriber-button:hover{
     cursor: pointer;
     opacity: 100%;
 }
