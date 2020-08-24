@@ -33,7 +33,12 @@
         display: block;
         box-shadow: 0 3px 1rem rgba(0,0,0,.09);
         position: fixed;
+        transition: 0.2s;
     }
+
+    nav.hide{
+        transform: translateY(-100%);
+}
     
     nav ul {
         background-color: #f3f3f3;
@@ -72,6 +77,7 @@
         padding-right: 20px;
         color: #656565;
         text-transform: uppercase;
+        transition: 0.3s;
     }
     
     .topNavigation-left {
