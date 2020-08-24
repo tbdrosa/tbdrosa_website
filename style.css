@@ -5,12 +5,6 @@
         letter-spacing: 1.7px;
     }
     
-    nav,
-    header {
-        display: block;
-        background: #f3f3f3;
-    }
-    
     body {
         line-height: 1;
         margin: 0;
@@ -36,6 +30,9 @@
         font-weight: 400;
         width: 100%;
         margin: 0;
+        display: block;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.09);
+        position: fixed;
     }
     
     nav ul {
