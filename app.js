@@ -1,4 +1,4 @@
-const nav = document.querySelector(" nav");
+const nav = document.querySelector("nav");
 let previousScrollPosition = window.pageYOffset;
 window.addEventListener("scroll", ()=>{
     let currentScrollPosition = window.pageYOffset;
