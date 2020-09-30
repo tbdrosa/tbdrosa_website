@@ -1,5 +1,68 @@
-body {
-    padding: 70px 40px 0px 0px;
+/*######## Navigation Bar ########*/
+
+nav,
+topNavigation {
+    background: #f3f3f3;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    display: block;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    position: fixed;
+    transition: 0.2s;
+}
+nav.hide {
+    transform: translateY(-100%);
+}
+nav ul {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topNavigation {
+    margin: 0 auto;
+}
+ul.topNavigation li {
+    list-style: none;
+    float: left;
+}
+ul.topNavigation li.topNavigation-right,
+
+/*this is the styling label for the rest of the navigation bar contents */
+
+ul.topNavigation li.socialMedia_icon-right
+/* this is the styling label for the twitter and instagram icons */
+
+{
+    float: right;
+    font-size: 15px;
+}
+ul.topNavigation li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: #656565;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.topNavigation-left {
+    padding-left: 90px;
+    text-transform: uppercase;
+}
+.topNavigation li a:hover {
+    color: #f4a482;
+}
+.social-part .fa {
+    padding-right: 90px;
+}
+ul li a {
+    margin-right: 20px;
 }
 h1 {
     margin: 30px;
@@ -8,6 +71,7 @@ h1 {
     color: #77716d;
 }
 .contact-form {
+    padding: 70px 40px 0px 0px;
     font-family: 'Libre Baskerville', serif;
     color: #77716d;
     width: 600px;
