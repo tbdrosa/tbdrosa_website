@@ -1,5 +1,4 @@
 html {
-    background-color: #f7f7f7;
     letter-spacing: 1.7px;
 }
 
@@ -7,7 +6,6 @@ html {
 
 nav,
 topNavigation {
-    background: #f3f3f3;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
     width: 100%;
@@ -59,6 +57,7 @@ ul.topNavigation li a {
 .topNavigation-left {
     padding-left: 90px;
     text-transform: uppercase;
+    font-size: 16px;
 }
 .topNavigation li a:hover {
     color: #f4a482;
@@ -69,6 +68,14 @@ ul.topNavigation li a {
 ul li a {
     margin-right: 20px;
 }
+.container,
+.aboutContainer {
+    padding: 0;
+    margin: 0;
+}
+
+/* below is the beginning of contact form styling */
+
 h1 {
     margin: 30px;
     text-align: center;
