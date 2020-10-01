@@ -99,15 +99,15 @@ h1 {
 }
 .contact-form .form-control:focus {
     transition: 1s ease;
-    border-bottom: 1px solid #2abfcc;
+    border-bottom: 1px solid #f4a482;
 }
 .contact-main .contact-main-title h2 {
     margin-top: 0;
 }
 .contact-form .send-msg {
     font-family: 'Libre Baskerville', serif;
-    color: #2abfcc;
-    border: 1px solid #2abfcc;
+    color: #f4a482;
+    border: 1px solid #f4a482;
     height: 40px;
     background-color: transparent;
     transition: all 0.8s ease-out;
@@ -117,5 +117,5 @@ h1 {
     color: #fff;
     border: 1px solid #fff;
     height: 40px;
-    background-color: #2abfcc;
+    background-color: #f4a482;
 }
