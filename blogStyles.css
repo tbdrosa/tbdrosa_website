@@ -1,77 +1,106 @@
-nav,
-topNavigation {
-    background: #f3f3f3;
-    font-family: 'Asap', sans-serif;
-    font-weight: 400;
-    width: 100%;
-    margin: 0;
-    display: block;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-    position: fixed;
-    transition: 0.3s;
-    z-index: 2;
-}
-p {
-    margin: 0 10%;
-    text-align: center;
-    padding: 25px;
-}
-nav.hide {
-    transform: translateY(-100%);
-}
-nav ul {
-    background-color: #f3f3f3;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-ul.topNavigation {
-    margin: 0 auto;
-}
-ul.topNavigation li {
-    list-style: none;
-    float: left;
-}
-ul.topNavigation li.topNavigation-right,
-
-/*this is the styling label for the rest of the navigation bar contents */
-
-ul.topNavigation li.socialMedia_icon-right
-/* this is the styling label for the twitter and instagram icons */
-
-{
-    float: right;
-    font-size: 15px;
-}
-
-/* Create a Parallax Effect */
-
-.blogIntro {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: cover;
-    opacity: 0.87;
-}
-
-/* First image (Full height) */
-
-.blogIntro {
-    background-image: url("img/sitting.jpg");
-    min-height: 100vh;
-    z-index: -1;
-}
-
-/*#### titles for images ####*/
-
-.blogHeader {
-    padding: 150px 20%;
-    z-index: 1;
-    text-align: center;
-    color: #fff;
-    font-size: 1em
-}
-h1 {
-    font-weight: 400;
-}
+     html {
+     color: #444;
+     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px;
+ }
+ nav,
+ topNavigation {
+     background: #f3f3f3;
+     font-family: 'Asap', sans-serif;
+     font-weight: 400;
+     width: 100%;
+     margin: 0;
+     display: block;
+     box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+     position: fixed;
+     transition: 0.3s;
+     z-index: 2;
+ }
+ p {
+     margin: 0 10%;
+     text-align: center;
+     padding: 25px;
+ }
+ nav.hide {
+     transform: translateY(-100%);
+ }
+ nav ul {
+     background-color: #f3f3f3;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+ }
+ ul.topNavigation {
+     margin: 0 auto;
+ }
+ ul.topNavigation li {
+     list-style: none;
+     float: left;
+ }
+ ul.topNavigation li.topNavigation-right,
+ /*this is the styling label for the rest of the navigation bar contents */
+ 
+ ul.topNavigation li.socialMedia_icon-right
+ /* this is the styling label for the twitter and instagram icons */
+ 
+ {
+     float: right;
+     font-size: 15px;
+ }
+ /* Create a Parallax Effect */
+ 
+ .blogIntro {
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     background-size: cover;
+     opacity: 0.87;
+ }
+ /* First image (Full height) */
+ 
+ .blogIntro {
+     background-image: url("img/sitting.jpg");
+     min-height: 100vh;
+     z-index: -1;
+ }
+ /*#### titles for images ####*/
+ 
+ .blogHeader {
+     padding: 150px 20%;
+     z-index: 1;
+     text-align: center;
+     color: #fff;
+     font-size: 1em
+ }
+ h1 {
+     font-weight: 400;
+ }
+ :root {
+     --yellow: #ffc600;
+ }
+ html {
+     color: #444;
+     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px;
+ }
+ p {
+     line-height: 1.8;
+ }
+ img {
+     max-width: 100%;
+ }
+ a {
+     color: black;
+     text-decoration: underline wavy var(--yellow);
+ }
+ h1 {
+     font-size: 80px;
+     font-style: italic;
+     font-weight: 100;
+ }
+ h2 {
+     font-size: 80px;
+     font-style: italic;
+     font-weight: 100;
+     text-align: center;
