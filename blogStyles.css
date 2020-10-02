@@ -100,12 +100,6 @@ h6 {
 
 /* this is the main body text styling */
 
-.post {
-    margin: 25px auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1.5fr;
-}
 .journalEntryBody > * {
     grid-column: 2/-2;
 }
