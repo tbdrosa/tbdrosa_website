@@ -93,6 +93,7 @@
     
     img,
     .aboutProfile {
+        padding: 65px 0px 0px;
         max-width: 100%;
         display: block;
         margin: auto;
