@@ -1,20 +1,33 @@
+/*######## Defaults ########*/
+
 html {
-    color: #444;
-    font-family: Cochin, Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    background-color: #f7f7f7;
+    letter-spacing: 1.7px;
+    color: #77716d;
 }
+body {
+    line-height: 1;
+    margin: 0;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+/*######## Navigation Bar ########*/
+
 nav,
 topNavigation {
     background: #f3f3f3;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
+    font-size: 16px;
     width: 100%;
     margin: 0;
     display: block;
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
     position: fixed;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 1;
 }
 nav.hide {
     transform: translateY(-100%);
@@ -42,6 +55,31 @@ ul.topNavigation li.socialMedia_icon-right
 {
     float: right;
     font-size: 15px;
+}
+ul.topNavigation li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: #656565;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.topNavigation-left {
+    padding-left: 90px;
+    text-transform: uppercase;
+}
+.topNavigation li a:hover {
+    color: #f4a482;
+}
+.social-part .fa {
+    padding-right: 90px;
+}
+ul li a {
+    margin-right: 20px;
 }
 
 /* Create a Parallax Effect */
@@ -79,6 +117,7 @@ h1 {
     text-align: center;
 }
 h2 {
+    color: #656565;
     font-size: 55px;
     font-style: italic;
     font-weight: 100;
@@ -86,6 +125,7 @@ h2 {
     padding: 15px 11px 0px 11px;
 }
 h3 {
+    color: #656565;
     font-size: 25px;
     font-style: italic;
     font-weight: 100;
@@ -117,6 +157,7 @@ h6 {
     grid-column: 1/-1;
 }
 .journalEntryBody {
+    font-size: 18px;
     margin: 25px auto;
     max-width: 1000px;
     display: grid;
@@ -125,6 +166,15 @@ h6 {
 }
 p {
     line-height: 2.0;
-    font-size: 18px;
     font-family: 'Libre Baskerville', serif;
+}
+.blogFooter {
+    padding: 20px 80px 33px 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    color: #77716d;
 }
