@@ -112,7 +112,7 @@ h2 {
     font-size: 25px;
 }
 .aboutTextBlocks {
-    padding: 20px 80px 33px 80px;
+    padding: 20px 0px 33px 0px;
     text-align: justify;
     display: flex;
     justify-content: space-around;
@@ -129,7 +129,7 @@ footer {
     font-size: 13px;
     color: #77716d;
 }
-@media(min-width: 40rem) {
+@media(min-width: 65rem) {
     .aboutTextBlocks {
         flex-direction: row;
     }
