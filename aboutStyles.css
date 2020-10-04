@@ -100,6 +100,26 @@ img,
     margin: auto;
     grid-row-gap: 20px;
 }
+.aboutTextBlocks {
+    padding: 12vh 0;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+@media(min-width: 40rem) {
+    .aboutTextBlocks {
+        flex-direction: row;
+    }
+}
+.biographyTextBlock,
+.expertiseTextBlock,
+.marketingTextBlock {
+    flex-basis: 28%;
+    padding: 20px;
+    line-height: 2;
+    overflow: hidden;
+}
 
 /*######## Custom Styles ########*/
 
