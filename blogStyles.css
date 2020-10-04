@@ -120,20 +120,11 @@ h6 {
     margin: 25px auto;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 5.5fr 1.5fr;
-    grid-gap: 10px 30px;
-}
-.journalEntryBody > * {
-    grid-column: 2/-2;
-}
-.blogJounralEntry {
-    margin: 18px auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1.5fr;
+    grid-template-columns: 1fr 5.85fr 1.5fr;
     grid-gap: 10px 30px;
 }
 p {
     line-height: 2.0;
     font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
 }
