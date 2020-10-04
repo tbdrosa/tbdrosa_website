@@ -91,9 +91,11 @@ img,
     margin: auto;
     grid-row-gap: 20px;
 }
-a {
-    font-size: 35px;
-    text-decoration: none;
+.marketingTextBlock a {
+    color: #656565;
+}
+.marketingTextBlock a:hover {
+    color: #f4a482;
 }
 
 /*######## aboutText paragraph positions  ########*/
