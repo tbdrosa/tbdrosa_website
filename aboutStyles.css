@@ -1,0 +1,313 @@
+/*######## Defaults ########*/
+
+html {
+    background-color: #f7f7f7;
+    letter-spacing: 1.7px;
+}
+body {
+    line-height: 1;
+    margin: 0;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+/*######## Navigation Bar ########*/
+
+nav,
+topNavigation {
+    background: #f3f3f3;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    display: block;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    position: fixed;
+    transition: 0.3s;
+    z-index: 1;
+}
+nav.hide {
+    transform: translateY(-100%);
+}
+nav ul {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topNavigation {
+    margin: 0 auto;
+}
+ul.topNavigation li {
+    list-style: none;
+    float: left;
+}
+ul.topNavigation li.topNavigation-right,
+
+/*this is the styling label for the rest of the navigation bar contents */
+
+ul.topNavigation li.socialMedia_icon-right
+/* this is the styling label for the twitter and instagram icons */
+
+{
+    float: right;
+    font-size: 15px;
+}
+ul.topNavigation li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: #656565;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.topNavigation-left {
+    padding-left: 90px;
+    text-transform: uppercase;
+}
+.topNavigation li a:hover {
+    color: #f4a482;
+}
+.social-part .fa {
+    padding-right: 90px;
+}
+ul li a {
+    margin-right: 20px;
+}
+
+/*######## image styling: how big they show on the screen  ########*/
+
+img,
+.aboutProfile {
+    padding: 65px 0px 0px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    grid-row-gap: 20px;
+}
+
+/*######## image position: how they are centered in the screen and equal padding########*/
+
+.portfolio-Column img {
+    display: block;
+    max-width: 530px;
+    padding: 20px;
+    margin: auto;
+    grid-row-gap: 20px;
+}
+
+/*######## aboutText paragraph positions  ########*/
+
+.aboutContainer {
+    display: block;
+    max-width: 530px;
+    padding: 36px 20px;
+    margin: auto;
+    grid-row-gap: 20px;
+}
+
+/*######## aboutText font style: includes colors, text style ########*/
+
+p.aboutText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: 0px;
+    margin: 0px 50px 30px;
+    text-align: center;
+    color: #656565;
+}
+p.copyright {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 15px 50px 15px;
+}
+
+/*######## footer background color and font color ########*/
+
+footer {
+    background-color: #2e3438;
+    color: #fff;
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
+
+ul.bottomFooter li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*######## socialMediaIcon positioning ########*/
+
+ul.bottomFooter li {
+    list-style: none;
+    float: right;
+}
+
+/*######## socialMediaIcon hover effect ########*/
+
+ul.bottomFooter li a:hover {
+    color: #f4a482;
+}
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "footer-mainMenu footer-newsletter";
+    margin: 0 auto;
+    padding: 60px 115px 0px
+}
+p.mainMenu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 40px;
+    width: 90%;
+}
+p.footer-Newsletter {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 40px;
+    width: 90%;
+}
+.footer-mainMenu {
+    grid-area: footer-mainMenu;
+}
+.footer-newsletter {
+    grid-area: footer-newsletter;
+}
+p.mainMenu {
+    font-family: 'Asap', sans-serif;
+    font-size: 16.2px;
+    font-weight: bold
+}
+p.footer-Newsletter {
+    font-family: 'Asap', sans-serif;
+    font-size: 16.2px;
+    font-weight: bold
+}
+p.newsletterMessage {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11.4px;
+}
+
+/*email input box */
+
+#emailSubscriber-input {
+    padding: 10.5px 10px;
+    width: 475px;
+    border: none;
+    border-radius: 2.4px;
+    position: absolute;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* input button css */
+
+#joinSubscriber-button {
+    padding: 8px 10px;
+    margin-top: 4.5px;
+    transform: translate(1010%);
+    border: none;
+    border-radius: 2.7px;
+    color: #fff;
+    background-color: #585e71;
+    opacity: 87%;
+    text-transform: uppercase;
+    font-size: 11.2px;
+    font-family: 'Asap', sans-serif;
+}
+#joinSubscriber-button:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+/*######## this is the footer list  ########*/
+
+.footer-mainMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11.4px;
+}
+.footer-mainMenu ul a {
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 11px;
+}
+.footer-mainMenu ul li {
+    padding-bottom: 11px;
+}
+.footer-mainMenu ul a:hover {
+    color: #f4a482;
+}
+
+/*######## copyright font styling ########*/
+
+p.copyright a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    font-size: 11.2px;
+    margin: auto;
+}
+p.social-media-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/*######## copyright hover effect ########*/
+
+p.copyright a:hover {
+    color: #f4a482;
+}
+p.social-media-footer a:hover {
+    color: #f4a482;
+}
+
+/*text-decoration: none;
+    display: block;
+   padding-bottom: 11px;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    font-size: 11.4px;
+    color: #fff;
+.footer-list a:hover{
+     color: #f4a482;*/
+
+
+}
+p.social-media-footer {
+    display: flex;
+    justify-content: center;
+}
+p.social-media-footer a {
+    color: #fff;
+    letter-spacing: 15px;
+    min-height: 20px;
+}
+
+/*######## Custom Styles ########*/
+
+/*
+#section-1-backgroundImage{
+    background-image: url(walking_away.jpg);
+    background-image: -webkit- url(walking_away.jpg);
+    background-image: -o- url(walking_away.jpg);
+    background-image: -moz- url(walking_away.jpg);  
+}
+*/
