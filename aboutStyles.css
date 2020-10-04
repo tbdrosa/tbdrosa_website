@@ -100,6 +100,9 @@ img,
     margin: auto;
     grid-row-gap: 20px;
 }
+h2 {
+    color: #656565;
+}
 .aboutTextBlocks {
     padding: 12vh 0;
     text-align: justify;
@@ -115,6 +118,8 @@ img,
 .biographyTextBlock,
 .expertiseTextBlock,
 .marketingTextBlock {
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
     flex-basis: 28%;
     padding: 20px;
     line-height: 2;
