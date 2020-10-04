@@ -2,7 +2,8 @@
 
 html {
     background-color: #f7f7f7;
-    letter-spacing: 1.7px;
+    letter-spacing: 2.8;
+    font-size: 15px;
 }
 body {
     line-height: 1;
@@ -102,9 +103,10 @@ img,
 }
 h2 {
     color: #656565;
+    font-size: 25px;
 }
 .aboutTextBlocks {
-    padding: 12vh 0;
+    padding: 20px 80px 33px 80px;
     text-align: justify;
     display: flex;
     justify-content: space-around;
@@ -121,7 +123,7 @@ h2 {
     font-family: 'Libre Baskerville', serif;
     color: #77716d;
     flex-basis: 28%;
-    padding: 20px;
+    padding: 35px;
     line-height: 2;
     overflow: hidden;
 }
