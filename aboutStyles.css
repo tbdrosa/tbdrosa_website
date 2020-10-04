@@ -112,7 +112,7 @@ h2 {
     font-size: 25px;
 }
 .aboutTextBlocks {
-    padding: 20px 0px 33px 0px;
+    padding: 15px 55px 0px 55px;
     text-align: justify;
     display: flex;
     justify-content: space-around;
@@ -133,14 +133,17 @@ footer {
     .aboutTextBlocks {
         flex-direction: row;
     }
+    nav {
+        overflow: hidden;
+    }
 }
 .biographyTextBlock,
 .expertiseTextBlock,
 .marketingTextBlock {
     font-family: 'Libre Baskerville', serif;
     color: #77716d;
-    flex-basis: 28%;
-    padding: 35px;
+    flex-basis: 38%;
+    padding: 15px 30px 15px 35px;
     line-height: 2;
     overflow: hidden;
 }
