@@ -178,3 +178,23 @@ p {
     font-size: 12px;
     color: #77716d;
 }
+@media(max-width: 65rem) {
+    .journalEntryBody {
+        font-size: 13.5px;
+        margin: 25px auto;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 35fr 3.5fr;
+        grid-gap: 10px 30px;
+        letter-spacing: 1.7px;
+        line-height:
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 15px 10px 15px 10px;
+        line-height: 2.9;
+        overflow: hidden;
+    }
+}
