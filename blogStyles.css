@@ -116,6 +116,9 @@ h1 {
     font-weight: 100;
     text-align: center;
 }
+
+/* First Blog Entry title styles*/
+
 h2 {
     color: #656565;
     font-size: 55px;
@@ -124,6 +127,9 @@ h2 {
     text-align: center;
     padding: 15px 11px 0px 11px;
 }
+
+/* Getting Started subEntry title*/
+
 h3 {
     color: #656565;
     font-size: 25px;
@@ -132,6 +138,9 @@ h3 {
     text-align: center;
     padding: 7px;
 }
+
+/* welcome intro blurb*/
+
 h5 {
     font-size: 25px;
     font-style: normal;
@@ -140,6 +149,9 @@ h5 {
     padding: 10px;
     line-height: 1.7;
 }
+
+/* the dateSUbmission of post*/
+
 h6 {
     font-size: 15px;
     font-style: normal;
@@ -179,8 +191,49 @@ p {
     color: #77716d;
 }
 @media(max-width: 65rem) {
+    h1 {
+        font-size: 160px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+    }
+    /* First Blog Entry title styles*/
+    h2 {
+        color: #656565;
+        font-size: 110px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 15px 11px 0px 11px;
+    }
+    /* Getting Started subEntry title*/
+    h3 {
+        color: #656565;
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 7px;
+    }
+    /* welcome intro blurb*/
+    h5 {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        padding: 10px;
+        line-height: 1.7;
+    }
+    /* the dateSUbmission of post*/
+    h6 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        color: #656565;
+    }
     .journalEntryBody {
-        font-size: 35.5px;
+        font-size: 33px;
         max-width: 1000px;
         display: grid;
         grid-template-columns: 1fr 35fr 3.5fr;
@@ -191,7 +244,7 @@ p {
         font-family: 'Libre Baskerville', serif;
         color: #77716d;
         flex-basis: 38%;
-        padding: 5px 10px 15px 10px;
+        padding: 15px 30px 15px 35px;
         line-height: 2.2;
         overflow: hidden;
     }
