@@ -317,10 +317,13 @@ p.social-media-footer a {
     letter-spacing: 15px;
     min-height: 20px;
 }
-
 @media(max-width: 749px) {
-    .container{
+    .container {
         background-attachment: scroll;
+    }
+    .socialMedia_icon-right,
+    .topNavigation-right {
+        display: none;
     }
 }
 
