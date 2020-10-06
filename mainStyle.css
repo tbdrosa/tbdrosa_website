@@ -318,6 +318,12 @@ p.social-media-footer a {
     min-height: 20px;
 }
 
+@media(max-width: 749px) {
+    .container{
+        background-attachment: scroll;
+    }
+}
+
 /*######## Custom Styles ########*/
 
 /*
