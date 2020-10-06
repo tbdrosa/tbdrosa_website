@@ -27,9 +27,6 @@ topNavigation {
     transition: 0.3s;
     z-index: 1;
 }
-nav.hide {
-    transform: translateY(-100%);
-}
 nav ul {
     background-color: #f3f3f3;
     margin: 0;
@@ -65,6 +62,15 @@ ul.topNavigation li a {
     color: #656565;
     text-transform: uppercase;
     transition: 0.3s;
+}
+
+/* RESPONSIVE NAV BAR*/
+
+@media screen and (max-width: 749px) {
+    li.socialMedia_icon-right,
+    li.topNavigation-right {
+        display: none;
+    }
 }
 .topNavigation-left {
     padding-left: 90px;
