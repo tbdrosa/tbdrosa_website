@@ -3,6 +3,7 @@
 html {
     background-color: #f7f7f7;
     letter-spacing: 1.7px;
+    overflow-x: hidden;
 }
 body {
     line-height: 1;
@@ -218,15 +219,19 @@ p.newsletterMessage {
     font-family: 'Libre Baskerville', serif;
     font-size: 11.4px;
 }
+form {
+    position: relative;
+}
 
 /*email input box */
 
 #emailSubscriber-input {
     padding: 10.5px 10px;
-    width: 475px;
+    width: 85%;
+    padding: 12px;
     border: none;
     border-radius: 2.4px;
-    position: absolute;
+    resize: vertical;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -235,7 +240,7 @@ p.newsletterMessage {
 #joinSubscriber-button {
     padding: 8px 10px;
     margin-top: 4.5px;
-    transform: translate(1010%);
+    transform: translateY(-140%);
     border: none;
     border-radius: 2.7px;
     color: #fff;
