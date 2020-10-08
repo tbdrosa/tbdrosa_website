@@ -2,7 +2,7 @@
 
 html {
     background-color: #f7f7f7;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.7;
 }
 body {
     line-height: 1;
@@ -112,12 +112,31 @@ h2 {
     font-size: 25px;
 }
 .aboutTextBlocks {
-    padding: 15px 55px 0px 55px;
+    /*padding: 15px 55px 0px 55px;*/
     text-align: justify;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
+    flex-basis: 38%;
+    padding: 15px 45px 15px 45px;
+    /*padding: 15px 30px 15px 35px;*/
+    line-height: 2;
+    overflow: hidden;
 }
+
+/*.biographyTextBlock,
+.expertiseTextBlock,
+.marketingTextBlock {
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
+    flex-basis: 38%;
+    padding: 15px 30px 15px 35px;
+    line-height: 2;
+    overflow: hidden;
+}*/
+
 footer {
     padding: 20px 80px 33px 80px;
     text-align: justify;
@@ -129,23 +148,33 @@ footer {
     font-size: 13px;
     color: #77716d;
 }
-@media(min-width: 65rem) {
+@media(min-width: 1024px) {
     .aboutTextBlocks {
         flex-direction: row;
+        text-align: justify;
+        display: flex;
+        justify-content: space-around;
+        /*flex-direction: column;*/
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 0px 15px 0px 15px;
+        line-height: 2;
+        overflow: hidden;
+    }
+    .biographyTextBlock,
+    .expertiseTextBlock,
+    .marketingTextBlock {
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 15px 30px 15px 35px;
+        line-height: 2;
+        overflow: hidden;
     }
     nav {
         overflow: hidden;
     }
-}
-.biographyTextBlock,
-.expertiseTextBlock,
-.marketingTextBlock {
-    font-family: 'Libre Baskerville', serif;
-    color: #77716d;
-    flex-basis: 38%;
-    padding: 15px 30px 15px 35px;
-    line-height: 2;
-    overflow: hidden;
 }
 
 /*######## Custom Styles ########*/
