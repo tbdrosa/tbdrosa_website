@@ -121,7 +121,7 @@ h1 {
 
 h2 {
     color: #656565;
-    font-size: 55px;
+    font-size: 75px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
@@ -132,28 +132,28 @@ h2 {
 
 h3 {
     color: #656565;
-    font-size: 25px;
+    font-size: 45px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
-    padding: 7px;
+    padding: 7px 0px 0px 0px;
 }
 
 /* welcome intro blurb*/
 
 h5 {
-    font-size: 25px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 100;
     text-align: center;
-    padding: 10px;
+    /*padding: 10px;*/
     line-height: 1.7;
 }
 
 /* the dateSUbmission of post*/
 
 h6 {
-    font-size: 15px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 100;
     text-align: center;
@@ -190,7 +190,7 @@ p {
     font-size: 12px;
     color: #77716d;
 }
-@media(max-width: 65rem) {
+@media(min-width: 768px) {
     h1 {
         font-size: 160px;
         font-style: italic;
@@ -200,7 +200,7 @@ p {
     /* First Blog Entry title styles*/
     h2 {
         color: #656565;
-        font-size: 110px;
+        font-size: 90px;
         font-style: italic;
         font-weight: 100;
         text-align: center;
@@ -209,7 +209,7 @@ p {
     /* Getting Started subEntry title*/
     h3 {
         color: #656565;
-        font-size: 50px;
+        font-size: 39px;
         font-style: italic;
         font-weight: 100;
         text-align: center;
@@ -217,7 +217,7 @@ p {
     }
     /* welcome intro blurb*/
     h5 {
-        font-size: 50px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 100;
         text-align: center;
@@ -233,7 +233,7 @@ p {
         color: #656565;
     }
     .journalEntryBody {
-        font-size: 33px;
+        font-size: 18px;
         max-width: 1000px;
         display: grid;
         grid-template-columns: 1fr 35fr 3.5fr;
@@ -247,5 +247,8 @@ p {
         padding: 15px 30px 15px 35px;
         line-height: 2.2;
         overflow: hidden;
+    }
+    footer {
+        text-align: center;
     }
 }
