@@ -187,7 +187,38 @@ ul.bottomFooter li a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "footer-mainMenu footer-newsletter";
     margin: 0 auto;
-    padding: 60px 115px 0px
+    padding: 60px 115px 0px;
+}
+@media(max-width: 749px) {
+    .footerGrid {
+        display: block;
+        margin: 0 auto;
+        padding: 60px 115px 0px;
+    }
+    footer {
+        background-color: #2e3438;
+        color: #fff;
+        display: block;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    /*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
+    ul.bottomFooter li a {
+        display: block;
+        text-decoration: none;
+        min-height: 16px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    /*######## socialMediaIcon positioning ########*/
+    ul.bottomFooter li {
+        list-style: none;
+        float: right;
+    }
+    /*######## socialMediaIcon hover effect ########*/
+    ul.bottomFooter li a:hover {
+        color: #f4a482;
+    }
 }
 p.mainMenu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
