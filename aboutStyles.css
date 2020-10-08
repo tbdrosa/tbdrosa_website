@@ -1,4 +1,4 @@
-/*######## Defaults ########*/
+    /*######## Defaults ########*/
 
 html {
     background-color: #f7f7f7;
@@ -118,6 +118,7 @@ h2 {
     justify-content: space-around;
     flex-direction: column;
     font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
     color: #77716d;
     flex-basis: 38%;
     padding: 15px 45px 15px 45px;
@@ -176,11 +177,31 @@ footer {
         overflow: hidden;
     }
 }
-
-/*######## Custom Styles ########*/
-
-
-/*
+@media(max-width: 563px) {
+    .biographyTextBlock,
+    .expertiseTextBlock,
+    .marketingTextBlock {
+        font-size: 10px;
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 0px 0px 0px 0px;
+        line-height: 2;
+        overflow: hidden;
+    }
+    footer {
+        padding: 20px 80px 33px 80px;
+        text-align: justify;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 100;
+        font-size: 8px;
+        color: #77716d;
+    }
+    /*######## Custom Styles ########*/
+    /*
 #section-1-backgroundImage{
     background-image: url(walking_away.jpg);
     background-image: -webkit- url(walking_away.jpg);
