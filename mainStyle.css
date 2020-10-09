@@ -100,8 +100,7 @@ ul li a {
 
 /*######## image styling: how big they show on the screen  ########*/
 
-img,
-.aboutProfile {
+img {
     padding: 65px 0px 0px;
     max-width: 100%;
     display: block;
@@ -111,11 +110,14 @@ img,
 
 /*######## image position: how they are centered in the screen and equal padding########*/
 
-.portfolio-Column img {
+.portfolioColumn img {
     display: block;
-    max-width: 530px;
-    padding: 20px;
-    margin: auto;
+    max-width: 100%;
+    height: auto;
+    /*max-height: 100vh;*/
+    padding: 20px 0px 20px 0px;
+    /*margin: 20px 0px 20px 0px;*/
+    /*    border: 20px 0px 20px 0px;*/
     grid-row-gap: 20px;
 }
 
@@ -183,12 +185,26 @@ ul.bottomFooter li a:hover {
     color: #f4a482;
 }
 .footerGrid {
+    background-color: #2e3438;
     display: grid;
+    max-width: 100%;
+    height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "footer-mainMenu footer-newsletter";
     margin: 0 auto;
     padding: 60px 115px 0px;
 }
+
+/*.footerGrid {
+    background-color: #2e3438;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh;
+    margin: 0 auto;
+    padding: 60px 0px 0px;
+}*/
+
 
 }
 footer {
@@ -226,7 +242,7 @@ p.mainMenu {
     255,
     0.15);
     line-height: 40px;
-    width: 90%;
+    width: 85%;
 }
 p.footer-Newsletter {
     border-bottom: 1px solid rgba(255,
@@ -241,12 +257,16 @@ p.footer-Newsletter {
 }
 .footer-newsletter {
     grid-area: footer-newsletter;
+    max-width: 100%;
+    line-height: 20px;
 }
 p.mainMenu {
-    font-family: 'Asap',
-    sans-serif;
-    font-size: 16.2px;
-    font-weight: bold
+    border-bottom: 1px solid rgba(255,
+    255,
+    255,
+    0.15);
+    line-height: 40px;
+    width: 90%;
 }
 p.footer-Newsletter {
     font-family: 'Asap',
@@ -360,34 +380,108 @@ p.social-media-footer a {
     letter-spacing: 15px;
     min-height: 20px;
 }
+
+/* this makes the background and column of images responsive */
 @media(min-width: 1024px) {
-    .portfolio-Column img {
+    .container {
+        background-size: cover;
+    }
+    .portfolioColumn img {
+        display: block;
         max-width: 100%;
+        height: auto;
+        max-height: 100vh
     }
     .footerGrid {
         max-width: 100%;
-        display: block;
-        margin: 0 auto;
+        margin: 0;
         padding: 60px 115px 0px;
+    }
+}
+
+/* this decreases the size of newsletter message or phones*/
+@media(max-width: 444px) {
+    p.newsletterMessage {
+        font-family: 'Libre Baskerville',
+        serif;
+        font-size: 8.56px;
+    }
+}
+
+/* RESPONSIVE FOOTER for larger tablets */
+@media(max-width: 1019px) {
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        /*margin: 0 auto;*/
+        padding: 60px 0px 0px;
+    }
+}
+
+/* mobile responsive navigation bar*/
+@media (max-width: 735px) {
+    .socialMedia_icon-right,
+    .topNavigation-right {
+        display: none;
+    }
+}
+
+/* RESPONSIVE FOOTER for tablets */
+@media(max-width: 843px) {
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        /*margin: 0 auto;*/
+        padding: 60px 0px 0px;
     }
 }
 @media(max-width: 563px) {
     .container {
         background-attachment: scroll;
-    }
-    .socialMedia_icon-right,
-    .topNavigation-right {
-        display: none;
-    }
-    .portfolio-Column img {
+        background-size: cover;
         max-width: 100%;
+        height: auto;
+    }
+    .portfolioColumn img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh
     }
     .footerGrid {
         background-color: #2e3438;
-        max-width: 110%;
         display: block;
-        /*margin: 0 auto;*/
-        /*padding: 60px 115px 0px;*/
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        margin: 0;
+        padding: 60px 0px 0px;
+    }
+    p.newsletterMessage {
+        font-family: 'Libre Baskerville',
+        serif;
+        font-size: 9px;
+    }
+}
+.portfolioColumn img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh
+}
+@media(max-width: 375px) {
+    img {
+        padding: 65px 0px 0px;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        padding: grid-row-gap: 20px;
     }
 }
 
