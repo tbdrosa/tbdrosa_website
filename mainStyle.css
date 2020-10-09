@@ -189,44 +189,50 @@ ul.bottomFooter li a:hover {
     margin: 0 auto;
     padding: 60px 115px 0px;
 }
-@media(max-width: 749px) {
-    .footerGrid {
-        display: block;
-        margin: 0 auto;
-        padding: 60px 115px 0px;
-    }
-    footer {
-        background-color: #2e3438;
-        color: #fff;
-        display: block;
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    /*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
-    ul.bottomFooter li a {
-        display: block;
-        text-decoration: none;
-        min-height: 16px;
-        color: #fff;
-        text-transform: uppercase;
-    }
-    /*######## socialMediaIcon positioning ########*/
-    ul.bottomFooter li {
-        list-style: none;
-        float: right;
-    }
-    /*######## socialMediaIcon hover effect ########*/
-    ul.bottomFooter li a:hover {
-        color: #f4a482;
-    }
+
+}
+footer {
+    background-color: #2e3438;
+    color: #fff;
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
+ul.bottomFooter li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*######## socialMediaIcon positioning ########*/
+ul.bottomFooter li {
+    list-style: none;
+    float: right;
+}
+
+/*######## socialMediaIcon hover effect ########*/
+ul.bottomFooter li a:hover {
+    color: #f4a482;
+}
+
 }
 p.mainMenu {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255,
+    255,
+    255,
+    0.15);
     line-height: 40px;
     width: 90%;
 }
 p.footer-Newsletter {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255,
+    255,
+    255,
+    0.15);
     line-height: 40px;
     width: 90%;
 }
@@ -237,17 +243,20 @@ p.footer-Newsletter {
     grid-area: footer-newsletter;
 }
 p.mainMenu {
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',
+    sans-serif;
     font-size: 16.2px;
     font-weight: bold
 }
 p.footer-Newsletter {
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',
+    sans-serif;
     font-size: 16.2px;
     font-weight: bold
 }
 p.newsletterMessage {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville',
+    serif;
     font-size: 11.4px;
 }
 form {
@@ -255,7 +264,6 @@ form {
 }
 
 /*email input box */
-
 #emailSubscriber-input {
     padding: 10.5px 10px;
     width: 85%;
@@ -263,11 +271,11 @@ form {
     border: none;
     border-radius: 2.4px;
     resize: vertical;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville',
+    serif;
 }
 
 /* input button css */
-
 #joinSubscriber-button {
     padding: 8px 10px;
     margin-top: 4.5px;
@@ -279,7 +287,8 @@ form {
     opacity: 87%;
     text-transform: uppercase;
     font-size: 11.2px;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',
+    sans-serif;
 }
 #joinSubscriber-button:hover {
     cursor: pointer;
@@ -287,7 +296,6 @@ form {
 }
 
 /*######## this is the footer list  ########*/
-
 .footer-mainMenu ul {
     margin: 0;
     padding: 0;
@@ -296,7 +304,8 @@ form {
 }
 .footer-mainMenu ul a {
     text-transform: uppercase;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',
+    sans-serif;
     text-decoration: none;
     color: #fff;
     padding-bottom: 11px;
@@ -309,12 +318,12 @@ form {
 }
 
 /*######## copyright font styling ########*/
-
 p.copyright a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap',
+    sans-serif;
     font-size: 11.2px;
     margin: auto;
 }
@@ -324,7 +333,6 @@ p.social-media-footer {
 }
 
 /*######## copyright hover effect ########*/
-
 p.copyright a:hover {
     color: #f4a482;
 }
@@ -342,7 +350,6 @@ p.social-media-footer a:hover {
 .footer-list a:hover{
      color: #f4a482;*/
 
-
 }
 p.social-media-footer {
     display: flex;
@@ -353,13 +360,34 @@ p.social-media-footer a {
     letter-spacing: 15px;
     min-height: 20px;
 }
-@media(max-width: 749px) {
+@media(min-width: 1024px) {
+    .portfolio-Column img {
+        max-width: 100%;
+    }
+    .footerGrid {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 60px 115px 0px;
+    }
+}
+@media(max-width: 563px) {
     .container {
         background-attachment: scroll;
     }
     .socialMedia_icon-right,
     .topNavigation-right {
         display: none;
+    }
+    .portfolio-Column img {
+        max-width: 100%;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        max-width: 110%;
+        display: block;
+        /*margin: 0 auto;*/
+        /*padding: 60px 115px 0px;*/
     }
 }
 
