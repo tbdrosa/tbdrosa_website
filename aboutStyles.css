@@ -1,133 +1,128 @@
-    /*######## Defaults ########*/
-
-html {
-    background-color: #f7f7f7;
-    letter-spacing: 1.7;
-}
-body {
-    line-height: 1;
-    margin: 0;
-    background: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-}
-
-/*######## Navigation Bar ########*/
-
-nav,
-topNavigation {
-    background: #f3f3f3;
-    font-family: 'Asap', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    width: 100%;
-    margin: 0;
-    display: block;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-    position: fixed;
-    transition: 0.3s;
-    z-index: 1;
-}
-nav.hide {
-    transform: translateY(-100%);
-}
-nav ul {
-    background-color: #f3f3f3;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-ul.topNavigation {
-    margin: 0 auto;
-}
-ul.topNavigation li {
-    list-style: none;
-    float: left;
-}
-ul.topNavigation li.topNavigation-right,
-
-/*this is the styling label for the rest of the navigation bar contents */
-
-ul.topNavigation li.socialMedia_icon-right
-/* this is the styling label for the twitter and instagram icons */
-
-{
-    float: right;
-    font-size: 15px;
-}
-ul.topNavigation li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    color: #656565;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-.topNavigation-left {
-    padding-left: 90px;
-    text-transform: uppercase;
-}
-.topNavigation li a:hover {
-    color: #f4a482;
-}
-.social-part .fa {
-    padding-right: 90px;
-}
-ul li a {
-    margin-right: 20px;
-}
-
-/*######## image styling: how big they show on the screen  ########*/
-
-img,
-.aboutProfile {
-    padding: 65px 0px 0px;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-.marketingTextBlock a {
-    color: #656565;
-}
-.marketingTextBlock a:hover {
-    color: #f4a482;
-}
-
-/*######## aboutText paragraph positions  ########*/
-
-.aboutContainer {
-    display: block;
-    max-width: 530px;
-    padding: 36px 20px;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-h2 {
-    color: #656565;
-    font-size: 25px;
-}
-.aboutTextBlocks {
-    /*padding: 15px 55px 0px 55px;*/
-    text-align: justify;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 16px;
-    color: #77716d;
-    flex-basis: 38%;
-    padding: 15px 45px 15px 45px;
-    /*padding: 15px 30px 15px 35px;*/
-    line-height: 2;
-    overflow: hidden;
-}
-
-/*.biographyTextBlock,
+        /*######## Defaults ########*/
+    
+    html {
+        background-color: #f7f7f7;
+        letter-spacing: 1.7;
+    }
+    body {
+        line-height: 1;
+        margin: 0;
+        background: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+    }
+    /*######## Navigation Bar ########*/
+    
+    nav,
+    topNavigation {
+        background: #f3f3f3;
+        font-family: 'Asap', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        display: block;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: fixed;
+        transition: 0.3s;
+        z-index: 1;
+    }
+    nav.hide {
+        transform: translateY(-100%);
+    }
+    nav ul {
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    ul.topNavigation {
+        margin: 0 auto;
+    }
+    ul.topNavigation li {
+        list-style: none;
+        float: left;
+    }
+    ul.topNavigation li.topNavigation-right,
+    /*this is the styling label for the rest of the navigation bar contents */
+    
+    ul.topNavigation li.socialMedia_icon-right
+    /* this is the styling label for the twitter and instagram icons */
+    
+    {
+        float: right;
+        font-size: 15px;
+    }
+    ul.topNavigation li a {
+        display: block;
+        text-decoration: none;
+        min-height: 16px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        color: #656565;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    .topNavigation-left {
+        padding-left: 90px;
+        text-transform: uppercase;
+    }
+    .topNavigation li a:hover {
+        color: #f4a482;
+    }
+    .social-part .fa {
+        padding-right: 90px;
+    }
+    ul li a {
+        margin-right: 20px;
+    }
+    /*######## image styling: how big they show on the screen  ########*/
+    
+    img,
+    .aboutProfile {
+        padding: 65px 0px 0px;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        grid-row-gap: 20px;
+    }
+    .marketingTextBlock a {
+        color: #656565;
+    }
+    .marketingTextBlock a:hover {
+        color: #f4a482;
+    }
+    /*######## aboutText paragraph positions  ########*/
+    
+    .aboutContainer {
+        display: block;
+        max-width: 530px;
+        padding: 36px 20px;
+        margin: auto;
+        grid-row-gap: 20px;
+    }
+    h2 {
+        color: #656565;
+        font-size: 25px;
+    }
+    .aboutTextBlocks {
+        /*padding: 15px 55px 0px 55px;*/
+        text-align: justify;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 16px;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 15px 45px 15px 45px;
+        /*padding: 15px 30px 15px 35px;*/
+        line-height: 2;
+        overflow: hidden;
+    }
+    /*.biographyTextBlock,
 .expertiseTextBlock,
 .marketingTextBlock {
     font-family: 'Libre Baskerville', serif;
@@ -137,58 +132,7 @@ h2 {
     line-height: 2;
     overflow: hidden;
 }*/
-
-footer {
-    padding: 20px 80px 33px 80px;
-    text-align: justify;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 100;
-    font-size: 13px;
-    color: #77716d;
-}
-@media(min-width: 1024px) {
-    .aboutTextBlocks {
-        flex-direction: row;
-        text-align: justify;
-        display: flex;
-        justify-content: space-around;
-        /*flex-direction: column;*/
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 0px 15px 0px 15px;
-        line-height: 2;
-        overflow: hidden;
-    }
-    .biographyTextBlock,
-    .expertiseTextBlock,
-    .marketingTextBlock {
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 15px 30px 15px 35px;
-        line-height: 2;
-        overflow: hidden;
-    }
-    nav {
-        overflow: hidden;
-    }
-}
-@media(max-width: 563px) {
-    .biographyTextBlock,
-    .expertiseTextBlock,
-    .marketingTextBlock {
-        font-size: 10px;
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 0px 0px 0px 0px;
-        line-height: 2;
-        overflow: hidden;
-    }
+    
     footer {
         padding: 20px 80px 33px 80px;
         text-align: justify;
@@ -197,11 +141,62 @@ footer {
         flex-direction: column;
         font-family: 'Libre Baskerville', serif;
         font-weight: 100;
-        font-size: 8px;
+        font-size: 13px;
         color: #77716d;
     }
-    /*######## Custom Styles ########*/
-    /*
+    @media(min-width: 1024px) {
+        .aboutTextBlocks {
+            flex-direction: row;
+            text-align: justify;
+            display: flex;
+            justify-content: space-around;
+            /*flex-direction: column;*/
+            font-family: 'Libre Baskerville', serif;
+            color: #77716d;
+            flex-basis: 38%;
+            padding: 0px 15px 0px 15px;
+            line-height: 2;
+            overflow: hidden;
+        }
+        .biographyTextBlock,
+        .expertiseTextBlock,
+        .marketingTextBlock {
+            font-family: 'Libre Baskerville', serif;
+            color: #77716d;
+            flex-basis: 38%;
+            padding: 15px 30px 15px 35px;
+            line-height: 2;
+            overflow: hidden;
+        }
+        nav {
+            overflow: hidden;
+        }
+    }
+    @media(max-width: 563px) {
+        .biographyTextBlock,
+        .expertiseTextBlock,
+        .marketingTextBlock {
+            font-size: 10px;
+            font-family: 'Libre Baskerville', serif;
+            color: #77716d;
+            flex-basis: 38%;
+            padding: 0px 0px 0px 0px;
+            line-height: 2;
+            overflow: hidden;
+        }
+        footer {
+            padding: 20px 80px 33px 80px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 100;
+            font-size: 8px;
+            color: #77716d;
+        }
+        /*######## Custom Styles ########*/
+        /*
 #section-1-backgroundImage{
     background-image: url(walking_away.jpg);
     background-image: -webkit- url(walking_away.jpg);
