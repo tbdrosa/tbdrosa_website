@@ -55,7 +55,7 @@ body {
 
 /*this is the mobile hamburger button*/
 
-.hamburgerButton {
+.toggle-hamburger {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -65,7 +65,7 @@ body {
     width: 31px;
     height: 21px
 }
-.hamburgerButton .bar {
+.toggle-hamburger .bar {
     height: 3px;
     width: 100%;
     background-color: #656565;
@@ -94,6 +94,9 @@ body {
 }
 nav.hide {
     transform: translateY(-100%);
+}
+.navBarLinks li.socialMediaIconRightLast a {
+    padding-right: 45px;
 }
 
 /*nav ul.topNavigation li.logoLeft a {
@@ -579,7 +582,7 @@ p.social-media-footer a {
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
-    .hamburgerButton {
+    .toggle-hamburger {
         display: flex;
         margin: 0px 0px 0px 0px;
         padding: 15px;
