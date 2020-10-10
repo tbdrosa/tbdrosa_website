@@ -115,10 +115,16 @@ img {
     max-width: 100%;
     height: auto;
     /*max-height: 100vh;*/
-    padding: 20px 15px 20px 15px;
+    padding: 35px 15px 0px 15px;
     /*margin: 20px 0px 20px 0px;*/
     /*    border: 20px 0px 20px 0px;*/
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+/* this is the last image in the column - the third padding much be a number so that it goes to the bottom to seperate footer and image*/
+
+.portfolioColumn img.last {
+    padding: 35px 15px 20px 15px;
 }
 
 /*######## aboutText paragraph positions  ########*/
