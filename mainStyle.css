@@ -4,6 +4,7 @@ html {
     background-color: #f7f7f7;
     letter-spacing: 1.7px;
     overflow-x: hidden;
+    margin: 0;
 }
 body {
     line-height: 1;
@@ -15,48 +16,140 @@ body {
 
 /*######## Navigation Bar ########*/
 
-nav,
-topNavigation {
+.entireNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #f3f3f3;
-    font-family: 'Asap', sans-serif;
+    /*position: relative;*/
+    margin: 0;
+    width: 100%;
+    /*font-family: 'Asap', sans-serif;
     font-weight: 400;
     width: 100%;
-    margin: 0;
-    display: block;
+    margin: 0
+    display: block;*/
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
     position: fixed;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 3;
+}
+
+/*this is the tbdrosa 'logo' styling*/
+
+.logoLeftName a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Asap', sans-serif;
+    color: #656565;
+    transition: 0.3s;
+    margin: 0px 0px 0px 90px;
+}
+
+/*when you hover color change*/
+
+.logoLeftName a:hover {
+    color: #2e3438;
+}
+
+/*this is the mobile hamburger button*/
+
+.hamburgerButton {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px
+}
+.hamburgerButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #656565;
+    border-radius: 10px;
+}
+
+/* the contents towards the right of the navigation bar*/
+
+.navBarLinks ul {
+    display: flex;
+}
+.navBarLinks li {
+    list-style: none;
+}
+.navBarLinks li a {
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    color: #656565;
+    padding-right: 26px;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.navBarLinks li a:hover {
+    color: #f4a482;
 }
 nav.hide {
     transform: translateY(-100%);
 }
-nav ul {
+
+/*nav ul.topNavigation li.logoLeft a {
+   
+}*/
+
+
+/* the color transition when you hover over the logo */
+
+
+/*styling list items so they line up*/
+
+
+/* this makes the navigation disappear on scroll*/
+
+
+/* this styles the navigation bar color and some positioning*/
+
+
+/*nav ul {
     background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-ul.topNavigation {
-    margin: 0 auto;
-}
+ul.topNavigation {*/
+
+
+/* margin: 0 auto;*/
+
+
+/*}
 ul.topNavigation li {
     list-style: none;
     float: left;
-}
-ul.topNavigation li.topNavigation-right,
+}*/
 
-/*this is the styling label for the rest of the navigation bar contents */
 
-ul.topNavigation li.socialMedia_icon-right
+/*ul.topNavigation li.topNavigation-right,
+
+this is the styling label for the rest of the navigation bar contents 
+
+ul.topNavigation li.socialMedia_icon-right*/
+
+
 /* this is the styling label for the twitter and instagram icons */
 
-{
-    float: right;
-    font-size: 15px;
-}
-ul.topNavigation li a {
-    display: block;
+
+/*float: right;
+    font-size: 15px;*/
+
+
+/*ul.topNavigation li a {*/
+
+
+/*display: block;
     text-decoration: none;
     min-height: 16px;
     text-align: center;
@@ -65,21 +158,33 @@ ul.topNavigation li a {
     padding-right: 20px;
     color: #656565;
     text-transform: uppercase;
-    transition: 0.3s;
-}
-.topNavigation-left {
-    padding-left: 90px;
-    text-transform: uppercase;
-}
-.topNavigation li a:hover {
-    color: #f4a482;
-}
-.social-part .fa {
-    padding-right: 90px;
-}
-ul li a {
-    margin-right: 20px;
-}
+    transition: 0.3s;*/
+
+
+/*.topNavigation-left {*/
+
+
+/* padding-left: 90px;
+    text-transform: uppercase;*/
+
+
+/*.topNavigation li a:hover {*/
+
+
+/* color: #f4a482;*/
+
+
+/*.social-part .fa {*/
+
+
+/*padding-right: 90px;*/
+
+
+/*ul li a {*/
+
+
+/*margin-right: 20px;*/
+
 
 /* Create a Parallax Effect */
 
@@ -198,7 +303,7 @@ ul.bottomFooter li a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "footer-mainMenu footer-newsletter";
     margin: 0 auto;
-    padding: 60px 115px 0px;
+    padding: 60px 0px 0px;
 }
 
 /*.footerGrid {
@@ -211,8 +316,6 @@ ul.bottomFooter li a:hover {
     padding: 60px 0px 0px;
 }*/
 
-
-}
 footer {
     background-color: #2e3438;
     color: #fff;
@@ -222,6 +325,7 @@ footer {
 }
 
 /*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
+
 ul.bottomFooter li a {
     display: block;
     text-decoration: none;
@@ -231,12 +335,14 @@ ul.bottomFooter li a {
 }
 
 /*######## socialMediaIcon positioning ########*/
+
 ul.bottomFooter li {
     list-style: none;
     float: right;
 }
 
 /*######## socialMediaIcon hover effect ########*/
+
 ul.bottomFooter li a:hover {
     color: #f4a482;
 }
@@ -273,6 +379,7 @@ form {
 }
 
 /*email input box */
+
 #emailSubscriber-input {
     padding: 10.5px 10px;
     width: 85%;
@@ -284,6 +391,7 @@ form {
 }
 
 /* input button css */
+
 #joinSubscriber-button {
     padding: 8px 10px;
     margin-top: 4.5px;
@@ -303,6 +411,7 @@ form {
 }
 
 /*######## this is the footer list  ########*/
+
 .footer-mainMenu ul {
     margin: 0;
     padding: 0;
@@ -324,6 +433,7 @@ form {
 }
 
 /*######## copyright font styling ########*/
+
 p.copyright a {
     color: #fff;
     text-decoration: none;
@@ -334,12 +444,14 @@ p.copyright a {
 }
 
 /* the placement of twitter and instagram icons */
+
 p.social-media-footer {
     display: flex;
     justify-content: center;
 }
 
 /*######## copyright hover effect ########*/
+
 p.copyright a:hover {
     color: #f4a482;
 }
@@ -356,6 +468,7 @@ p.social-media-footer a:hover {
     color: #fff;
 .footer-list a:hover{
      color: #f4a482;*/
+
 p.social-media-footer {
     display: flex;
     justify-content: center;
@@ -364,9 +477,11 @@ p.social-media-footer a {
     color: #fff;
     letter-spacing: 15px;
     min-height: 20px;
+    margin-bottom: 25px;
 }
 
 /* this makes the background and column of images responsive */
+
 @media(min-width: 1024px) {
     .container {
         background-size: cover;
@@ -385,6 +500,7 @@ p.social-media-footer a {
 }
 
 /* this decreases the size of newsletter message or phones*/
+
 @media(max-width: 444px) {
     p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
@@ -393,6 +509,7 @@ p.social-media-footer a {
 }
 
 /* RESPONSIVE FOOTER for larger tablets */
+
 @media(max-width: 1019px) {
     .footerGrid {
         background-color: #2e3438;
@@ -400,36 +517,52 @@ p.social-media-footer a {
         max-width: 100%;
         height: auto;
         max-height: 100vh;
-        /*margin: 0 auto;*/
+        margin: 0 auto;
         padding: 60px 0px 0px;
     }
 }
 
 /* mobile responsive navigation bar*/
-@media (max-width: 735px) {
-    .socialMedia_icon-right,
-    .topNavigation-right {
+
+@media (max-width: 760px) {
+    .hamburgerButton {
+        display: flex;
+    }
+    .navBarLinks {
         display: none;
     }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
+    /*this is the tbdrosa 'logo' styling*/
+    .logoLeftName a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #656565;
+        transition: 0.3s;
+        margin: 0px 0px 0px 90px;
     }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
+}
+img {
+    /*padding: 65px 25px 0px;*/
+    max-width: 100%;
+    /*display: block;*/
+    /*padding: 20px 0px 20px 0px;*/
+    /*grid-row-gap: 20px;*/
+}
+
+/*######## image position: how they are centered in the screen and equal padding########*/
+
+.portfolioColumn img {
+    display: block;
+    max-width: 92%;
+    /*height: auto;*/
+    /*max-height: 100vh;*/
+    margin: auto;
+    /*margin: 20px 0px 20px 0px;*/
+    /*    border: 20px 0px 20px 0px;*/
+    grid-row-gap: 20px;
+}
+
 }
 
 /* RESPONSIVE FOOTER for tablets */
