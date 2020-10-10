@@ -63,7 +63,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 31px;
-    height: 21px
+    height: 21px;
 }
 .toggle-hamburger .bar {
     height: 3px;
@@ -594,16 +594,17 @@ p.social-media-footer a {
     .navBarLinks {
         display: none;
         width: 100%;
+        padding: 0px;
     }
     .navBarLinks ul {
         width: 100%;
         flex-direction: column;
     }
     .navBarLinks li {
-        text-align: center;
+        text-align: justify;
     }
     .navBarLinks a {
-        padding: 44px;
+        padding: 28px;
         max-height: 100vh;
     }
     .navBarLinks.active {
