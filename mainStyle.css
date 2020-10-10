@@ -497,6 +497,24 @@ p.social-media-footer a {
         margin: 0;
         padding: 60px 115px 0px;
     }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
 }
 
 /* this decreases the size of newsletter message or phones*/
@@ -505,6 +523,24 @@ p.social-media-footer a {
     p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
         font-size: 8.56px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
     }
 }
 
@@ -520,35 +556,69 @@ p.social-media-footer a {
         margin: 0 auto;
         padding: 60px 0px 0px;
     }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
 }
 
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
+    .navBarLinks {
+        display: none;
+    }
     .hamburgerButton {
         display: flex;
         margin: 0px 0px 0px 0px;
         padding: 15px;
     }
-}
-.navBarLinks {
-    display: none;
-}
-
-/*this is the tbdrosa 'logo' styling*/
-
-.logoLeftName a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Asap', sans-serif;
-    color: #656565;
-    transition: 0.3s;
-    margin: 0px 0px 0px 0px;
-}
-.logoLeftName {
-    margin: 0px 0px 0px 0px;
-    padding: 30px;
+    /*this is the tbdrosa 'logo' styling*/
+    .logoLeftName a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #656565;
+        transition: 0.3s;
+        margin: 0px 0px 0px 0px;
+    }
+    .logoLeftName {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
 }
 
 }
@@ -675,6 +745,7 @@ img {
     .portfolioColumn img {
         display: block;
         max-width: 92%;
+        max-height: 100vh;
         /*height: auto;*/
         /*max-height: 100vh;*/
         
