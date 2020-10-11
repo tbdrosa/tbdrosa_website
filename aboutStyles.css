@@ -1,128 +1,141 @@
-        /*######## Defaults ########*/
-    
-    html {
-        background-color: #f7f7f7;
-        letter-spacing: 1.7;
-    }
-    body {
-        line-height: 1;
-        margin: 0;
-        background: #f7f7f7;
-        display: flex;
-        flex-direction: column;
-    }
-    /*######## Navigation Bar ########*/
-    
-    nav,
-    topNavigation {
-        background: #f3f3f3;
-        font-family: 'Asap', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        width: 100%;
-        margin: 0;
-        display: block;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: fixed;
-        transition: 0.3s;
-        z-index: 1;
-    }
-    nav.hide {
-        transform: translateY(-100%);
-    }
-    nav ul {
-        background-color: #f3f3f3;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    ul.topNavigation {
-        margin: 0 auto;
-    }
-    ul.topNavigation li {
-        list-style: none;
-        float: left;
-    }
-    ul.topNavigation li.topNavigation-right,
-    /*this is the styling label for the rest of the navigation bar contents */
-    
-    ul.topNavigation li.socialMedia_icon-right
-    /* this is the styling label for the twitter and instagram icons */
-    
-    {
-        float: right;
-        font-size: 15px;
-    }
-    ul.topNavigation li a {
-        display: block;
-        text-decoration: none;
-        min-height: 16px;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 20px;
-        color: #656565;
-        text-transform: uppercase;
-        transition: 0.3s;
-    }
-    .topNavigation-left {
-        padding-left: 90px;
-        text-transform: uppercase;
-    }
-    .topNavigation li a:hover {
-        color: #f4a482;
-    }
-    .social-part .fa {
-        padding-right: 90px;
-    }
-    ul li a {
-        margin-right: 20px;
-    }
-    /*######## image styling: how big they show on the screen  ########*/
-    
-    img,
-    .aboutProfile {
-        padding: 65px 0px 0px;
-        max-width: 100%;
-        display: block;
-        margin: auto;
-        grid-row-gap: 20px;
-    }
-    .marketingTextBlock a {
-        color: #656565;
-    }
-    .marketingTextBlock a:hover {
-        color: #f4a482;
-    }
-    /*######## aboutText paragraph positions  ########*/
-    
-    .aboutContainer {
-        display: block;
-        max-width: 530px;
-        padding: 36px 20px;
-        margin: auto;
-        grid-row-gap: 20px;
-    }
-    h2 {
-        color: #656565;
-        font-size: 25px;
-    }
-    .aboutTextBlocks {
-        /*padding: 15px 55px 0px 55px;*/
-        text-align: justify;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        font-family: 'Libre Baskerville', serif;
-        font-size: 16px;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 15px 45px 15px 45px;
-        /*padding: 15px 30px 15px 35px;*/
-        line-height: 2;
-        overflow: hidden;
-    }
-    /*.biographyTextBlock,
+                    /*######## Defaults ########*/
+                
+                html {
+                    background-color: #f7f7f7;
+                    letter-spacing: 1.7;
+                }
+                body {
+                    line-height: 1;
+                    margin: 0;
+                    background: #f7f7f7;
+                    display: flex;
+                    flex-direction: column;
+                }
+                /*######## Navigation Bar ########*/
+                
+                .entireNavigation {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #f3f3f3;
+                    /*position: relative;*/
+                    margin: 0;
+                    width: 100%;
+                    /*font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 0
+    display: block;*/
+                    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+                    position: fixed;
+                    transition: 0.3s;
+                    z-index: 3;
+                }
+                /*this is the tbdrosa 'logo' styling*/
+                
+                .logoLeftName a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-family: 'Asap', sans-serif;
+                    color: #656565;
+                    transition: 0.3s;
+                    margin: 0px 0px 0px 90px;
+                }
+                /*when you hover color change*/
+                
+                .logoLeftName a:hover {
+                    color: #2e3438;
+                }
+                /*this is the mobile hamburger button*/
+                
+                .toggle-hamburger {
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 31px;
+                    height: 21px;
+                }
+                .toggle-hamburger .bar {
+                    height: 3px;
+                    width: 100%;
+                    background-color: #656565;
+                    border-radius: 10px;
+                }
+                /* the contents towards the right of the navigation bar*/
+                
+                .navBarLinks ul {
+                    display: flex;
+                }
+                .navBarLinks li {
+                    list-style: none;
+                }
+                .navBarLinks li a {
+                    font-family: 'Asap', sans-serif;
+                    text-decoration: none;
+                    color: #656565;
+                    padding-right: 26px;
+                    display: block;
+                    text-transform: uppercase;
+                    transition: 0.3s;
+                }
+                .navBarLinks li a:hover {
+                    color: #f4a482;
+                }
+                nav.hide {
+                    transform: translateY(-100%);
+                }
+                .navBarLinks li.socialMediaIconRightLast a {
+                    padding-right: 45px;
+                }
+                /*######## image styling: how big they show on the screen  ########*/
+                
+                img,
+                .aboutProfile {
+                    padding: 65px 0px 0px;
+                    max-width: 100%;
+                    display: block;
+                    margin: auto;
+                    grid-row-gap: 20px;
+                }
+                .marketingTextBlock a {
+                    color: #656565;
+                }
+                .marketingTextBlock a:hover {
+                    color: #f4a482;
+                }
+                /*######## aboutText paragraph positions  ########*/
+                
+                .aboutContainer {
+                    display: block;
+                    max-width: 530px;
+                    padding: 36px 20px;
+                    margin: auto;
+                    grid-row-gap: 20px;
+                }
+                h2 {
+                    color: #656565;
+                    font-size: 25px;
+                }
+                .aboutTextBlocks {
+                    /*padding: 15px 55px 0px 55px;*/
+                    text-align: justify;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 16px;
+                    color: #77716d;
+                    flex-basis: 38%;
+                    padding: 15px 45px 15px 45px;
+                    /*padding: 15px 30px 15px 35px;*/
+                    line-height: 2;
+                    overflow: hidden;
+                }
+                /*.biographyTextBlock,
 .expertiseTextBlock,
 .marketingTextBlock {
     font-family: 'Libre Baskerville', serif;
@@ -132,71 +145,117 @@
     line-height: 2;
     overflow: hidden;
 }*/
-    
-    footer {
-        padding: 20px 80px 33px 80px;
-        text-align: justify;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        font-family: 'Libre Baskerville', serif;
-        font-weight: 100;
-        font-size: 13px;
-        color: #77716d;
-    }
-    @media(min-width: 1024px) {
-        .aboutTextBlocks {
-            flex-direction: row;
-            text-align: justify;
-            display: flex;
-            justify-content: space-around;
-            /*flex-direction: column;*/
-            font-family: 'Libre Baskerville', serif;
-            color: #77716d;
-            flex-basis: 38%;
-            padding: 0px 15px 0px 15px;
-            line-height: 2;
-            overflow: hidden;
-        }
-        .biographyTextBlock,
-        .expertiseTextBlock,
-        .marketingTextBlock {
-            font-family: 'Libre Baskerville', serif;
-            color: #77716d;
-            flex-basis: 38%;
-            padding: 15px 30px 15px 35px;
-            line-height: 2;
-            overflow: hidden;
-        }
-        nav {
-            overflow: hidden;
-        }
-    }
-    @media(max-width: 563px) {
-        .biographyTextBlock,
-        .expertiseTextBlock,
-        .marketingTextBlock {
-            font-size: 10px;
-            font-family: 'Libre Baskerville', serif;
-            color: #77716d;
-            flex-basis: 38%;
-            padding: 0px 0px 0px 0px;
-            line-height: 2;
-            overflow: hidden;
-        }
-        footer {
-            padding: 20px 80px 33px 80px;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 100;
-            font-size: 8px;
-            color: #77716d;
-        }
-        /*######## Custom Styles ########*/
-        /*
+                
+                footer {
+                    padding: 20px 80px 33px 80px;
+                    text-align: justify;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    font-family: 'Libre Baskerville', serif;
+                    font-weight: 100;
+                    font-size: 13px;
+                    color: #77716d;
+                }
+                @media(min-width: 1024px) {
+                    .aboutTextBlocks {
+                        flex-direction: row;
+                        text-align: justify;
+                        display: flex;
+                        justify-content: space-around;
+                        /*flex-direction: column;*/
+                        font-family: 'Libre Baskerville', serif;
+                        color: #77716d;
+                        flex-basis: 38%;
+                        padding: 0px 15px 0px 15px;
+                        line-height: 2;
+                        overflow: hidden;
+                    }
+                    .biographyTextBlock,
+                    .expertiseTextBlock,
+                    .marketingTextBlock {
+                        font-family: 'Libre Baskerville', serif;
+                        color: #77716d;
+                        flex-basis: 38%;
+                        padding: 15px 30px 15px 35px;
+                        line-height: 2;
+                        overflow: hidden;
+                    }
+                    nav {
+                        overflow: hidden;
+                    }
+                }
+                /* mobile responsive navigation bar*/
+                
+                @media (max-width: 760px) {
+                    .toggle-hamburger {
+                        display: flex;
+                        margin: 0px 0px 0px 0px;
+                        padding: 15px;
+                    }
+                    .entireNavigation {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .navBarLinks {
+                        display: none;
+                        width: 100%;
+                        padding: 0px;
+                    }
+                    .navBarLinks ul {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                    .navBarLinks li {
+                        text-align: justify;
+                    }
+                    .navBarLinks a {
+                        padding: 28px;
+                        max-height: 100vh;
+                    }
+                    .navBarLinks.active {
+                        display: flex;
+                    }
+                    /*this is the tbdrosa 'logo' styling*/
+                    .logoLeftName a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-family: 'Asap', sans-serif;
+                        color: #656565;
+                        transition: 0.3s;
+                        margin: 0px 0px 0px 0px;
+                    }
+                    .logoLeftName {
+                        margin: 0px 0px 0px 0px;
+                        padding: 30px;
+                    }
+                }
+                @media(max-width: 563px) {
+                    .biographyTextBlock,
+                    .expertiseTextBlock,
+                    .marketingTextBlock {
+                        font-size: 10px;
+                        font-family: 'Libre Baskerville', serif;
+                        color: #77716d;
+                        flex-basis: 38%;
+                        padding: 0px 0px 0px 0px;
+                        line-height: 2;
+                        overflow: hidden;
+                    }
+                    footer {
+                        padding: 20px 80px 33px 80px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: space-around;
+                        flex-direction: column;
+                        font-family: 'Libre Baskerville', serif;
+                        font-weight: 100;
+                        font-size: 8px;
+                        color: #77716d;
+                    }
+                    /*######## Custom Styles ########*/
+                    /*
 #section-1-backgroundImage{
     background-image: url(walking_away.jpg);
     background-image: -webkit- url(walking_away.jpg);
