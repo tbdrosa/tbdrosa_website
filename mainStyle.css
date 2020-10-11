@@ -18,6 +18,7 @@ body {
 
 .entireNavigation {
     display: flex;
+    transition: 0.4s ease;
     justify-content: space-between;
     align-items: center;
     background: #f3f3f3;
@@ -57,6 +58,7 @@ body {
 
 .toggle-hamburger {
     position: absolute;
+    transition: 0.4s ease;
     top: 15px;
     right: 20px;
     display: none;
@@ -66,6 +68,7 @@ body {
     height: 21px;
 }
 .toggle-hamburger .bar {
+    transition: 0.4s ease;
     height: 3px;
     width: 100%;
     background-color: #656565;
@@ -76,11 +79,14 @@ body {
 
 .navBarLinks ul {
     display: flex;
+    transition: 0.4s ease;
 }
 .navBarLinks li {
     list-style: none;
+    transition: 0.4s ease;
 }
 .navBarLinks li a {
+    transition: 0.4s ease;
     font-family: 'Asap', sans-serif;
     text-decoration: none;
     color: #656565;
@@ -550,6 +556,21 @@ p.social-media-footer a {
 /* RESPONSIVE FOOTER for larger tablets */
 
 @media(max-width: 1019px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -582,33 +603,54 @@ p.social-media-footer a {
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
     .toggle-hamburger {
         display: flex;
         margin: 0px 0px 0px 0px;
         padding: 15px;
+        transition: 0.4s ease;
     }
     .entireNavigation {
         flex-direction: column;
         align-items: flex-start;
+        transition: 0.4s ease;
     }
     .navBarLinks {
         display: none;
         width: 100%;
         padding: 0px;
+        transition: 0.4s ease;
     }
     .navBarLinks ul {
-        width: 100%;
+        max-height: 100vh;
         flex-direction: column;
+        transition: 0.4s ease;
     }
     .navBarLinks li {
         text-align: justify;
+        transition: 0.4s ease;
     }
     .navBarLinks a {
         padding: 28px;
-        max-height: 100vh;
+        transition: 0.4s ease;
     }
     .navBarLinks.active {
         display: flex;
+        transition: 0.4s ease;
     }
     /*this is the tbdrosa 'logo' styling*/
     .logoLeftName a {
@@ -672,6 +714,21 @@ img {
 
 /* RESPONSIVE FOOTER for tablets */
 @media(max-width: 843px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -684,6 +741,21 @@ img {
     }
 }
 @media(max-width: 563px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
     .container {
         background-attachment: scroll;
         background-size: cover;
