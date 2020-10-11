@@ -294,6 +294,7 @@ p {
     .navBarLinks ul {
         width: 100%;
         flex-direction: column;
+        height: 100vh;
     }
     .navBarLinks li {
         text-align: justify;
