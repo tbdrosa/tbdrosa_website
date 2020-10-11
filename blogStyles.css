@@ -319,78 +319,80 @@ p {
         margin: 0px 0px 0px 0px;
         padding: 30px;
     }
-    @media(max-width: 563px) {
-        nav {
-            position: fixed;
-        }
-        /* First image (Full height) */
-        .blogIntro {
-            background-image: url("img/sitting.jpg");
-            background-attachment: scroll;
-            min-height: 100vh;
-            /*z-index: -1;*/
-        }
-        h1 {
-            font-size: 90px;
-            font-style: italic;
-            font-weight: 100;
-            text-align: center;
-        }
-        /* First Blog Entry title styles*/
-        h2 {
-            color: #656565;
-            font-size: 45px;
-            font-style: italic;
-            font-weight: 100;
-            text-align: center;
-            padding: 15px 11px 0px 11px;
-        }
-        /* Getting Started subEntry title*/
-        h3 {
-            color: #656565;
-            font-size: 17px;
-            font-style: italic;
-            font-weight: 100;
-            text-align: center;
-            padding: 7px;
-        }
-        /* welcome intro blurb*/
-        h5 {
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 100;
-            margin: 0px 15px 0px 15px;
-            text-align: center;
-            padding: 10px 0px 0px 0px;
-            line-height: 1.7;
-        }
-        /* the dateSUbmission of post*/
-        h6 {
-            font-size: 15.7px;
-            font-style: normal;
-            font-weight: 100;
-            text-align: center;
-            color: #656565;
-        }
-        .journalEntryBody {
-            font-size: 13px;
-            max-width: 1000px;
-            display: grid;
-            /*grid-template-columns: 1fr 35fr 3.5fr;*/
-            grid-gap: 10px 5px;
-            letter-spacing: 1.7px;
-        }
-        p {
-            font-family: 'Libre Baskerville', serif;
-            color: #77716d;
-            /*flex-basis: 38%;*/
-            /* padding: 15px 30px 15px 35px;*/
-            line-height: 2.2;
-            overflow: hidden;
-        }
-        footer {
-            text-align: center;
-            font-size: 7px;
-        }
+}
+@media(max-width: 563px) {
+    nav {
+        position: fixed;
     }
+    /* First image (Full height) */
+    .blogIntro {
+        background-image: url("img/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    h1 {
+        font-size: 90px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+    }
+    /* First Blog Entry title styles*/
+    h2 {
+        color: #656565;
+        font-size: 45px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 15px 11px 0px 11px;
+    }
+    /* Getting Started subEntry title*/
+    h3 {
+        color: #656565;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 7px;
+    }
+    /* welcome intro blurb*/
+    h5 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 100;
+        margin: 0px 15px 0px 15px;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+        line-height: 1.7;
+    }
+    /* the dateSUbmission of post*/
+    h6 {
+        font-size: 15.7px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        color: #656565;
+    }
+    .journalEntryBody {
+        font-size: 13px;
+        max-width: 1000px;
+        display: grid;
+        /*grid-template-columns: 1fr 35fr 3.5fr;*/
+        grid-gap: 10px 5px;
+        letter-spacing: 1.7px;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        /*flex-basis: 38%;*/
+        /* padding: 15px 30px 15px 35px;*/
+        line-height: 2.2;
+        overflow: hidden;
+    }
+    footer {
+        text-align: center;
+        font-size: 7px;
+    }
+}
+
 }
