@@ -1,0 +1,359 @@
+/*######## Defaults ########*/
+
+html {
+    background-color: #f7f7f7;
+    letter-spacing: 1.7px;
+    color: #77716d;
+}
+body {
+    line-height: 1;
+    margin: 0;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+}
+
+/*######## Navigation Bar ########*/
+
+.entireNavigation {
+    display: flex;
+    transition: 0.4s ease;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    /*position: relative;*/
+    margin: 0;
+    width: 100%;
+    /*font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 0
+    display: block;*/
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    position: fixed;
+    transition: 0.3s;
+    z-index: 3;
+}
+
+/*this is the tbdrosa 'logo' styling*/
+
+.logoLeftName a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Asap', sans-serif;
+    color: #656565;
+    transition: 0.3s;
+    margin: 0px 0px 0px 90px;
+}
+
+/*when you hover color change*/
+
+.logoLeftName a:hover {
+    color: #2e3438;
+}
+
+/*this is the mobile hamburger button*/
+
+.toggle-hamburger {
+    position: absolute;
+    transition: 0.4s ease;
+    top: 15px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+.toggle-hamburger .bar {
+    transition: 0.4s ease;
+    height: 3px;
+    width: 100%;
+    background-color: #656565;
+    border-radius: 10px;
+}
+
+/* the contents towards the right of the navigation bar*/
+
+.navBarLinks ul {
+    display: flex;
+    transition: 0.4s ease;
+}
+.navBarLinks li {
+    list-style: none;
+    transition: 0.4s ease;
+}
+.navBarLinks li a {
+    transition: 0.4s ease;
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    color: #656565;
+    padding-right: 26px;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.navBarLinks li a:hover {
+    color: #f4a482;
+}
+nav.hide {
+    transform: translateY(-100%);
+}
+.navBarLinks li.socialMediaIconRightLast a {
+    padding-right: 45px;
+}
+
+/*nav ul.topNavigation li.logoLeft a {
+   
+}*/
+
+
+/* the color transition when you hover over the logo */
+
+
+/*styling list items so they line up*/
+
+
+/* this makes the navigation disappear on scroll*/
+
+
+/* this styles the navigation bar color and some positioning*/
+
+
+/*nav ul {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topNavigation {*/
+
+
+/* margin: 0 auto;*/
+
+
+/*}
+ul.topNavigation li {
+    list-style: none;
+    float: left;
+}*/
+
+
+/*ul.topNavigation li.topNavigation-right,
+
+this is the styling label for the rest of the navigation bar contents 
+
+ul.topNavigation li.socialMedia_icon-right*/
+
+
+/* this is the styling label for the twitter and instagram icons */
+
+
+/*float: right;
+    font-size: 15px;*/
+
+
+/*ul.topNavigation li a {*/
+
+
+/*display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: #656565;
+    text-transform: uppercase;
+    transition: 0.3s;*/
+
+
+/*.topNavigation-left {*/
+
+
+/* padding-left: 90px;
+    text-transform: uppercase;*/
+
+
+/*.topNavigation li a:hover {*/
+
+
+/* color: #f4a482;*/
+
+
+/*.social-part .fa {*/
+
+
+/*padding-right: 90px;*/
+
+
+/*ul li a {*/
+
+
+/*margin-right: 20px;*/
+
+
+/* Create a Parallax Effect */
+
+.container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/* First image (Full height) */
+
+.container {
+    background-image: url("img/walking_.jpg");
+    min-height: 100vh;
+}
+
+/*######## image styling: how big they show on the screen  ########*/
+
+img {
+    /*padding: 65px 25px 0px;*/
+    max-width: 100%;
+    /*display: block;*/
+    margin: auto;
+    /*grid-row-gap: 20px;*/
+}
+
+/*######## image position: how they are centered in the screen and equal padding########*/
+
+.portfolioBlogColumn img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /*max-height: 100vh;*/
+    padding: 35px 15px 0px 15px;
+    /*margin: 20px 0px 20px 0px;*/
+    /*    border: 20px 0px 20px 0px;*/
+    grid-row-gap: 40px;
+}
+
+/* Create a Parallax Effect */
+
+.blogIntro {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    opacity: 0.87;
+}
+
+/* First image (Full height) */
+
+.blogIntro {
+    background-image: url("blogs/elijahxrod/flashWalking.jpg");
+    min-height: 100vh;
+    z-index: -1;
+}
+
+/*#### titles for images ####*/
+
+.blogHeader {
+    padding: 150px 20%;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-size: 1em
+}
+h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* First Blog Entry title styles*/
+
+h2 {
+    color: #656565;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 11px 0px 11px;
+}
+
+/* Getting Started subEntry title*/
+
+h3 {
+    color: #656565;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 7px 0px 0px 0px;
+}
+
+/* welcome intro blurb*/
+
+h5 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    /*padding: 10px;*/
+    line-height: 1.7;
+}
+
+/* the dateSUbmission of post*/
+
+h6 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: #656565;
+}
+
+/* this is the main body text styling */
+
+.journalEntryBody > * {
+    grid-column: 2/-2;
+}
+.journalEntryBody>figure {
+    grid-column: 1/-1;
+}
+.journalEntryBody {
+    font-size: 18px;
+    margin: 25px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 5.85fr 1.5fr;
+    grid-gap: 10px 30px;
+}
+p {
+    line-height: 2.0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/*give images a clean border and some margin around the edges*/
+
+@media(min-width: 319px) {
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioBlogColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+        /*margin: 20px 0px 20px 0px;*/
+        border: 20px 20px 20px 0px;
+    }
+}
