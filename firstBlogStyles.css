@@ -207,75 +207,109 @@ p {
     color: #77716d;
 }
 @media(min-width: 1024px) {
-    .blogIntro {
-        background-image: url("img/sitting.jpg");
-        min-height: 100vh;
-        z-index: -1;
+    .portfolioColumn img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        padding-top: 35px;
     }
-    h1 {
-        font-size: 125px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
     }
-    /* First Blog Entry title styles*/
-    h2 {
-        color: #656565;
-        font-size: 80px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        padding: 15px 11px 0px 11px;
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
     }
-    /* Getting Started subEntry title*/
-    h3 {
-        color: #656565;
-        font-size: 39px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        padding: 7px;
-    }
-    /* welcome intro blurb*/
-    h5 {
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 100;
-        text-align: center;
-        padding: 10px;
-        line-height: 1.7;
-    }
-    /* the dateSUbmission of post*/
-    h6 {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 100;
-        text-align: center;
-        color: #656565;
-    }
-    .journalEntryBody {
-        font-size: 18px;
-        max-width: 1000px;
-        display: grid;
-        grid-template-columns: 1fr 35fr 3.5fr;
-        grid-gap: 10px 30px;
-        letter-spacing: 1.7px;
-    }
-    p {
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 15px 30px 15px 35px;
-        line-height: 2.2;
-        overflow: hidden;
-    }
-    footer {
-        text-align: center;
-    }
+}
+.blogIntro {
+    background-image: url("img/sitting.jpg");
+    min-height: 100vh;
+    z-index: -1;
+}
+h1 {
+    font-size: 125px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* First Blog Entry title styles*/
+
+h2 {
+    color: #656565;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 11px 0px 11px;
+}
+
+/* Getting Started subEntry title*/
+
+h3 {
+    color: #656565;
+    font-size: 39px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 7px;
+}
+
+/* welcome intro blurb*/
+
+h5 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7;
+}
+
+/* the dateSUbmission of post*/
+
+h6 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: #656565;
+}
+.journalEntryBody {
+    font-size: 18px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 35fr 3.5fr;
+    grid-gap: 10px 30px;
+    letter-spacing: 1.7px;
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
+    flex-basis: 38%;
+    padding: 15px 30px 15px 35px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+footer {
+    text-align: center;
+}
+
 }
 
 /* mobile responsive navigation bar*/
-
 @media (max-width: 760px) {
     .toggle-hamburger {
         display: flex;
@@ -307,6 +341,7 @@ p {
         display: flex;
     }
     /*this is the tbdrosa 'logo' styling*/
+    
     .logoLeftName a {
         text-decoration: none;
         text-transform: uppercase;
@@ -326,6 +361,7 @@ p {
         position: fixed;
     }
     /* First image (Full height) */
+    
     .blogIntro {
         background-image: url("img/sitting.jpg");
         background-attachment: scroll;
@@ -339,6 +375,7 @@ p {
         text-align: center;
     }
     /* First Blog Entry title styles*/
+    
     h2 {
         color: #656565;
         font-size: 45px;
@@ -348,6 +385,7 @@ p {
         padding: 15px 11px 0px 11px;
     }
     /* Getting Started subEntry title*/
+    
     h3 {
         color: #656565;
         font-size: 17px;
@@ -357,6 +395,7 @@ p {
         padding: 7px;
     }
     /* welcome intro blurb*/
+    
     h5 {
         font-size: 15px;
         font-style: normal;
@@ -367,6 +406,7 @@ p {
         line-height: 1.7;
     }
     /* the dateSUbmission of post*/
+    
     h6 {
         font-size: 15.7px;
         font-style: normal;
@@ -400,5 +440,31 @@ color: #77716d;*/
     footer {
         text-align: center;
         font-size: 7px;
+    }
+}
+@media(min-width: 444px) {
+    /*  p.newsletterMessage {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 8.56px;
+    }*/
+    
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
     }
 }
