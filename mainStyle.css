@@ -448,6 +448,12 @@ p.social-media-footer {
     display: flex;
     justify-content: center;
 }
+p.social-media-footer-copyright {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
 
 /*######## copyright hover effect ########*/
 
