@@ -196,6 +196,12 @@ p {
     line-height: 2.0;
     font-family: 'Libre Baskerville', serif;
 }
+p.note {
+    color: #2e3438;
+    padding-left: 185px;
+    /*text-align: justify;
+    align-content: center;*/
+}
 .blogFooter {
     padding: 20px 80px 33px 80px;
     text-align: justify;
@@ -403,13 +409,20 @@ p {
         /*padding: 15px 30px 15px 35px;*/
         line-height: 2.2;
         overflow: hidden;
-        /*justify-content: space-around;
+    }
+    /*justify-content: space-around;
 flex-direction: column;
 font-family: 'Libre Baskerville',
 serif;
 font-weight: 100;
 font-size: 8px;
 color: #77716d;*/
+    p.note {
+        color: #2e3438;
+        padding-left: 10px;
+        font-size: 12px;
+        /*text-align: justify;
+    align-content: center;*/
     }
     footer {
         text-align: center;
@@ -457,10 +470,10 @@ color: #77716d;*/
 /* this decreases the size of newsletter message or phones*/
 
 @media(max-width: 444px) {
-    p.newsletterMessage {
+    /*  p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
         font-size: 8.56px;
-    }
+    }*/
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
