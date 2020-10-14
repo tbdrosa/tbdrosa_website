@@ -202,6 +202,14 @@ p.note {
     /*text-align: justify;
     align-content: center;*/
 }
+a.eliInsta {
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
+    flex-basis: 38%;
+    /*padding: 15px 30px 15px 35px;*/
+    line-height: 2.2;
+    overflow: hidden;
+}
 .blogFooter {
     padding: 20px 80px 33px 80px;
     text-align: justify;
@@ -401,14 +409,6 @@ p.note {
         /*grid-template-columns: 1fr 35fr 3.5fr;*/
         grid-gap: 10px 5px;
         letter-spacing: 1.7px;
-    }
-    p {
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        /*padding: 15px 30px 15px 35px;*/
-        line-height: 2.2;
-        overflow: hidden;
     }
     /*justify-content: space-around;
 flex-direction: column;
