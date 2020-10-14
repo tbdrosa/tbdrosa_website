@@ -149,8 +149,11 @@ h4 {
     --font-sans: 'Rubik', sans-serif;
     --font-serif: 'Cardo', serif;
 }
+
+/* ###### the sizing of the boxes ######*/
+
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 html,
 body {
@@ -181,6 +184,9 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ######  the block of blog styling #######*/
+
 .card {
     position: relative;
     display: -webkit-box;
@@ -189,11 +195,59 @@ body {
     align-items: flex-end;
     overflow: hidden;
     padding: 1rem;
-    width: 100%;
+    /*width: 100%;*/
     text-align: center;
     color: whitesmoke;
     background-color: whitesmoke;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* mobile responsive navigation bar*/
+
+@media (max-width: 760px) {
+    .toggle-hamburger {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        padding: 15px;
+    }
+    .entireNavigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBarLinks {
+        display: none;
+        width: 100%;
+        padding: 0px;
+    }
+    .navBarLinks ul {
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .navBarLinks li {
+        text-align: justify;
+    }
+    .navBarLinks a {
+        padding: 28px;
+        max-height: 100vh;
+    }
+    .navBarLinks.active {
+        display: flex;
+    }
+    /*this is the tbdrosa 'logo' styling*/
+    .logoLeftName a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #656565;
+        transition: 0.3s;
+        margin: 0px 0px 0px 0px;
+    }
+    .logoLeftName {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+    }
 }
 @media (min-width: 600px) {
     .card {
