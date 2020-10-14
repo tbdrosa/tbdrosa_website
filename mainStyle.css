@@ -241,16 +241,6 @@ img {
     padding: 35px 15px 20px 15px;
 }
 
-/*######## aboutText paragraph positions  ########*/
-
-.aboutContainer {
-    display: block;
-    max-width: 530px;
-    padding: 36px 20px;
-    margin: auto;
-    grid-row-gap: 20px;
-}
-
 /*######## aboutText font style: includes colors, text style ########*/
 
 p.aboutText {
