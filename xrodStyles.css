@@ -234,6 +234,11 @@ a.eliInsta {
     /*    border: 20px 0px 20px 0px;*/
     grid-row-gap: 20px;
 }
+@media(max-width: 1024px) {
+    p.note {
+        font-size: 11px;
+    }
+}
 @media(min-width: 1024px) {
     .blogIntro {
         background-image: url("blogs/elijahxrod/flashWalking.jpg");
@@ -427,6 +432,12 @@ color: #77716d;*/
     footer {
         text-align: center;
         font-size: 7px;
+    }
+}
+@media(max-width: 321px) {
+    p.note {
+        text-align: justify;
+        font-size: 6px;
     }
 }
 
