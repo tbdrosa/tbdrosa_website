@@ -95,6 +95,9 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
 }
+
+/* navigation color hover effect */
+
 .navBarLinks li a:hover {
     color: #f4a482;
 }
