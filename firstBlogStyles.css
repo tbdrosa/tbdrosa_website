@@ -137,7 +137,7 @@ h1 {
 
 h2 {
     color: #656565;
-    font-size: 45px;
+    font-size: 75px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
@@ -148,7 +148,7 @@ h2 {
 
 h3 {
     color: #656565;
-    font-size: 45px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 100;
     text-align: center;
@@ -213,7 +213,7 @@ p {
         z-index: -1;
     }
     h1 {
-        font-size: 160px;
+        font-size: 125px;
         font-style: italic;
         font-weight: 100;
         text-align: center;
@@ -221,7 +221,7 @@ p {
     /* First Blog Entry title styles*/
     h2 {
         color: #656565;
-        font-size: 90px;
+        font-size: 80px;
         font-style: italic;
         font-weight: 100;
         text-align: center;
@@ -385,15 +385,20 @@ p {
     p {
         font-family: 'Libre Baskerville', serif;
         color: #77716d;
-        /*flex-basis: 38%;*/
-        /* padding: 15px 30px 15px 35px;*/
+        flex-basis: 38%;
+        /*padding: 15px 30px 15px 35px;*/
         line-height: 2.2;
         overflow: hidden;
+        /*justify-content: space-around;
+flex-direction: column;
+font-family: 'Libre Baskerville',
+serif;
+font-weight: 100;
+font-size: 8px;
+color: #77716d;*/
     }
     footer {
         text-align: center;
         font-size: 7px;
     }
-}
-
 }
