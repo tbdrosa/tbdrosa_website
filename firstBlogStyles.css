@@ -206,110 +206,81 @@ p {
     font-size: 12px;
     color: #77716d;
 }
+@media(max-width: 1024px) {
+    p.note {
+        font-size: 11px;
+    }
+}
 @media(min-width: 1024px) {
-    .portfolioColumn img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        padding-top: 35px;
+    .blogIntro {
+        background-image: url("img/sitting.jpg");
+        min-height: 100vh;
+        z-index: -1;
     }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
+    h1 {
+        font-size: 125px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
     }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
+    /* First Blog Entry title styles*/
+    h2 {
+        color: #656565;
+        font-size: 80px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 15px 11px 0px 11px;
     }
-}
-.blogIntro {
-    background-image: url("img/sitting.jpg");
-    min-height: 100vh;
-    z-index: -1;
-}
-h1 {
-    font-size: 125px;
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-}
-
-/* First Blog Entry title styles*/
-
-h2 {
-    color: #656565;
-    font-size: 80px;
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-    padding: 15px 11px 0px 11px;
-}
-
-/* Getting Started subEntry title*/
-
-h3 {
-    color: #656565;
-    font-size: 39px;
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-    padding: 7px;
-}
-
-/* welcome intro blurb*/
-
-h5 {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 100;
-    text-align: center;
-    padding: 10px;
-    line-height: 1.7;
-}
-
-/* the dateSUbmission of post*/
-
-h6 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 100;
-    text-align: center;
-    color: #656565;
-}
-.journalEntryBody {
-    font-size: 18px;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 35fr 3.5fr;
-    grid-gap: 10px 30px;
-    letter-spacing: 1.7px;
-}
-p {
-    font-family: 'Libre Baskerville', serif;
-    color: #77716d;
-    flex-basis: 38%;
-    padding: 15px 30px 15px 35px;
-    line-height: 2.2;
-    overflow: hidden;
-}
-footer {
-    text-align: center;
-}
-
+    /* Getting Started subEntry title*/
+    h3 {
+        color: #656565;
+        font-size: 39px;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        padding: 7px;
+    }
+    /* welcome intro blurb*/
+    h5 {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        padding: 10px;
+        line-height: 1.7;
+    }
+    /* the dateSUbmission of post*/
+    h6 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 100;
+        text-align: center;
+        color: #656565;
+    }
+    .journalEntryBody {
+        font-size: 18px;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 35fr 3.5fr;
+        grid-gap: 10px 30px;
+        letter-spacing: 1.7px;
+    }
+    p {
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        flex-basis: 38%;
+        padding: 15px 30px 15px 35px;
+        line-height: 2.2;
+        overflow: hidden;
+    }
+    footer {
+        text-align: center;
+    }
 }
 
 /* mobile responsive navigation bar*/
+
 @media (max-width: 760px) {
     .toggle-hamburger {
         display: flex;
@@ -341,7 +312,6 @@ footer {
         display: flex;
     }
     /*this is the tbdrosa 'logo' styling*/
-    
     .logoLeftName a {
         text-decoration: none;
         text-transform: uppercase;
@@ -360,8 +330,21 @@ footer {
     nav {
         position: fixed;
     }
+    .toggle-hamburger {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        padding: 15px;
+    }
+    .entireNavigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBarLinks {
+        display: none;
+        width: 100%;
+        padding: 0px;
+    }
     /* First image (Full height) */
-    
     .blogIntro {
         background-image: url("img/sitting.jpg");
         background-attachment: scroll;
@@ -375,7 +358,6 @@ footer {
         text-align: center;
     }
     /* First Blog Entry title styles*/
-    
     h2 {
         color: #656565;
         font-size: 45px;
@@ -385,7 +367,6 @@ footer {
         padding: 15px 11px 0px 11px;
     }
     /* Getting Started subEntry title*/
-    
     h3 {
         color: #656565;
         font-size: 17px;
@@ -395,7 +376,6 @@ footer {
         padding: 7px;
     }
     /* welcome intro blurb*/
-    
     h5 {
         font-size: 15px;
         font-style: normal;
@@ -406,7 +386,6 @@ footer {
         line-height: 1.7;
     }
     /* the dateSUbmission of post*/
-    
     h6 {
         font-size: 15.7px;
         font-style: normal;
@@ -422,32 +401,49 @@ footer {
         grid-gap: 10px 5px;
         letter-spacing: 1.7px;
     }
-    p {
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        /*padding: 15px 30px 15px 35px;*/
-        line-height: 2.2;
-        overflow: hidden;
-        /*justify-content: space-around;
+    /*justify-content: space-around;
 flex-direction: column;
 font-family: 'Libre Baskerville',
 serif;
 font-weight: 100;
 font-size: 8px;
 color: #77716d;*/
+    p.note {
+        color: #2e3438;
+        padding-left: 10px;
+        font-size: 12px;
+        /*text-align: justify;
+    align-content: center;*/
     }
     footer {
         text-align: center;
         font-size: 7px;
     }
 }
-@media(min-width: 444px) {
-    /*  p.newsletterMessage {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 8.56px;
-    }*/
-    
+@media(max-width: 321px) {
+    p.note {
+        text-align: justify;
+        font-size: 6px;
+    }
+}
+
+/* this makes the background and column of images responsive */
+
+@media(min-width: 1024px) {
+    .container {
+        background-size: cover;
+    }
+    .portfolioColumn img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh
+    }
+    .footerGrid {
+        max-width: 100%;
+        margin: 0;
+        padding: 60px 115px 0px;
+    }
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -456,7 +452,6 @@ color: #77716d;*/
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
-    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -465,6 +460,334 @@ color: #77716d;*/
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+/* this decreases the size of newsletter message or phones*/
+
+@media(max-width: 444px) {
+    /*  p.newsletterMessage {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 8.56px;
+    }*/
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+/* RESPONSIVE FOOTER for larger tablets */
+
+@media(max-width: 1019px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        margin: 0 auto;
+        padding: 60px 0px 0px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        padding: 35px 15px 0px 15px;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+/* mobile responsive navigation bar*/
+
+@media (max-width: 760px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .toggle-hamburger {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        padding: 15px;
+        transition: 0.4s ease;
+    }
+    .entireNavigation {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: 0.4s ease;
+    }
+    .navBarLinks {
+        display: none;
+        width: 100%;
+        padding: 0px;
+        transition: 0.4s ease;
+    }
+    .navBarLinks ul {
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .navBarLinks li {
+        text-align: justify;
+        transition: 0.4s ease;
+    }
+    .navBarLinks a {
+        padding: 28px;
+        transition: 0.4s ease;
+    }
+    .navBarLinks.active {
+        display: flex;
+        transition: 0.4s ease;
+    }
+    /*this is the tbdrosa 'logo' styling*/
+    .logoLeftName a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #656565;
+        transition: 0.3s;
+        margin: 0px 0px 0px 0px;
+    }
+    .logoLeftName {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        padding: 35px 15px 0px 15px;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+}
+img {
+    /*padding: 65px 25px 0px;*/
+    
+    max-width: 100%;
+    /*display: block;*/
+    /*padding: 20px 0px 20px 0px;*/
+    /*grid-row-gap: 20px;*/
+}
+
+/*######## image position: how they are centered in the screen and equal padding########*/
+.portfolioColumn img {
+    display: block;
+    max-width: 92%;
+    /*height: auto;*/
+    /*max-height: 100vh;*/
+    
+    margin: auto;
+    /*margin: 20px 0px 20px 0px;*/
+    /*    border: 20px 0px 20px 0px;*/
+    
+    grid-row-gap: 20px;
+}
+
+}
+
+/* RESPONSIVE FOOTER for tablets */
+@media(max-width: 843px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        /*margin: 0 auto;*/
+        
+        padding: 60px 0px 0px;
+    }
+}
+@media(max-width: 563px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .container {
+        background-attachment: scroll;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        
+        grid-row-gap: 20px;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        margin: 0;
+        padding: 60px 0px 0px;
+    }
+    p.newsletterMessage {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 9px;
+    }
+}
+
+/*.portfolioColumn img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh
+}*/
+@media(max-width: 375px) {
+    img {
+        /*padding: 65px 25px 0px;*/
+        
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        
+        grid-row-gap: 20px;
+    }
+}
+@media (min-width: 321px) {
+    img {
+        /*padding: 65px 25px 0px;*/
+        
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        max-height: 100vh;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        
         grid-row-gap: 20px;
     }
 }
