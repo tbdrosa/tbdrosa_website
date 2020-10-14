@@ -1,4 +1,4 @@
-/*######## Defaults ########*/
+            /*######## Defaults ########*/
 
 html {
     background-color: #f7f7f7;
@@ -356,4 +356,16 @@ p {
         /*margin: 20px 0px 20px 0px;*/
         border: 20px 20px 20px 0px;
     }
-}
+    
+    footer {
+        text-align: center;
+        font-size: 10px;
+    }
+    @media(min-width: 1024px) {
+        footer {
+            text-align: center;
+        }
+        @media(min-width: 1024px) {
+            footer {
+                text-align: center;
+            }
