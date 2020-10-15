@@ -206,6 +206,29 @@ p {
     font-size: 12px;
     color: #77716d;
 }
+img {
+    /*padding: 65px 25px 0px;*/
+    max-width: 100%;
+    /*display: block;*/
+    /*padding: 20px 0px 20px 0px;*/
+    /*grid-row-gap: 20px;*/
+}
+
+/*######## image position: how they are centered in the screen and equal padding########*/
+
+.portfolioColumn img {
+    display: block;
+    max-width: 92%;
+    /*height: auto;*/
+    /*max-height: 100vh;*/
+    margin: auto;
+    /*margin: 20px 0px 20px 0px;*/
+    /*    border: 20px 0px 20px 0px;*/
+    grid-row-gap: 20px;
+}
+
+/* added styling for **kodak note at the bottom */
+
 @media(max-width: 1024px) {
     p.note {
         font-size: 11px;
@@ -279,6 +302,120 @@ p {
     }
 }
 
+/* this makes the background and column of images responsive */
+
+@media(min-width: 1024px) {
+    .container {
+        background-size: cover;
+    }
+    .portfolioColumn img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh
+    }
+    .footerGrid {
+        max-width: 100%;
+        margin: 0;
+        padding: 60px 115px 0px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+/* RESPONSIVE FOOTER for larger tablets */
+
+@media(max-width: 1019px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        margin: 0 auto;
+        padding: 60px 0px 0px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        padding: 35px 15px 0px 15px;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
+    }
+}
+
+/* RESPONSIVE FOOTER for tablets */
+
+@media(max-width: 843px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        /*margin: 0 auto;*/
+        padding: 60px 0px 0px;
+    }
+}
+
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
@@ -324,6 +461,93 @@ p {
     .logoLeftName {
         margin: 0px 0px 0px 0px;
         padding: 30px;
+    }
+}
+
+/* mobile responsive navigation bar*/
+
+@media (max-width: 760px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .toggle-hamburger {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        padding: 15px;
+        transition: 0.4s ease;
+    }
+    .entireNavigation {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: 0.4s ease;
+    }
+    .navBarLinks {
+        display: none;
+        width: 100%;
+        padding: 0px;
+        transition: 0.4s ease;
+    }
+    .navBarLinks ul {
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .navBarLinks li {
+        text-align: justify;
+        transition: 0.4s ease;
+    }
+    .navBarLinks a {
+        padding: 28px;
+        transition: 0.4s ease;
+    }
+    .navBarLinks.active {
+        display: flex;
+        transition: 0.4s ease;
+    }
+    /*this is the tbdrosa 'logo' styling*/
+    .logoLeftName a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Asap', sans-serif;
+        color: #656565;
+        transition: 0.3s;
+        margin: 0px 0px 0px 0px;
+    }
+    .logoLeftName {
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+    }
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        padding: 35px 15px 0px 15px;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
+        grid-row-gap: 20px;
     }
 }
 @media(max-width: 563px) {
@@ -420,29 +644,27 @@ color: #77716d;*/
         font-size: 7px;
     }
 }
-@media(max-width: 321px) {
-    p.note {
-        text-align: justify;
-        font-size: 6px;
+@media(max-width: 563px) {
+    nav {
+        position: sticky;
     }
-}
-
-/* this makes the background and column of images responsive */
-
-@media(min-width: 1024px) {
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
     .container {
+        background-attachment: scroll;
         background-size: cover;
-    }
-    .portfolioColumn img {
-        display: block;
         max-width: 100%;
         height: auto;
-        max-height: 100vh
-    }
-    .footerGrid {
-        max-width: 100%;
-        margin: 0;
-        padding: 60px 115px 0px;
     }
     img {
         /*padding: 65px 25px 0px;*/
@@ -462,7 +684,28 @@ color: #77716d;*/
         /*    border: 20px 0px 20px 0px;*/
         grid-row-gap: 20px;
     }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        margin: 0;
+        padding: 60px 0px 0px;
+    }
+    p.newsletterMessage {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 9px;
+    }
 }
+
+/*.portfolioColumn img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh
+}*/
+
 
 /* this decreases the size of newsletter message or phones*/
 
@@ -490,264 +733,9 @@ color: #77716d;*/
         grid-row-gap: 20px;
     }
 }
-
-/* RESPONSIVE FOOTER for larger tablets */
-
-@media(max-width: 1019px) {
-    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        margin: 0 auto;
-        padding: 60px 0px 0px;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        padding: 35px 15px 0px 15px;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-/* mobile responsive navigation bar*/
-
-@media (max-width: 760px) {
-    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .toggle-hamburger {
-        display: flex;
-        margin: 0px 0px 0px 0px;
-        padding: 15px;
-        transition: 0.4s ease;
-    }
-    .entireNavigation {
-        flex-direction: column;
-        align-items: flex-start;
-        transition: 0.4s ease;
-    }
-    .navBarLinks {
-        display: none;
-        width: 100%;
-        padding: 0px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks ul {
-        width: 100%;
-        flex-direction: column;
-        height: 100vh;
-    }
-    .navBarLinks li {
-        text-align: justify;
-        transition: 0.4s ease;
-    }
-    .navBarLinks a {
-        padding: 28px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks.active {
-        display: flex;
-        transition: 0.4s ease;
-    }
-    /*this is the tbdrosa 'logo' styling*/
-    .logoLeftName a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-family: 'Asap', sans-serif;
-        color: #656565;
-        transition: 0.3s;
-        margin: 0px 0px 0px 0px;
-    }
-    .logoLeftName {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        padding: 35px 15px 0px 15px;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-}
-img {
-    /*padding: 65px 25px 0px;*/
-    
-    max-width: 100%;
-    /*display: block;*/
-    /*padding: 20px 0px 20px 0px;*/
-    /*grid-row-gap: 20px;*/
-}
-
-/*######## image position: how they are centered in the screen and equal padding########*/
-.portfolioColumn img {
-    display: block;
-    max-width: 92%;
-    /*height: auto;*/
-    /*max-height: 100vh;*/
-    
-    margin: auto;
-    /*margin: 20px 0px 20px 0px;*/
-    /*    border: 20px 0px 20px 0px;*/
-    
-    grid-row-gap: 20px;
-}
-
-}
-
-/* RESPONSIVE FOOTER for tablets */
-@media(max-width: 843px) {
-    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        /*margin: 0 auto;*/
-        
-        padding: 60px 0px 0px;
-    }
-}
-@media(max-width: 563px) {
-    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .container {
-        background-attachment: scroll;
-        background-size: cover;
-        max-width: 100%;
-        height: auto;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        
-        grid-row-gap: 20px;
-    }
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        margin: 0;
-        padding: 60px 0px 0px;
-    }
-    p.newsletterMessage {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 9px;
-    }
-}
-
-/*.portfolioColumn img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    max-height: 100vh
-}*/
 @media(max-width: 375px) {
     img {
         /*padding: 65px 25px 0px;*/
-        
         max-width: 100%;
         /*display: block;*/
         /*padding: 20px 0px 20px 0px;*/
@@ -759,18 +747,15 @@ img {
         max-width: 92%;
         /*height: auto;*/
         /*max-height: 100vh;*/
-        
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
-        
         grid-row-gap: 20px;
     }
 }
 @media (min-width: 321px) {
     img {
         /*padding: 65px 25px 0px;*/
-        
         max-width: 100%;
         /*display: block;*/
         /*padding: 20px 0px 20px 0px;*/
@@ -783,11 +768,15 @@ img {
         max-height: 100vh;
         /*height: auto;*/
         /*max-height: 100vh;*/
-        
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
-        
         grid-row-gap: 20px;
+    }
+}
+@media(max-width: 321px) {
+    p.note {
+        text-align: justify;
+        font-size: 6px;
     }
 }
