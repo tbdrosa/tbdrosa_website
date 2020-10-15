@@ -108,96 +108,6 @@ nav.hide {
     padding-right: 45px;
 }
 
-/*nav ul.topNavigation li.logoLeft a {
-   
-}*/
-
-
-/* the color transition when you hover over the logo */
-
-
-/*styling list items so they line up*/
-
-
-/* this makes the navigation disappear on scroll*/
-
-
-/* this styles the navigation bar color and some positioning*/
-
-
-/*nav ul {
-    background-color: #f3f3f3;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-ul.topNavigation {*/
-
-
-/* margin: 0 auto;*/
-
-
-/*}
-ul.topNavigation li {
-    list-style: none;
-    float: left;
-}*/
-
-
-/*ul.topNavigation li.topNavigation-right,
-
-this is the styling label for the rest of the navigation bar contents 
-
-ul.topNavigation li.socialMedia_icon-right*/
-
-
-/* this is the styling label for the twitter and instagram icons */
-
-
-/*float: right;
-    font-size: 15px;*/
-
-
-/*ul.topNavigation li a {*/
-
-
-/*display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    color: #656565;
-    text-transform: uppercase;
-    transition: 0.3s;*/
-
-
-/*.topNavigation-left {*/
-
-
-/* padding-left: 90px;
-    text-transform: uppercase;*/
-
-
-/*.topNavigation li a:hover {*/
-
-
-/* color: #f4a482;*/
-
-
-/*.social-part .fa {*/
-
-
-/*padding-right: 90px;*/
-
-
-/*ul li a {*/
-
-
-/*margin-right: 20px;*/
-
-
 /* Create a Parallax Effect */
 
 .container {
@@ -220,22 +130,24 @@ ul.topNavigation li.socialMedia_icon-right*/
 img {
     /*padding: 65px 25px 0px;*/
     max-width: 100%;
-    /*display: block;*/
     margin: auto;
+    /*display: block;*/
+    /*padding: 20px 0px 20px 0px;*/
     /*grid-row-gap: 20px;*/
 }
 
 /*######## image position: how they are centered in the screen and equal padding########*/
 
 .portfolioColumn img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    /*max-height: 100vh;*/
     padding: 35px 15px 0px 15px;
+    display: block;
+    max-width: 92%;
+    /*height: auto;*/
+    /*max-height: 100vh;*/
+    margin: auto;
     /*margin: 20px 0px 20px 0px;*/
     /*    border: 20px 0px 20px 0px;*/
-    grid-row-gap: 40px;
+    grid-row-gap: 20px;
 }
 
 /* this is the last image in the column - the third padding much be a number so that it goes to the bottom to seperate footer and image*/
@@ -307,17 +219,6 @@ ul.bottomFooter li a:hover {
     margin: 0 auto;
     padding: 60px 0px 0px;
 }
-
-/*.footerGrid {
-    background-color: #2e3438;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    max-height: 100vh;
-    margin: 0 auto;
-    padding: 60px 0px 0px;
-}*/
-
 footer {
     background-color: #2e3438;
     color: #fff;
@@ -466,17 +367,6 @@ p.copyright a:hover {
 p.social-media-footer a:hover {
     color: #f4a482;
 }
-
-/*text-decoration: none;
-    display: block;
-   padding-bottom: 11px;
-    text-transform: uppercase;
-    font-family: 'Asap', sans-serif;
-    font-size: 11.4px;
-    color: #fff;
-.footer-list a:hover{
-     color: #f4a482;*/
-
 p.social-media-footer {
     display: flex;
     justify-content: center;
@@ -504,33 +394,6 @@ p.social-media-footer a {
         max-width: 100%;
         margin: 0;
         padding: 60px 115px 0px;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-/* this decreases the size of newsletter message or phones*/
-
-@media(max-width: 444px) {
-    p.newsletterMessage {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 8.56px;
     }
     img {
         /*padding: 65px 25px 0px;*/
@@ -596,6 +459,35 @@ p.social-media-footer a {
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
         grid-row-gap: 20px;
+    }
+}
+
+/* RESPONSIVE FOOTER for tablets */
+
+@media(max-width: 843px) {
+    nav {
+        position: sticky;
+    }
+    entireNavigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+        position: sticky;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .footerGrid {
+        background-color: #2e3438;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 100vh;
+        /*margin: 0 auto;*/
+        padding: 60px 0px 0px;
     }
 }
 
@@ -684,61 +576,6 @@ p.social-media-footer a {
         grid-row-gap: 20px;
     }
 }
-
-}
-img {
-    /*padding: 65px 25px 0px;*/
-    
-    max-width: 100%;
-    /*display: block;*/
-    /*padding: 20px 0px 20px 0px;*/
-    /*grid-row-gap: 20px;*/
-}
-
-/*######## image position: how they are centered in the screen and equal padding########*/
-.portfolioColumn img {
-    display: block;
-    max-width: 92%;
-    /*height: auto;*/
-    /*max-height: 100vh;*/
-    
-    margin: auto;
-    /*margin: 20px 0px 20px 0px;*/
-    /*    border: 20px 0px 20px 0px;*/
-    
-    grid-row-gap: 20px;
-}
-
-}
-
-/* RESPONSIVE FOOTER for tablets */
-@media(max-width: 843px) {
-    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        /*margin: 0 auto;*/
-        
-        padding: 60px 0px 0px;
-    }
-}
 @media(max-width: 563px) {
     nav {
         position: sticky;
@@ -763,7 +600,6 @@ img {
     }
     img {
         /*padding: 65px 25px 0px;*/
-        
         max-width: 100%;
         /*display: block;*/
         /*padding: 20px 0px 20px 0px;*/
@@ -775,11 +611,9 @@ img {
         max-width: 92%;
         /*height: auto;*/
         /*max-height: 100vh;*/
-        
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
-        
         grid-row-gap: 20px;
     }
     .footerGrid {
@@ -797,16 +631,15 @@ img {
     }
 }
 
-/*.portfolioColumn img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    max-height: 100vh
-}*/
-@media(max-width: 375px) {
+/* this decreases the size of newsletter message or phones*/
+
+@media(max-width: 444px) {
+    p.newsletterMessage {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 8.56px;
+    }
     img {
         /*padding: 65px 25px 0px;*/
-        
         max-width: 100%;
         /*display: block;*/
         /*padding: 20px 0px 20px 0px;*/
@@ -818,35 +651,54 @@ img {
         max-width: 92%;
         /*height: auto;*/
         /*max-height: 100vh;*/
-        
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
-        
+        grid-row-gap: 20px;
+    }
+}
+
+}
+@media(max-width: 375px) {
+    img {
+        /*padding: 65px 25px 0px;*/
+        max-width: 100%;
+        /*display: block;*/
+        /*padding: 20px 0px 20px 0px;*/
+        /*grid-row-gap: 20px;*/
+    }
+    /*######## image position: how they are centered in the screen and equal padding########*/
+    
+    .portfolioColumn img {
+        display: block;
+        max-width: 92%;
+        /*height: auto;*/
+        /*max-height: 100vh;*/
+        margin: auto;
+        /*margin: 20px 0px 20px 0px;*/
+        /*    border: 20px 0px 20px 0px;*/
         grid-row-gap: 20px;
     }
 }
 @media (min-width: 321px) {
     img {
         /*padding: 65px 25px 0px;*/
-        
         max-width: 100%;
         /*display: block;*/
         /*padding: 20px 0px 20px 0px;*/
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
         max-height: 100vh;
         /*height: auto;*/
         /*max-height: 100vh;*/
-        
         margin: auto;
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
-        
         grid-row-gap: 20px;
     }
 }
