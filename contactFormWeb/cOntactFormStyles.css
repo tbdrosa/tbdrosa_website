@@ -228,6 +228,7 @@ h1 {
     box-shadow: none;
     border-radius: 0;
     border-bottom: 1px solid #cfd8dc;
+    /*width: 66%;*/
     transition: 1s ease;
     font-weight: bold;
 }
@@ -279,7 +280,7 @@ h1 {
         width: 20px;
     }
     .contact-form {
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         /* width: 100%;*/
         overflow: hidden;
     }
@@ -289,9 +290,18 @@ h1 {
 
 @media(max-width: 760px) {
     .contact-form {
-        margin: 0 auto;
-        /* width: 100%;*/
-        padding: 70px 70px 0px 70px;
-        overflow: hidden;
+        font-family: 'Libre Baskerville', serif;
+        color: #77716d;
+        width: 100%;
+        padding-left: 70px;
+    }
+    .contact-form .form-control {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: 1px solid #cfd8dc;
+        width: 88%;
+        transition: 1s ease;
+        font-weight: bold;
     }
 }
