@@ -4,6 +4,136 @@ html {
 
 /*######## Navigation Bar ########*/
 
+a {
+    color: #656565;
+}
+
+/* instead of nav its called header */
+
+.entireNavigation {
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    background: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+/* the list items underneath the logo*/
+
+.entireNavigation ul {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    /*font-size: 15px;*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: #f3f3f3;
+    transition: 0.3s ease;
+}
+
+/* the anchor tags of headers*/
+
+.entireNavigation ul a {
+    display: flex;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.entireNavigation ul a:hover {
+    color: #f4a482;
+    transition: 0.3s ease;
+}
+
+/* the positioning and styling of the tbdross logo*/
+
+.entireNavigation .logoLeftName {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    font-size: 17px;
+    padding: 20px 20px 0px 22px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.entireNavigation a.logoLeftName:hover {
+    color: #2e3438;
+}
+
+/* this clears the syling and positions the items underneath the logo */
+
+.entireNavigation .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.1s ease-out;
+}
+
+/* this is the styling of the hamburger*/
+
+.entireNavigation .menu-icon {
+    position: relative;
+    float: right;
+    padding: 27px 20px;
+    cursor: pointer;
+}
+
+/* these 3 header menue-icon stylings are for the hamburger*/
+
+.entireNavigation .menu-icon .nav-icon {
+    background: #656565;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    border-radius: 15px;
+}
+.entireNavigation .menu-icon .nav-icon:before {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+}
+.entireNavigation .menu-icon .nav-icon:after {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+/*this links the input check and the hamburger together*/
+
+.navBar-btn {
+    display: none;
+}
+.entireNavigation .navBar-btn:checked~ .menu {
+    max-height: 330px;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*
 nav,
 topNavigation {
     font-family: 'Asap', sans-serif;
@@ -33,12 +163,15 @@ ul.topNavigation li {
 }
 ul.topNavigation li.topNavigation-right,
 
-/*this is the styling label for the rest of the navigation bar contents */
+this is the styling label for the rest of the navigation bar contents 
+*/
 
-ul.topNavigation li.socialMedia_icon-right
-/* this is the styling label for the twitter and instagram icons */
 
-{
+/*ul.topNavigation li.socialMedia_icon-right
+ this is the styling label for the twitter and instagram icons */
+
+
+/*{
     float: right;
     font-size: 15px;
 }
@@ -67,7 +200,8 @@ ul.topNavigation li a {
 }
 ul li a {
     margin-right: 20px;
-}
+}*/
+
 .container,
 .aboutContainer {
     padding: 0;
@@ -118,4 +252,44 @@ h1 {
     border: 1px solid #fff;
     height: 40px;
     background-color: #f4a482;
+}
+
+/* new mobile responsive navigation bar*/
+
+@media(min-width: 760px) {
+    .entireNavigation {
+        /* height: 100%;*/
+    }
+    .entireNavigation li {
+        float: left;
+    }
+    .entireNavigation li a {
+        padding: 20px 20px;
+    }
+    .entireNavigation .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .entireNavigation .menu-icon {
+        display: none;
+    }
+    .entireNavigation .menu-icon .nav-icon {
+        height: 4px;
+        width: 20px;
+    }
+    .contact-form {
+        margin: 0 auto;
+        /* width: 100%;*/
+    }
+}
+
+/* padding around contact form for mobile*/
+
+@media(max-width: 760px) {
+    .contact-form {
+        margin: 0 auto;
+        /* width: 100%;*/
+        padding: 70px 70px 0px 70px;
+    }
 }
