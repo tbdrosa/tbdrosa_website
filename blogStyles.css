@@ -16,27 +16,168 @@ body {
 
 /*######## Navigation Bar ########*/
 
+a {
+    color: #656565;
+}
+
+/* instead of nav its called header */
+
 .entireNavigation {
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    background: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+/* the list items underneath the logo*/
+
+.entireNavigation ul {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    /*font-size: 15px;*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: #f3f3f3;
+    transition: 0.3s ease;
+}
+
+/* the anchor tags of headers*/
+
+.entireNavigation ul a {
+    display: flex;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.entireNavigation ul a:hover {
+    color: #f4a482;
+    transition: 0.3s ease;
+}
+
+/* the positioning and styling of the tbdross logo*/
+
+.entireNavigation .logoLeftName {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    font-size: 17px;
+    padding: 20px 20px 0px 22px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.entireNavigation a.logoLeftName:hover {
+    color: green;
+}
+
+/* this clears the syling and positions the items underneath the logo */
+
+.entireNavigation .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.1s ease-out;
+}
+
+/* this is the styling of the hamburger*/
+
+.entireNavigation .menu-icon {
+    position: relative;
+    float: right;
+    padding: 27px 20px;
+    cursor: pointer;
+}
+
+/* these 3 header menue-icon stylings are for the hamburger*/
+
+.entireNavigation .menu-icon .nav-icon {
+    background: #656565;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    border-radius: 15px;
+}
+.entireNavigation .menu-icon .nav-icon:before {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+}
+.entireNavigation .menu-icon .nav-icon:after {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+/*this links the input check and the hamburger together*/
+
+.navBar-btn {
+    display: none;
+}
+.entireNavigation .navBar-btn:checked~ .menu {
+    max-height: 330px;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*.entireNavigation {
     display: flex;
     transition: 0.4s ease;
     justify-content: space-between;
     align-items: center;
-    background: #f3f3f3;
-    /*position: relative;*/
-    margin: 0;
-    width: 100%;
-    /*font-family: 'Asap', sans-serif;
+    background: #f3f3f3;*/
+
+
+/*position: relative;*/
+
+
+/*    margin: 0;
+    width: 100%;*/
+
+
+/*font-family: 'Asap', sans-serif;
     font-weight: 400;
     width: 100%;
     margin: 0
     display: block;*/
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+
+
+/*    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
     position: fixed;
     transition: 0.3s;
     z-index: 3;
-}
+}*/
+
 
 /*this is the tbdrosa 'logo' styling*/
+
+
+/*
 
 .logoLeftName a {
     text-decoration: none;
@@ -47,15 +188,23 @@ body {
     transition: 0.3s;
     margin: 0px 0px 0px 90px;
 }
+*/
+
 
 /*when you hover color change*/
 
+
+/*
 .logoLeftName a:hover {
     color: #2e3438;
 }
+*/
+
 
 /*this is the mobile hamburger button*/
 
+
+/*
 .toggle-hamburger {
     position: absolute;
     transition: 0.4s ease;
@@ -66,18 +215,24 @@ body {
     justify-content: space-between;
     width: 31px;
     height: 21px;
-}
+}*/
+
+
+/*
 .toggle-hamburger .bar {
     transition: 0.4s ease;
     height: 3px;
     width: 100%;
     background-color: #656565;
     border-radius: 10px;
+*/
+
+
 }
 
 /* the contents towards the right of the navigation bar*/
 
-.navBarLinks ul {
+/*.navBarLinks ul {
     display: flex;
     transition: 0.4s ease;
 }
@@ -103,25 +258,23 @@ nav.hide {
 }
 .navBarLinks li.socialMediaIconRightLast a {
     padding-right: 45px;
-}
+}*/
 
 /* Create a Parallax Effect */
-
 .blogIntro {
     font-family: 'Asap', sans-serif;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     /*min-height: 100vh;*/
+    
     background-size: cover;
     opacity: 0.87;
 }
 
 /* First image (Full height) */
 
-
 /*#### titles for images ####*/
-
 .blogHeader {
     padding: 90px 0px 0px 0px;
     z-index: 1;
@@ -148,9 +301,32 @@ h4 {
     }
 }
 
-/* mobile responsive navigation bar*/
+/* new mobile responsive navigation bar*/
+@media(min-width: 760px) {
+    .entireNavigation {
+        /* height: 100%;*/
+    }
+    .entireNavigation li {
+        float: left;
+    }
+    .entireNavigation li a {
+        padding: 20px 20px;
+    }
+    .entireNavigation .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .entireNavigation .menu-icon {
+        display: none;
+    }
+    .entireNavigation .menu-icon .nav-icon {
+        height: 4px;
+        width: 20px;
+    }
+}
 
-@media (max-width: 760px) {
+/*@media (max-width: 760px) {
     .toggle-hamburger {
         display: flex;
         margin: 0px 0px 0px 0px;
@@ -179,9 +355,11 @@ h4 {
     }
     .navBarLinks.active {
         display: flex;
-    }
-    /*this is the tbdrosa 'logo' styling*/
-    .logoLeftName a {
+    }*/
+
+/*this is the tbdrosa 'logo' styling*/
+
+/*    .logoLeftName a {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 16px;
@@ -194,10 +372,9 @@ h4 {
         margin: 0px 0px 0px 0px;
         padding: 30px;
     }
-}
+}*/
 
 /* ######  the block of blog styling #######*/
-
 .card {
     position: relative;
     display: -webkit-box;
@@ -207,6 +384,7 @@ h4 {
     overflow: hidden;
     padding: 1rem;
     /*width: 100%;*/
+    
     text-align: center;
     color: whitesmoke;
     background-color: whitesmoke;
@@ -221,7 +399,6 @@ h4 {
 }
 
 /* ###### the sizing of the boxes ######*/
-
 * {
     box-sizing: content-box;
 }
@@ -292,7 +469,6 @@ body {
 .card:nth-child(4):before {
     background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }*/
-
 .content {
     position: relative;
     display: -webkit-box;
@@ -315,7 +491,6 @@ body {
 }
 
 /* ######## the title for ########*/
-
 .title {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
@@ -324,7 +499,6 @@ body {
 }
 
 /* the description of the card after hovering*/
-
 .summary {
     font-family: 'Asap', sans-serif;
     font-size: 16px;
