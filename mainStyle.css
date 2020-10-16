@@ -16,28 +16,157 @@ body {
 
 /*######## Navigation Bar ########*/
 
+a {
+    color: #656565;
+}
+
+/* instead of nav its called header */
+
+.entireNavigation {
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    background: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+/* the list items underneath the logo*/
+
+.entireNavigation ul {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    /*font-size: 15px;*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: #f3f3f3;
+    transition: 0.3s ease;
+}
+
+/* the anchor tags of headers*/
+
+.entireNavigation ul a {
+    display: flex;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.entireNavigation ul a:hover {
+    color: #f4a482;
+    transition: 0.3s ease;
+}
+
+/* the positioning and styling of the tbdross logo*/
+
+.entireNavigation .logoLeftName {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    font-size: 17px;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.entireNavigation a.logoLeftName:hover {
+    color: green;
+}
+
+/* this clears the syling and positions the items underneath the logo */
+
+.entireNavigation .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+/* this is the styling of the hamburger*/
+
+.entireNavigation .menu-icon {
+    position: relative;
+    float: right;
+    padding: 27px 20px;
+    cursor: pointer;
+}
+
+/* these 3 header menue-icon stylings are for the hamburger*/
+
+.entireNavigation .menu-icon .nav-icon {
+    background: #656565;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    border-radius: 15px;
+}
+.entireNavigation .menu-icon .nav-icon:before {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+}
+.entireNavigation .menu-icon .nav-icon:after {
+    background: #656565;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    border-radius: 15px;
+    transition: all 0.2s ease-out;
+}
+
+/*this links the input check and the hamburger together*/
+
+.navBar-btn {
+    display: none;
+}
+.entireNavigation .navBar-btn:checked~ .menu {
+    max-height: 240px;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*
+
 .entireNavigation {
     display: flex;
     transition: 0.4s ease;
     justify-content: space-between;
     align-items: center;
     background: #f3f3f3;
-    /*position: relative;*/
     margin: 0;
     width: 100%;
-    /*font-family: 'Asap', sans-serif;
-    font-weight: 400;
-    width: 100%;
-    margin: 0
-    display: block;*/
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
     position: fixed;
     transition: 0.3s;
     z-index: 3;
 }
+*/
+
 
 /*this is the tbdrosa 'logo' styling*/
 
+
+/*
 .logoLeftName a {
     text-decoration: none;
     text-transform: uppercase;
@@ -47,16 +176,21 @@ body {
     transition: 0.3s;
     margin: 0px 0px 0px 90px;
 }
+*/
+
 
 /*when you hover color change*/
 
-.logoLeftName a:hover {
+
+/*.logoLeftName a:hover {
     color: #2e3438;
-}
+}*/
+
 
 /*this is the mobile hamburger button*/
 
-.toggle-hamburger {
+
+/*.toggle-hamburger {
     position: absolute;
     transition: 0.4s ease;
     top: 15px;
@@ -73,10 +207,13 @@ body {
     width: 100%;
     background-color: #656565;
     border-radius: 10px;
-}
+}*/
+
 
 /* the contents towards the right of the navigation bar*/
 
+
+/*
 .navBarLinks ul {
     display: flex;
     transition: 0.4s ease;
@@ -95,10 +232,13 @@ body {
     text-transform: uppercase;
     transition: 0.3s;
 }
+*/
+
 
 /* navigation color hover effect */
 
-.navBarLinks li a:hover {
+
+/*.navBarLinks li a:hover {
     color: #f4a482;
 }
 nav.hide {
@@ -106,7 +246,8 @@ nav.hide {
 }
 .navBarLinks li.socialMediaIconRightLast a {
     padding-right: 45px;
-}
+}*/
+
 
 /* Create a Parallax Effect */
 
@@ -418,7 +559,7 @@ p.social-media-footer a {
 /* RESPONSIVE FOOTER for larger tablets */
 
 @media(max-width: 1019px) {
-    nav {
+    /*nav {
         position: sticky;
     }
     entireNavigation {
@@ -432,7 +573,7 @@ p.social-media-footer a {
         position: sticky;
         transition: 0.3s;
         z-index: 3;
-    }
+    }*/
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -465,7 +606,7 @@ p.social-media-footer a {
 /* RESPONSIVE FOOTER for tablets */
 
 @media(max-width: 843px) {
-    nav {
+    /*  nav {
         position: sticky;
     }
     entireNavigation {
@@ -479,7 +620,7 @@ p.social-media-footer a {
         position: sticky;
         transition: 0.3s;
         z-index: 3;
-    }
+    }*/
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -493,8 +634,34 @@ p.social-media-footer a {
 
 /* mobile responsive navigation bar*/
 
+@media(min-width: 760px) {
+    .entireNavigation {
+        /* height: 100%;*/
+    }
+    .entireNavigation li {
+        float: left;
+    }
+    .entireNavigation li a {
+        padding: 20px 20px;
+    }
+    .entireNavigation .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .entireNavigation .menu-icon {
+        display: none;
+    }
+    .entireNavigation .menu-icon .nav-icon {
+        height: 4px;
+        width: 20px;
+    }
+}
+
+/* mobile responsive navigation bar*/
+
 @media (max-width: 760px) {
-    nav {
+    /*nav {
         position: sticky;
     }
     entireNavigation {
@@ -542,9 +709,9 @@ p.social-media-footer a {
     .navBarLinks.active {
         display: flex;
         transition: 0.4s ease;
-    }
+    }*/
     /*this is the tbdrosa 'logo' styling*/
-    .logoLeftName a {
+    /*.logoLeftName a {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 16px;
@@ -556,7 +723,7 @@ p.social-media-footer a {
     .logoLeftName {
         margin: 0px 0px 0px 0px;
         padding: 30px;
-    }
+    }*/
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -577,7 +744,7 @@ p.social-media-footer a {
     }
 }
 @media(max-width: 563px) {
-    nav {
+    /* nav {
         position: sticky;
     }
     entireNavigation {
@@ -591,7 +758,7 @@ p.social-media-footer a {
         position: sticky;
         transition: 0.3s;
         z-index: 3;
-    }
+    }*/
     .container {
         background-attachment: scroll;
         background-size: cover;
