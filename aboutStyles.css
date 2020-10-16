@@ -64,7 +64,7 @@
          transition: 0.3s ease;
      }
      .entireNavigation a.logoLeftName:hover {
-         color: green;
+         color: #2e3438;
      }
      /* this clears the syling and positions the items underneath the logo */
      
