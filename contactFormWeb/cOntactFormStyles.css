@@ -294,6 +294,7 @@ h1 {
         color: #77716d;
         width: 100%;
         padding-left: 55px;
+        padding-bottom: 55px;
     }
     .contact-form .form-control {
         border: none;
