@@ -256,7 +256,7 @@ nav.hide {
 /* First image (Full height) */
 
 .blogIntro {
-    background-image: url("blogs/elijahxrod/flashWalking.jpg");
+    background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
     min-height: 100vh;
     z-index: -1;
 }
@@ -381,7 +381,7 @@ a.eliInsta {
 }
 @media(min-width: 1024px) {
     .blogIntro {
-        background-image: url("blogs/elijahxrod/flashWalking.jpg");
+        background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
         min-height: 100vh;
         z-index: -1;
     }
@@ -685,7 +685,7 @@ a.eliInsta {
     }*/
     /* First image (Full height) */
     .blogIntro {
-        background-image: url("blogs/elijahxrod/flashWalking.jpg");
+        background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
         background-attachment: scroll;
         min-height: 100vh;
         /*z-index: -1;*/
