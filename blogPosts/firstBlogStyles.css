@@ -262,7 +262,7 @@ nav.hide {
 /* First image (Full height) */
 
 .blogIntro {
-    background-image: url("img/sitting.jpg");
+    background-image: url("../img/sitting.jpg");
     min-height: 100vh;
     z-index: -1;
 }
@@ -386,7 +386,7 @@ img {
 }
 @media(min-width: 1024px) {
     .blogIntro {
-        background-image: url("img/sitting.jpg");
+        background-image: url("../img/sitting.jpg");
         min-height: 100vh;
         z-index: -1;
     }
@@ -750,7 +750,7 @@ img {
     }*/
     /* First image (Full height) */
     .blogIntro {
-        background-image: url("img/sitting.jpg");
+        background-image: url("../img/sitting.jpg");
         background-attachment: scroll;
         min-height: 100vh;
         /*z-index: -1;*/
