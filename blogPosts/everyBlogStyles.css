@@ -388,7 +388,7 @@ a.eliInsta {
         z-index: -1;
     }
     .firstBlogIntro {
-        background-image: url("../img/sitting.jpg");
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
         min-height: 100vh;
         z-index: -1;
     }
@@ -577,6 +577,18 @@ a.eliInsta {
 /* mobile responsive navigation bar*/
 
 @media(min-width: 760px) {
+    .eliBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
     .entireNavigation {
         /* height: 100%;*/
     }
@@ -603,6 +615,18 @@ a.eliInsta {
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
+    .eliBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
     /*    nav {
         position: sticky;
     }
@@ -698,7 +722,7 @@ a.eliInsta {
         /*z-index: -1;*/
     }
     .firstBlogIntro {
-        background-image: url("../img/sitting.jpg");
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
         background-attachment: scroll;
         min-height: 100vh;
         /*z-index: -1;*/
@@ -769,6 +793,18 @@ a.eliInsta {
 /* this decreases the size of newsletter message or phones*/
 
 @media(max-width: 444px) {
+    .eliBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
     /*  p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
         font-size: 8.56px;
@@ -801,6 +837,18 @@ a.eliInsta {
 }*/
 
 @media(max-width: 375px) {
+    .eliBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -821,6 +869,18 @@ a.eliInsta {
     }
 }
 @media(max-width: 321px) {
+    .eliBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
     p.note {
         text-align: center;
         font-size: 6px;

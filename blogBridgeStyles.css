@@ -457,10 +457,10 @@ body {
     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-    background-image: url(../img/sitting.jpg);
+    background-image: url(/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg);
 }
 .card:nth-child(2):before {
-    background-image: url(../blogPhotoGallery/elijahxrod/flashWalking.jpg);
+    background-image: url(/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg);
 }
 
 /*.card:nth-child(3):before {
