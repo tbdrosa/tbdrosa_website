@@ -244,7 +244,8 @@ nav.hide {
 
 /* Create a Parallax Effect */
 
-.blogIntro {
+.eliBlogIntro,
+.firstBlogIntro {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +256,7 @@ nav.hide {
 
 /* First image (Full height) */
 
-.blogIntro {
+.eliBlogIntro {
     background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
     min-height: 100vh;
     z-index: -1;
@@ -348,7 +349,7 @@ p {
 
 p.note {
     color: #2e3438;
-    padding-left: 185px;
+    text-align: center;
     /*text-align: justify;
     align-content: center;*/
 }
@@ -377,11 +378,17 @@ a.eliInsta {
 @media(max-width: 1024px) {
     p.note {
         font-size: 11px;
+        text-align: center;
     }
 }
 @media(min-width: 1024px) {
-    .blogIntro {
+    .eliBlogIntro {
         background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        min-height: 100vh;
+        z-index: -1;
+    }
+    .firstBlogIntro {
+        background-image: url("../img/sitting.jpg");
         min-height: 100vh;
         z-index: -1;
     }
@@ -684,8 +691,14 @@ a.eliInsta {
         position: fixed;
     }*/
     /* First image (Full height) */
-    .blogIntro {
+    .eliBlogIntro {
         background-image: url("../blogPhotoGallery/elijahxrod/flashWalking.jpg");
+        background-attachment: scroll;
+        min-height: 100vh;
+        /*z-index: -1;*/
+    }
+    .firstBlogIntro {
+        background-image: url("../img/sitting.jpg");
         background-attachment: scroll;
         min-height: 100vh;
         /*z-index: -1;*/
@@ -742,7 +755,7 @@ a.eliInsta {
     }
     p.note {
         color: #2e3438;
-        padding-left: 10px;
+        text-align: center;
         font-size: 12px;
         /*text-align: justify;
     align-content: center;*/
@@ -809,7 +822,7 @@ a.eliInsta {
 }
 @media(max-width: 321px) {
     p.note {
-        text-align: justify;
+        text-align: center;
         font-size: 6px;
     }
 }
