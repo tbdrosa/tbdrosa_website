@@ -242,10 +242,9 @@ nav.hide {
 }*/
 
 
-/* Create a Parallax Effect */
+/* Create a Parallax Effect #home is for all background cover images */
 
-.eliBlogIntro,
-.firstBlogIntro {
+#home {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
