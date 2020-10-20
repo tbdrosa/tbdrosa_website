@@ -495,7 +495,7 @@ p.social-media-footer {
 }
 p.social-media-footer-copyright {
     font-family: 'Asap', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
 }
@@ -824,8 +824,6 @@ p.social-media-footer a {
         grid-row-gap: 20px;
     }
 }
-
-}
 @media(max-width: 375px) {
     img {
         /*padding: 65px 25px 0px;*/
@@ -835,7 +833,6 @@ p.social-media-footer a {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
-    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -845,6 +842,20 @@ p.social-media-footer a {
         /*margin: 20px 0px 20px 0px;*/
         /*    border: 20px 0px 20px 0px;*/
         grid-row-gap: 20px;
+    }
+    p.social-media-footer-copyright {
+        font-family: 'Asap', sans-serif;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 322px) {
+    p.social-media-footer-copyright {
+        font-family: 'Asap', sans-serif;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
     }
 }
 @media (min-width: 321px) {
@@ -856,7 +867,6 @@ p.social-media-footer a {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
-    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -871,6 +881,7 @@ p.social-media-footer a {
 }
 
 /*######## Custom Styles ########*/
+
 
 /*
 #section-1-backgroundImage{
