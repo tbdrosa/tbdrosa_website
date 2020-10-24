@@ -257,7 +257,10 @@ nav.hide {
 
 .eliBlogIntro {
     background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-    min-height: 100vh;
+    z-index: -1;
+}
+.firstBlogIntro {
+    background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
     z-index: -1;
 }
 
@@ -380,83 +383,84 @@ a.eliInsta {
         text-align: center;
     }
 }
-@media(min-width: 1024px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        min-height: 100vh;
-        z-index: -1;
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        min-height: 100vh;
-        z-index: -1;
-    }
-    h1 {
-        font-size: 125px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-    }
-    /* First Blog Entry title styles*/
-    h2 {
-        color: #656565;
-        font-size: 80px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        padding: 15px 11px 0px 11px;
-    }
-    /* Getting Started subEntry title*/
-    h3 {
-        color: #656565;
-        font-size: 39px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        padding: 7px;
-    }
-    /* welcome intro blurb*/
-    h5 {
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 100;
-        text-align: center;
-        padding: 10px;
-        line-height: 1.7;
-    }
-    /* the dateSUbmission of post*/
-    h6 {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 100;
-        text-align: center;
-        color: #656565;
-    }
-    .journalEntryBody {
-        font-size: 18px;
-        max-width: 1000px;
-        display: grid;
-        grid-template-columns: 1fr 35fr 3.5fr;
-        grid-gap: 10px 30px;
-        letter-spacing: 1.7px;
-    }
-    p {
-        font-family: 'Libre Baskerville', serif;
-        color: #77716d;
-        flex-basis: 38%;
-        padding: 15px 30px 15px 35px;
-        line-height: 2.2;
-        overflow: hidden;
-    }
-    footer {
-        text-align: center;
-    }
+@media(min-width: 1024px) {}
+h1 {
+    font-size: 125px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* First Blog Entry title styles*/
+
+h2 {
+    color: #656565;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 11px 0px 11px;
+}
+
+/* Getting Started subEntry title*/
+
+h3 {
+    color: #656565;
+    font-size: 39px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding: 7px;
+}
+
+/* welcome intro blurb*/
+
+h5 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7;
+}
+
+/* the dateSUbmission of post*/
+
+h6 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: #656565;
+}
+.journalEntryBody {
+    font-size: 18px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 35fr 3.5fr;
+    grid-gap: 10px 30px;
+    letter-spacing: 1.7px;
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: #77716d;
+    flex-basis: 38%;
+    padding: 15px 30px 15px 35px;
+    line-height: 2.2;
+    overflow: hidden;
+}
+footer {
+    text-align: center;
+}
+
 }
 
 /* this makes the background and column of images responsive */
-
 @media(min-width: 1024px) {
     .container {
+        background-size: cover;
+    }
+    #home {
         background-size: cover;
     }
     .portfolioColumn img {
@@ -478,6 +482,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -494,7 +499,6 @@ a.eliInsta {
 }
 
 /* RESPONSIVE FOOTER for larger tablets */
-
 @media(max-width: 1019px) {
     /*    nav {
         position: sticky;
@@ -511,6 +515,7 @@ a.eliInsta {
         transition: 0.3s;
         z-index: 3;
     }*/
+    
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -528,6 +533,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -545,7 +551,6 @@ a.eliInsta {
 }
 
 /* RESPONSIVE FOOTER for tablets */
-
 @media(max-width: 843px) {
     /*  nav {
         position: sticky;
@@ -562,6 +567,7 @@ a.eliInsta {
         transition: 0.3s;
         z-index: 3;
     }*/
+    
     .footerGrid {
         background-color: #2e3438;
         display: block;
@@ -574,20 +580,7 @@ a.eliInsta {
 }
 
 /* mobile responsive navigation bar*/
-
 @media(min-width: 760px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
     .entireNavigation {
         /* height: 100%;*/
     }
@@ -612,20 +605,7 @@ a.eliInsta {
 }
 
 /* mobile responsive navigation bar*/
-
 @media (max-width: 760px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
     /*    nav {
         position: sticky;
     }
@@ -689,6 +669,7 @@ a.eliInsta {
         margin: 0px 0px 0px 0px;
         padding: 30px;
     }*/
+    
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -697,6 +678,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -710,22 +692,17 @@ a.eliInsta {
     }
 }
 @media(max-width: 563px) {
+    #home {
+        background-attachment: scroll;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+    }
     /* nav {
         position: fixed;
     }*/
     /* First image (Full height) */
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
+    
     h1 {
         font-size: 90px;
         font-style: italic;
@@ -733,6 +710,7 @@ a.eliInsta {
         text-align: center;
     }
     /* First Blog Entry title styles*/
+    
     h2 {
         color: #656565;
         font-size: 45px;
@@ -742,6 +720,7 @@ a.eliInsta {
         padding: 15px 11px 0px 11px;
     }
     /* Getting Started subEntry title*/
+    
     h3 {
         color: #656565;
         font-size: 17px;
@@ -751,6 +730,7 @@ a.eliInsta {
         padding: 7px;
     }
     /* welcome intro blurb*/
+    
     h5 {
         font-size: 15px;
         font-style: normal;
@@ -761,6 +741,7 @@ a.eliInsta {
         line-height: 1.7;
     }
     /* the dateSUbmission of post*/
+    
     h6 {
         font-size: 15.7px;
         font-style: normal;
@@ -790,24 +771,12 @@ a.eliInsta {
 }
 
 /* this decreases the size of newsletter message or phones*/
-
 @media(max-width: 444px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
     /*  p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
         font-size: 8.56px;
     }*/
+    
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -816,6 +785,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -834,20 +804,7 @@ a.eliInsta {
     height: auto;
     max-height: 100vh
 }*/
-
 @media(max-width: 375px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -856,6 +813,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
@@ -868,18 +826,6 @@ a.eliInsta {
     }
 }
 @media(max-width: 321px) {
-    .eliBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
-    .firstBlogIntro {
-        background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
-        background-attachment: scroll;
-        min-height: 100vh;
-        /*z-index: -1;*/
-    }
     p.note {
         text-align: center;
         font-size: 6px;
@@ -894,6 +840,7 @@ a.eliInsta {
         /*grid-row-gap: 20px;*/
     }
     /*######## image position: how they are centered in the screen and equal padding########*/
+    
     .portfolioColumn img {
         display: block;
         max-width: 92%;
