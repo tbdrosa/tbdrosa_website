@@ -295,6 +295,17 @@ h4 {
     line-height: 40px;
     width: 100%;
 }
+
+/* if you change
+--> grid-template-columns: 
+repeat(2, 1fr); for two columns of cards
+repeat(3, 1fr); for three columns of cards
+repeat(4, 1fr); for four columns of cards
+repeat(5, 1fr); for five columns of cards
+
+etc...
+
+*/
 @media (min-width: 800px) {
     .blogContent {
         grid-template-columns: repeat(2, 1fr);
@@ -456,11 +467,20 @@ body {
     transition: transform calc(var(--d) * 2) var(--e);
     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
+
+/* #### blog post card Haley Cover ####*/
 .card:nth-child(1):before {
-    background-image: url(/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg);
+    background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg);
 }
+
+/* #### blog post card Elijah Walking Cover ####*/
 .card:nth-child(2):before {
     background-image: url(/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg);
+}
+
+/* #### blog post card William sitting Cover ####*/
+.card:nth-child(3):before {
+    background-image: url(/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg);
 }
 
 /*.card:nth-child(3):before {
