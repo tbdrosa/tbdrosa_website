@@ -468,18 +468,23 @@ body {
     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 
-/* #### blog post card Haley Cover ####*/
+/* #### blog post card Rhode Island mansions Cover ####*/
 .card:nth-child(1):before {
+    background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg);
+}
+
+/* #### blog post card Haley Cover ####*/
+.card:nth-child(2):before {
     background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg);
 }
 
 /* #### blog post card Elijah Walking Cover ####*/
-.card:nth-child(2):before {
+.card:nth-child(3):before {
     background-image: url(/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg);
 }
 
 /* #### blog post card William sitting Cover ####*/
-.card:nth-child(3):before {
+.card:nth-child(4):before {
     background-image: url(/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg);
 }
 
