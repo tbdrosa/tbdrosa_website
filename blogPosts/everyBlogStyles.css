@@ -255,6 +255,9 @@ nav.hide {
 
 /* First image (Full height) */
 
+.mansionBlogIntro {
+    background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg)
+}
 .haleyBlogIntro {
     background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg)
 }
