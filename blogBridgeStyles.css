@@ -470,12 +470,12 @@ body {
 
 /* #### blog post card Rhode Island mansions Cover ####*/
 .card:nth-child(1):before {
-    background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg);
+    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/hairRuffleBlue-2.jpg);
 }
 
 /* #### blog post card Haley Cover ####*/
 .card:nth-child(2):before {
-    background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg);
+    background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg);
 }
 
 /* #### blog post card Elijah Walking Cover ####*/
