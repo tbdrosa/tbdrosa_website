@@ -255,8 +255,11 @@ nav.hide {
 
 /* First image (Full height) */
 
+.haleyBlogIntro {
+    background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg)
+}
 .shahnilaBlogIntro {
-    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg)
+    background-image: url(../blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg)
 }
 
 /*rhode-Island blog Post*/
@@ -369,6 +372,19 @@ p.note {
     /*text-align: justify;
     align-content: center;*/
 }
+p.disclaimer {
+    color: #2e3438;
+    text-align: justify;
+    /*text-align: justify;
+    align-content: center;*/
+}
+.journalEntryBody > blockquote {
+    grid-column: 1 / -1;
+    font-size: 25px;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+}
 a.eliInsta {
     font-family: 'Libre Baskerville', serif;
     color: #77716d;
@@ -396,6 +412,12 @@ a.eliInsta {
         font-size: 11px;
         text-align: center;
     }
+}
+p.disclaimer {
+    color: #2e3438;
+    text-align: justify;
+    /*text-align: justify;
+    align-content: center;*/
 }
 @media(min-width: 1024px) {}
 h1 {
@@ -847,6 +869,12 @@ Disabled & Hidden Styles [data-pagination] .disabled,
         /*text-align: justify;
     align-content: center;*/
     }
+    p.disclaimer {
+        color: #2e3438;
+        text-align: justify;
+        /*text-align: justify;
+    align-content: center;*/
+    }
     footer {
         text-align: center;
         font-size: 7px;
@@ -912,6 +940,12 @@ Disabled & Hidden Styles [data-pagination] .disabled,
         text-align: center;
         font-size: 6px;
     }
+}
+p.disclaimer {
+    color: #2e3438;
+    text-align: justify;
+    /*text-align: justify;
+    align-content: center;*/
 }
 @media (min-width: 321px) {
     img {
