@@ -468,28 +468,33 @@ body {
     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 
-/* #### blog post card William sitting Cover ####*/
+/* #### blog post card Amber Montalvo Cover ####*/
 .card:nth-child(1):before {
+    background-image: url(/blogPosts/blogPhotoGallery/amberMontalvo/#insert_image);
+}
+
+/* #### blog post card Haley Window Cover ####*/
+.card:nth-child(2):before {
     background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg);
 }
 
-/* #### blog post card Rhode Island mansions Cover ####*/
-.card:nth-child(2):before {
+/* #### blog post card Shahnila teeth dorm Cover ####*/
+.card:nth-child(3):before {
     background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg);
 }
 
-/* #### blog post card Haley Cover ####*/
-.card:nth-child(3):before {
+/* #### blog post card Rhode Island mansions Cover ####*/
+.card:nth-child(4):before {
     background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg);
 }
 
 /* #### blog post card Elijah Walking Cover ####*/
-.card:nth-child(4):before {
+.card:nth-child(5):before {
     background-image: url(/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg);
 }
 
 /* #### blog post card William sitting Cover ####*/
-.card:nth-child(5):before {
+.card:nth-child(6):before {
     background-image: url(/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg);
 }
 
