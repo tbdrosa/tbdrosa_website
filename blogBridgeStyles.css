@@ -470,7 +470,7 @@ body {
 
 /* #### blog post card Amber Montalvo Cover ####*/
 .card:nth-child(1):before {
-    background-image: url(/blogPosts/blogPhotoGallery/amberMontalvo/#insert_image);
+    background-image: url(/blogPosts/blogPhotoGallery/amberMontalvo/amberConeyIsland-cover.jpg);
 }
 
 /* #### blog post card Haley Window Cover ####*/
