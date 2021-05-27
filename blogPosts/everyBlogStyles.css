@@ -252,8 +252,14 @@ nav.hide {
     background-size: cover;
     opacity: 0.87;
 }
+
+/*
 .amberMontalvoIntro {
     background-image: url(/blogPosts/blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-6.jpg)
+}*/
+
+.puertoRicoIntro {
+    background-image: url(/blogPosts/blogPhotoGallery/puertoRicoSummer/puertoRico-40.jpg)
 }
 
 /* First image (Full height) */
@@ -262,7 +268,7 @@ nav.hide {
     background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg)
 }
 .shahnilaBlogIntro {
-    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg)
+    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.JPG)
 }
 
 /*rhode-Island blog Post*/
@@ -716,69 +722,6 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 /* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
-    /*    nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .toggle-hamburger {
-        display: flex;
-        margin: 0px 0px 0px 0px;
-        padding: 15px;
-        transition: 0.4s ease;
-    }
-    .entireNavigation {
-        flex-direction: column;
-        align-items: flex-start;
-        transition: 0.4s ease;
-    }
-    .navBarLinks {
-        display: none;
-        width: 100%;
-        padding: 0px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks ul {
-        width: 100%;
-        flex-direction: column;
-        height: 100vh;
-    }
-    .navBarLinks li {
-        text-align: justify;
-        transition: 0.4s ease;
-    }
-    .navBarLinks a {
-        padding: 28px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks.active {
-        display: flex;
-        transition: 0.4s ease;
-    }*/
-    /*this is the tbdrosa 'logo' styling*/
-    /*  .logoLeftName a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-family: 'Asap', sans-serif;
-        color: #656565;
-        transition: 0.3s;
-        margin: 0px 0px 0px 0px;
-    }
-    .logoLeftName {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-    }*/
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
