@@ -257,7 +257,6 @@ body {
     height: 100%;
 }
 body {
-    display: grid;
     place-items: center;
 }
 .blogContent {
