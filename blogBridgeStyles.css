@@ -184,7 +184,7 @@ h4 {
 }
 
 /* if you change
---> grid-template-columns: 
+--> grid-template-columns:
 repeat(2, 1fr); for two columns of cards
 repeat(3, 1fr); for three columns of cards
 repeat(4, 1fr); for four columns of cards
@@ -332,7 +332,7 @@ body {
 /* #### blog post card Shahnila teeth dorm Cover ####*/
 
 .card:nth-child(3):before {
-    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.JPG);
+    background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg);
 }
 
 /* #### blog post card Rhode Island mansions Cover ####*/
