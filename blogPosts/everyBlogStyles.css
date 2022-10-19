@@ -13,17 +13,13 @@ body {
     flex-direction: column;
 }
 
-/*######## Navigation Bar ########*/
-
 
 /*######## Navigation Bar ########*/
-
 a {
     color: #656565;
 }
 
 /* instead of nav its called header */
-
 .entireNavigation {
     box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
     background: #f3f3f3;
@@ -34,7 +30,6 @@ a {
 }
 
 /* the list items underneath the logo*/
-
 .entireNavigation ul {
     font-family: 'Asap', sans-serif;
     text-transform: uppercase;
@@ -48,7 +43,6 @@ a {
 }
 
 /* the anchor tags of headers*/
-
 .entireNavigation ul a {
     display: flex;
     padding: 20px 20px;
@@ -61,7 +55,6 @@ a {
 }
 
 /* the positioning and styling of the tbdross logo*/
-
 .entireNavigation .logoLeftName {
     font-family: 'Asap', sans-serif;
     text-transform: uppercase;
@@ -77,7 +70,6 @@ a {
 }
 
 /* this clears the syling and positions the items underneath the logo */
-
 .entireNavigation .menu {
     clear: both;
     max-height: 0;
@@ -85,7 +77,6 @@ a {
 }
 
 /* this is the styling of the hamburger*/
-
 .entireNavigation .menu-icon {
     position: relative;
     float: right;
@@ -253,40 +244,47 @@ nav.hide {
     opacity: 0.87;
 }
 
-/*
+/* .batistaIntro{
+    background-image: url(/blogPosts/blogPhotoGallery/anysaBatista/anysa-2.jpg)
+} */
+.elijahLIC_Intro{
+    background-image: url(/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-12.jpg)
+}
+
+/* Amber Blog Page cover  */
 .amberMontalvoIntro {
     background-image: url(/blogPosts/blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-6.jpg)
-}*/
-
+}
+/* Puerto Rico Blog Page cover  */
 .puertoRicoIntro {
     background-image: url(/blogPosts/blogPhotoGallery/puertoRicoSummer/puertoRico-50.jpg)
 }
 
-/* First image (Full height) */
-
+/* Haley Blog Page cover  */
 .haleyBlogIntro {
     background-image: url(/blogPosts/blogPhotoGallery/haleyKastler/windowShadowBlue.jpg)
 }
+/* Shahnila Blog Page cover  */
 .shahnilaBlogIntro {
     background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg)
 }
 
-/*rhode-Island blog Post*/
-
+/*rhode-Island Blog Page cover  */
 .mansionBlogIntro {
     background-image: url(/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg)
 }
+/* Elijah Blog Page cover  */
 .eliBlogIntro {
     background-image: url("/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg");
     z-index: -1;
 }
+/* William - first - Blog Page cover  */
 .firstBlogIntro {
     background-image: url("/blogPosts/blogPhotoGallery/firstBlogScreenshots/sitting.jpg");
     z-index: -1;
 }
 
 /*#### titles for images ####*/
-
 .blogHeader {
     padding: 150px 20%;
     z-index: 1;
@@ -302,7 +300,6 @@ h1 {
 }
 
 /* First Blog Entry title styles*/
-
 h2 {
     color: #656565;
     font-size: 75px;
@@ -313,7 +310,6 @@ h2 {
 }
 
 /* Getting Started subEntry title*/
-
 h3 {
     color: #656565;
     font-size: 25px;
@@ -324,7 +320,6 @@ h3 {
 }
 
 /* welcome intro blurb*/
-
 h5 {
     font-size: 28px;
     font-style: normal;
@@ -335,7 +330,6 @@ h5 {
 }
 
 /* the dateSUbmission of post*/
-
 h6 {
     font-size: 25px;
     font-style: normal;
@@ -345,7 +339,6 @@ h6 {
 }
 
 /* this is the main body text styling */
-
 .journalEntryBody > * {
     grid-column: 2/-2;
 }
@@ -354,7 +347,6 @@ h6 {
 }
 
 /* center column positioning for text*/
-
 .journalEntryBody {
     font-size: 18px;
     margin: 25px auto;
@@ -369,7 +361,6 @@ p {
 }
 
 /* kodak note at the bottom */
-
 p.note {
     color: #2e3438;
     text-align: center;
