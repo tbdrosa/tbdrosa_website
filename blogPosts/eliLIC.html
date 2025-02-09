@@ -1,163 +1,278 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title> Elijah Rodriguez - tbdrosa </title>
-    <!--#### favicon #### -->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles #### -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- ################################################
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Elijah Rodriguez - tbdrosa</title>
+        <!--#### favicon #### -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
+        <!-- #### CSS font styles #### -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <!-- ################################################
 use this to change fonts in the future
 font-family: 'Asap', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Libre Baskerville', serif; -->
 
-    <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <!-- #### social media icon link section #### -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+        <!-- #### CSS stylesheet #### -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <!--<link rel="stylesheet" href="404Styles.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* CSS for 2-second fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.6s ease-in,
+                    transform 0.8s ease-in;
+            }
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--########## this is the navigation bar ########## -->
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
+                <li class="topNavigationRight">
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                </li>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-          </ul>
-    </nav>
-    <!-- ######### beginner image for Blogs ##########-->
-    <header>
-        <div class="elijahLIC_Intro" id="home">
-            <div class="blogHeader">
+            </ul>
+        </nav>
+        <!-- ######### beginner image for Blogs ##########-->
+        <header>
+            <div class="elijahLIC_Intro" id="home">
+                <div class="blogHeader"></div>
             </div>
+        </header>
+        <!-- #### beginning of blog entries ####-->
+
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">Elijah Rodriguez</h2>
+        <h3 class="lazy-load">Long Island City</h3>
+        <h6 class="lazy-load">
+            10.20.2022<br /><br /><br />
+            <i> ~5 min read</i>
+        </h6>
+        <!-- journalEntry Body is where you put text-->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                Dear Friend,
+                <br />
+                <br />
+                It’s been a while. A long long while since my previous post.
+                <br />
+                Can’t believe it’s been nearly two years.
+                <br />
+                <br />I thought I’d post some images using my new Sony α 7 iii. I have to say that prior to officially
+                using it, I regretted my purchase. The sole reason is that it’s massively expensive – and is the most
+                expensive camera I have ever purchased. Secondly, and most importantly, I had not planned on upgrading
+                my setup anytime soon. I have been using the Sony α6000 for about four years, and I have been quite
+                content with its delivery.
+                <br />
+                <br />
+
+                The Sony α6000 is a solid entry-level mirrorless camera and holds up quite well in most conditions. The
+                only cons are that it felt a bit lightweight and “<i>cheap</i>” - I use that word <i>cheap</i> rather
+                loosely because the camera itself was far from affordable. However, the tiny body and its design are
+                what come across to me as “cheap.” I would find myself gripping the camera rather tightly because of its
+                thin frame of a build. It may be a bit pedantic, but if one is shooting for several hours to years, one
+                notices these small things on their camera.
+                <br />
+                <br />
+                As one might have already deduced, the purchase was definitely an impulse buy.
+                <br />
+                <br />
+                I often goof with my friends about it and poke fun at myself when discussing my purchase because I often
+                mock photographers who may suffer from <em>G</em>.<em>A</em>.<em>S</em>. No, not that type of gas, but
+                <em>G</em>.<em>A</em>.<em>S</em>. (Gear Acquisition Syndrome). As the acronym suggests, it’s the
+                incessant need to buy new cameras and other sh*t that is not needed. It’s a common disease many
+                photographers face every now and again. Most common among newbie photographers.
+                <br />
+                <br />
+                Those with <em>G</em>.<em>A</em>.<em>S</em> are usually among these beginner-level photographers who
+                regularly compare their style and setup and see these “influencers” who post beautiful artwork. These
+                “influencers” often use <em>fancy schmancy</em> cameras. The rookies self-reflect and convince
+                themselves they will underperform with a canon t6i or some other entry-level DSLR and want to
+                overcompensate with a $3,000+ camera. It’s a hard pill to swallow, but in the same way, a freshman
+                varsity basketball player may wish to be like Michael Jordan, Kobe, or Lebron; they are unfairly
+                comparing themselves with someone on a completely different plane of experience.
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries ####-->
-
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Elijah Rodriguez</h2>
-    <h3>Long Island City</h3>
-    <h6> 10.20.2022<br><br><br> <i> ~5 min read</i> </h6>
-    <!-- journalEntry Body is where you put text-->
-    <div class="journalEntryBody">
-        <p> Dear Friend,
-            <br>
-            <br> It’s been a while. A long long while since my previous post. <br>Can’t believe it’s been nearly two years.
-            <br>
-            <br>I thought I’d post some images using my new Sony α 7 iii. I have to say that prior to officially using it, I regretted my purchase. The sole reason is that it’s massively expensive – and is the most expensive camera I have ever purchased. Secondly, and most importantly, I had not planned on upgrading my setup anytime soon. I have been using the Sony α6000 for about four years, and I have been quite content with its delivery.
-            <br>
-            <br>
-
-            The Sony α6000 is a solid entry-level mirrorless camera and holds up quite well in most conditions. The only cons are that it felt a bit lightweight and “<i>cheap</i>” - I use that word <i>cheap</i> rather loosely because the camera itself was far from affordable. However, the tiny body and its design are what come across to me as “cheap.” I would find myself gripping the camera rather tightly because of its thin frame of a build. It may be a bit pedantic, but if one is shooting for several hours to years, one notices these small things on their camera.
-            <br>
-            <br>
-            As one might have already deduced, the purchase was definitely an impulse buy.
-            <br>
-            <br>
-            I often goof with my friends about it and poke fun at myself when discussing my purchase because I often mock photographers who may suffer from <em>G</em>.<em>A</em>.<em>S</em>. No, not that type of gas, but <em>G</em>.<em>A</em>.<em>S</em>. (Gear Acquisition Syndrome). As the acronym suggests, it’s the incessant need to buy new cameras and other sh*t that is not needed. It’s a common disease many photographers face every now and again. Most common among newbie photographers.
-            <br>
-            <br>
-            Those with <em>G</em>.<em>A</em>.<em>S</em> are usually among these beginner-level photographers who regularly compare their style and setup and see these “influencers” who post beautiful artwork. These “influencers” often use <em>fancy schmancy</em> cameras. The rookies self-reflect and convince themselves they will underperform with a canon t6i or some other entry-level DSLR and want to overcompensate with a $3,000+ camera. It’s a hard pill to swallow, but in the same way, a freshman varsity basketball player may wish to be like Michael Jordan, Kobe, or Lebron; they are unfairly comparing themselves with someone on a completely different plane of experience.
-          </p>
+        <br />
+        <br />
+        <div class="portfolioColumn lazy-load">
+            <img src="https://i.makeagif.com/media/9-27-2015/iW4Jnc.gif" />
         </div>
-        <br>
-        <br>
-        <div class="portfolioColumn">
-          <img src="https://i.makeagif.com/media/9-27-2015/iW4Jnc.gif">
+        <br />
+        <br />
+        <div class="journalEntryBody">
+            <p>
+                We are talking about years of practice, trial and error, and figuring out what one’s style is.
+                <br />
+                <br />
+            </p>
         </div>
 
-        <br>
-        <br>
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-4.jpg"
+                alt="Puerto Rico Photo 1" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-8.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-12.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-18.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-20.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-25.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-26.jpg" />
+        </div>
 
-        <div class="journalEntryBody"><p>
-          We are talking about years of practice, trial and error, and figuring out what one’s style is.
-          <br>
-          <br>
-        </p>
-      </div>
+        <div class="journalEntryBody">
+            <p>
+                <br />
+                <br />
+                Now was this me suffering from <em>G</em>.<em>A</em>.<em>S</em>? Maybe? I am not even sure because if it
+                is, then I have allowed myself to become a hypocrite, so I guess we all are guilty of suffering from
+                <em>G</em>.<em>A</em>.<em>S</em>. Although, I will add that I wasn’t feeling the need to copy
+                <i>Peter McKinnon</i>, nor did I want to copy the former goat <i>Bleeblu</i> (now known as
+                <i>gitpuller</i>), or even the fantastic <i>dfreske</i>. All amazing artists I once followed have either
+                quit, lost their drive, or have cringely morphed themselves into Instagram bureaucrats catering to the
+                almighty algorithm.
+                <br />
+                <br />
+                Always remember, when creating art, never do it for the likes, or the views, do it because you love it.
+                Once you succumb to the eye of Sauron (the evil social media companies and silicon valley), we lose what
+                it means to be an artist. Even the word “creator” now leaves an awful distaste in my mouth. I actually
+                cringe-shuddered just thinking about the dilution of what it means to be a <em>creator</em>.
+                <br />
+                <br />
+                The series of images above was a test shoot to dictate my ability to handle the camera – and to see what
+                the camera could handle under extremely sunny and relatively overexposed settings. So I used my buddy
+                <a class="eliInsta" href="https://www.instagram.com/elijahxrod/" target="blank"
+                    ><b>Elijah Rodriguez</b></a
+                >
+                as a test shoot, and he took me to one of his favorite spots to shoot.
+                <br />
+                <br />
+                Anyways, despite my purchase being rather impulsive with little to no thinking, I am glad that I did
+                because it has allowed me to do some things I probably would not have been able to with my previous
+                camera. Here’s to pushing the limits to one’s own setup. 🥂
+                <br />
+                <br />
+                Until next time.
+                <br />
+                <br />
 
-      <div class="portfolioColumn">
+                Your friend,
+                <br />
+                <br />
 
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-4.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-8.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-12.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-18.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-20.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-25.jpg">
-      <img src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-26.jpg">
-    </div>
+                Rosa
+            </p>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const lazyElements = document.querySelectorAll(".lazy-load");
+                    const paginationLinks = document.querySelectorAll(".pagination a");
 
-    <div class="journalEntryBody"><p>
+                    // Determine threshold for lazy loading based on screen size
+                    const mobileThreshold = window.innerWidth <= 768 ? 0.1 : 0.5;
 
-      <br>
-      <br>
-      Now was this me suffering from <em>G</em>.<em>A</em>.<em>S</em>? Maybe? I am not even sure because if it is, then I have allowed myself to become a hypocrite, so I guess we all are guilty of suffering from <em>G</em>.<em>A</em>.<em>S</em>. Although, I will add that I wasn’t feeling the need to copy <i>Peter McKinnon</i>, nor did I want to copy the former goat <i>Bleeblu</i> (now known as <i>gitpuller</i>), or even the fantastic <i>dfreske</i>. All amazing artists I once followed have either quit, lost their drive, or have cringely morphed themselves into Instagram bureaucrats catering to the almighty algorithm.
-      <br>
-      <br>
-      Always remember, when creating art, never do it for the likes, or the views, do it because you love it. Once you succumb to the eye of Sauron (the evil social media companies and silicon valley), we lose what it means to be an artist. Even the word “creator” now leaves an awful distaste in my mouth. I actually cringe-shuddered just thinking about the dilution of what it means to be a <em>creator</em>.
-      <br>
-      <br>
-      The series of images above was a test shoot to dictate my ability to handle the camera – and to see what the camera could handle under extremely sunny and relatively overexposed settings. So I used my buddy <a class="eliInsta" href="https://www.instagram.com/elijahxrod/" target="blank"><b>Elijah Rodriguez</b></a> as a test shoot, and he took me to one of his favorite spots to shoot.
-      <br>
-      <br>
-      Anyways, despite my purchase being rather impulsive with little to no thinking, I am glad that I did because it has allowed me to do some things I probably would not have been able to with my previous camera. Here’s to pushing the limits to one’s own setup. 🥂
-      <br>
-      <br>
-      Until next time.
-      <br>
-      <br>
+                    // IntersectionObserver for lazy loading elements
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    const element = entry.target;
+                                    if (element.tagName === "IMG" && element.dataset.src) {
+                                        element.src = element.dataset.src; // Load images
+                                    }
+                                    element.classList.add("fade-in"); // Trigger fade-in effect
+                                    observer.unobserve(element); // Stop observing once loaded
+                                }
+                            });
+                        },
+                        { threshold: mobileThreshold }
+                    );
 
-      Your friend,
-      <br>
-      <br>
+                    // Observe all lazy elements
+                    lazyElements.forEach((element) => observer.observe(element));
 
-      Rosa
-    </p>
+                    // Handle pagination with fade-out effect on navigation
+                    paginationLinks.forEach((link) => {
+                        link.addEventListener("click", function (event) {
+                            event.preventDefault(); // Prevent immediate navigation
+                            document.body.classList.add("fade-out"); // Trigger fade-out effect
 
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <a href="#">❮ PREV <i class=ion-chevron-left></i></a>
+                            // Wait for fade-out to complete, then navigate
+                            setTimeout(() => {
+                                window.location.href = this.href;
+                            }, 800);
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <a href="#">❮ PREV <i class="ion-chevron-left"></i></a>
 
-        <a href="puertoRico.html"> NEXT ❯<i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script src="app.js">
-
-    </script>
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
-</body>
-
+            <a href="puertoRico.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+        </nav>
+        <br />
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>

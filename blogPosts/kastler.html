@@ -1,16 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Haley Kastler - tbdrosa</title>
-    <!-- #### Favicon ####-->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles####-->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- ################################################
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Haley Kastler - tbdrosa</title>
+        <!-- #### Favicon ####-->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
+        <!-- #### CSS font styles####-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <!-- ################################################
 use this to change fonts in the future
 font-family: 'Asap', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -18,104 +19,255 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Libre Baskerville', serif;
 
   <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+        <!-- #### CSS stylesheet #### -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <!--<link rel="stylesheet" href="404Styles.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* CSS for 2-second fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.6s ease-in,
+                    transform 0.8s ease-in;
+            }
 
-<body>
-    <!-- #### this is the topNavigation bar ####-->
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- #### this is the topNavigation bar ####-->
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
+                <li class="topNavigationRight">
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                </li>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-          </ul>
-    </nav>
+            </ul>
+        </nav>
 
-    <!-- #### beginning image for Blogs#### -->
-    <header>
-        <div class="haleyBlogIntro" id="home">
-            <div class="blogHeader">
-                <!--               <h1>Blog Entries</h1>-->
+        <!-- #### beginning image for Blogs#### -->
+        <header>
+            <div class="haleyBlogIntro" id="home">
+                <div class="blogHeader">
+                    <!--               <h1>Blog Entries</h1>-->
+                </div>
             </div>
+        </header>
+        <!-- #### beginning of blog entries #### -->
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">Haley Kastler</h2>
+        <!-- blog Post date submit-->
+        <h6 class="lazy-load">02.08.2021</h6>
+        <!-- journalEntry Body is where you put the text-->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                I would always want to shoot with her, but one word convos every couple months was all I got :D
+                <br />
+                Plus, our schedules always seemed to clash.
+                <br />
+                <br />The shoot was unfortunately cut <em>super</em> short due to a grey overcast that blocked any light
+                from coming inside her massive window. Still, using my new camera, managed to snap these shots that
+                captured her perfectly.
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries #### -->
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Haley Kastler</h2>
-    <!-- blog Post date submit-->
-    <h6>02.08.2021</h6>
-    <!-- journalEntry Body is where you put the text-->
-    <div class="journalEntryBody">
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/armWindowYellowNoGrain-4.jpg"
+                alt="Haley Kastler Photo 1" />
 
-        <p>
-            I would always want to shoot with her, but one word convos every couple months was all I got :D
-            <br> Plus, our schedules always seemed to clash.
-            <br>
-            <br>The shoot was unfortunately cut <em>super</em> short due to a grey overcast that blocked any light from coming inside her massive window. Still, using my new camera, managed to snap these shots that captured her perfectly. </p>
-    </div>
-    <div class="portfolioColumn">
-        <img src="/blogPosts/blogPhotoGallery/haleyKastler/armWindowYellowNoGrain-4.jpg">
-        <img src="/blogPosts/blogPhotoGallery/haleyKastler/ceilingArmPoseNoGrain-4.jpg">
-        <img src="/blogPosts/blogPhotoGallery/haleyKastler/armWindowYellowNoGrain-6.jpg">
-        <!-- red + green -->
-        <img src="blogPhotoGallery/haleyKastler/armWindowYellowGrain.jpg">
-        <!--orange + red -->
-        <img src="blogPhotoGallery/haleyKastler/ceilingArmPoseSoftGrain-5.jpg">
-        <img src="blogPhotoGallery/haleyKastler/ceilingArmPoseSoftGrain-4.jpg">
-        <img src="blogPhotoGallery/haleyKastler/fixHairYellowSoftGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/handWindowSoftGrain-2.jpg">
-        <img src="blogPhotoGallery/haleyKastler/hmmWindowYellowGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/kneelHandWindowSoftGrain-2.jpg">
-        <img src="blogPhotoGallery/haleyKastler/kneelHandWindowSoftGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/shoulderYellowSoftGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/spookySoftGrain-2.jpg">
-        <img src="blogPhotoGallery/haleyKastler/spookyNoGrain-3.jpg">
-        <img src="blogPhotoGallery/haleyKastler/wallLeanSoftGrain-3.jpg">
-        <img src="blogPhotoGallery/haleyKastler/wallLeanNoGrain-4.jpg">
-        <img src="blogPhotoGallery/haleyKastler/windowTiredYellowNoGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/wallLeanSoftGrain-6.jpg">
-        <img src="blogPhotoGallery/haleyKastler/wallLeanGrain-8.jpg">
-        <img src="blogPhotoGallery/haleyKastler/wallLeanNoGrain-11.jpg">
-        <img src="blogPhotoGallery/haleyKastler/windowTiredBlueMoreGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/windowLookoutYellowGrain.jpg">
-        <img src="blogPhotoGallery/haleyKastler/windowShadowsNoGrain-2.jpg">
-        <img src="blogPhotoGallery/haleyKastler/windowShadowBlue.jpg">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>❮ PREV <i class=ion-chevron-left></i></a>
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/ceilingArmPoseNoGrain-4.jpg"
+                alt="Haley Kastler Photo 2" />
 
-        <a href="malik.html"> NEXT ❯<i class=ion-chevron-right></i></a>
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/armWindowYellowNoGrain-6.jpg"
+                alt="Haley Kastler Photo 3" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/armWindowYellowGrain.jpg"
+                alt="Haley Kastler Photo 4" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/ceilingArmPoseSoftGrain-5.jpg"
+                alt="Haley Kastler Photo 5" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/ceilingArmPoseSoftGrain-4.jpg"
+                alt="Haley Kastler Photo 6" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/fixHairYellowSoftGrain.jpg"
+                alt="Haley Kastler Photo 7" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/handWindowSoftGrain-2.jpg"
+                alt="Haley Kastler Photo 8" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/hmmWindowYellowGrain.jpg"
+                alt="Haley Kastler Photo 9" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/kneelHandWindowSoftGrain-2.jpg"
+                alt="Haley Kastler Photo 10" />
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/kneelHandWindowSoftGrain.jpg"
+                alt="Haley Kastler Photo 11" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/shoulderYellowSoftGrain.jpg"
+                alt="Haley Kastler Photo 12" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/spookySoftGrain-2.jpg"
+                alt="Haley Kastler Photo 13" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/spookyNoGrain-3.jpg"
+                alt="Haley Kastler Photo 14" />
+
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/FixHairPeek-a-Boo.jpg"
+                alt="Haley Kastler Photo 15" />
+
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/wallLeanSoftGrain-3.jpg"
+                alt="Haley Kastler Photo 16" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/windowTiredYellowNoGrain.jpg"
+                alt="Haley Kastler Photo 17" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/haleyKastler/lookRight.jpg"
+                alt="Haley Kastler Photo 18" />
+
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/wallLeanNoGrain-11.jpg"
+                alt="Haley Kastler Photo 19" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/windowLookoutYellowGrain.jpg"
+                alt="Haley Kastler Photo 20" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/windowShadowsNoGrain-2.jpg"
+                alt="Haley Kastler Photo 21" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/haleyKastler/windowShadowBlue.jpg"
+                alt="Haley Kastler Photo 22" />
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const lazyElements = document.querySelectorAll(".lazy-load");
+                    const paginationLinks = document.querySelectorAll(".pagination a");
+
+                    // Determine threshold for lazy loading based on screen size
+                    const mobileThreshold = window.innerWidth <= 768 ? 0.1 : 0.5;
+
+                    // IntersectionObserver for lazy loading elements
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    const element = entry.target;
+                                    if (element.tagName === "IMG" && element.dataset.src) {
+                                        element.src = element.dataset.src; // Load images
+                                    }
+                                    element.classList.add("fade-in"); // Trigger fade-in effect
+                                    observer.unobserve(element); // Stop observing once loaded
+                                }
+                            });
+                        },
+                        { threshold: mobileThreshold }
+                    );
+
+                    // Observe all lazy elements
+                    lazyElements.forEach((element) => observer.observe(element));
+
+                    // Handle pagination with fade-out effect on navigation
+                    paginationLinks.forEach((link) => {
+                        link.addEventListener("click", function (event) {
+                            event.preventDefault(); // Prevent immediate navigation
+                            document.body.classList.add("fade-out"); // Trigger fade-out effect
+
+                            // Wait for fade-out to complete, then navigate
+                            setTimeout(() => {
+                                window.location.href = this.href;
+                            }, 800);
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <a href="puertoRico.html">❮ PREV <i class="ion-chevron-left"></i></a>
+
+            <a href="malik.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+        </nav>
+        <br />
         <div class="blogFooter">
             <footer>
                 <p>Copyright 2020 &copy; All Rights Reserved.</p>
             </footer>
         </div>
-
-</body>
-
+    </body>
 </html>
