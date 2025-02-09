@@ -7,23 +7,22 @@ html {
     margin: 0;
 }
 body {
-    line-height: 1;
+    line-height: 1.6;
     margin: 0;
     background: #f7f7f7;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
-
-/*######## Navigation Bar ########*/
 
 a {
     color: #656565;
 }
 
-/* instead of nav its called header */
-
+/*######## Navigation Bar ########*/
 .entireNavigation {
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.09);
     background: #f3f3f3;
     position: fixed;
     width: 100%;
@@ -31,34 +30,24 @@ a {
     z-index: 3;
 }
 
-/* the list items underneath the logo*/
-
 .entireNavigation ul {
     font-family: 'Asap', sans-serif;
     text-transform: uppercase;
-    /*font-size: 15px;*/
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
     background: #f3f3f3;
-    transition: 0.3s ease;
 }
 
-/* the anchor tags of headers*/
-
 .entireNavigation ul a {
-    display: flex;
-    padding: 20px 20px;
+    display: block;
+    padding: 20px;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 .entireNavigation ul a:hover {
     color: #f4a482;
-    transition: 0.3s ease;
 }
-
-/* the positioning and styling of the tbdross logo*/
 
 .entireNavigation .logoLeftName {
     font-family: 'Asap', sans-serif;
@@ -66,32 +55,27 @@ a {
     float: left;
     display: block;
     font-size: 17px;
-    padding: 20px 20px 0px 22px;
+    padding: 20px;
     text-decoration: none;
-    transition: 0.3s ease;
 }
 .entireNavigation a.logoLeftName:hover {
     color: #2e3438;
 }
 
-/* this clears the syling and positions the items underneath the logo */
-
 .entireNavigation .menu {
     clear: both;
     max-height: 0;
-    transition: max-height 0.1s ease-out;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
-
-/* this is the styling of the hamburger*/
 
 .entireNavigation .menu-icon {
     position: relative;
     float: right;
     padding: 27px 20px;
     cursor: pointer;
+    display: block;
 }
-
-/* these 3 header menue-icon stylings are for the hamburger*/
 
 .entireNavigation .menu-icon .nav-icon {
     background: #656565;
@@ -99,795 +83,302 @@ a {
     height: 2px;
     width: 18px;
     position: relative;
-    transition: background 0.2s ease-out;
+    border-radius: 15px;
+}
+.entireNavigation .menu-icon .nav-icon:before,
+.entireNavigation .menu-icon .nav-icon:after {
+    content: "";
+    background: #656565;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     border-radius: 15px;
 }
 .entireNavigation .menu-icon .nav-icon:before {
-    background: #656565;
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
     top: 5px;
-    border-radius: 15px;
-    transition: all 0.2s ease-out;
 }
 .entireNavigation .menu-icon .nav-icon:after {
-    background: #656565;
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
     top: -5px;
-    border-radius: 15px;
-    transition: all 0.3s ease-out;
 }
-
-/*this links the input check and the hamburger together*/
 
 .navBar-btn {
     display: none;
 }
-.entireNavigation .navBar-btn:checked~ .menu {
+.entireNavigation .navBar-btn:checked ~ .menu {
     max-height: 330px;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:before {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:after {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 }
 
-/*
-
-.entireNavigation {
-    display: flex;
-    transition: 0.4s ease;
-    justify-content: space-between;
-    align-items: center;
-    background: #f3f3f3;
-    margin: 0;
-    width: 100%;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-    position: fixed;
-    transition: 0.3s;
-    z-index: 3;
-}
-*/
-
-
-/*this is the tbdrosa 'logo' styling*/
-
-
-/*
-.logoLeftName a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Asap', sans-serif;
-    color: #656565;
-    transition: 0.3s;
-    margin: 0px 0px 0px 90px;
-}
-*/
-
-
-/*when you hover color change*/
-
-
-/*.logoLeftName a:hover {
-    color: #2e3438;
-}*/
-
-
-/*this is the mobile hamburger button*/
-
-
-/*.toggle-hamburger {
-    position: absolute;
-    transition: 0.4s ease;
-    top: 15px;
-    right: 20px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 31px;
-    height: 21px;
-}
-.toggle-hamburger .bar {
-    transition: 0.4s ease;
-    height: 3px;
-    width: 100%;
-    background-color: #656565;
-    border-radius: 10px;
-}*/
-
-
-/* the contents towards the right of the navigation bar*/
-
-
-/*
-.navBarLinks ul {
-    display: flex;
-    transition: 0.4s ease;
-}
-.navBarLinks li {
-    list-style: none;
-    transition: 0.4s ease;
-}
-.navBarLinks li a {
-    transition: 0.4s ease;
-    font-family: 'Asap', sans-serif;
-    text-decoration: none;
-    color: #656565;
-    padding-right: 26px;
-    display: block;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-*/
-
-
-/* navigation color hover effect */
-
-
-/*.navBarLinks li a:hover {
-    color: #f4a482;
-}
-nav.hide {
-    transform: translateY(-100%);
-}
-.navBarLinks li.socialMediaIconRightLast a {
-    padding-right: 45px;
-}*/
-
-
-/* Create a Parallax Effect */
-
+/*######## Parallax Effect ########*/
 .container {
+    background-image: url("img/portfolio/walking_.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
     background-size: cover;
-}
-
-/* First image (Full height) */
-
-.container {
-    background-image: url("img/portfolio/walking_.jpg");
     min-height: 100vh;
 }
 
-/*######## image styling: how big they show on the screen  ########*/
+@media (max-width: 760px) {
+    .container {
+        background-attachment: scroll;
+        background-position: top;
+    }
+}
 
+/*######## Image Styling ########*/
 img {
-    /*padding: 65px 25px 0px;*/
     max-width: 100%;
     margin: auto;
-    /*display: block;*/
-    /*padding: 20px 0px 20px 0px;*/
-    /*grid-row-gap: 20px;*/
 }
-
-/*######## image position: how they are centered in the screen and equal padding########*/
 
 .portfolioColumn img {
-    padding: 35px 15px 0px 15px;
+    padding: 35px 15px 0;
     display: block;
     max-width: 92%;
-    /*height: auto;*/
-    /*max-height: 100vh;*/
-    margin: auto;
-    /*margin: 20px 0px 20px 0px;*/
-    /*    border: 20px 0px 20px 0px;*/
-    grid-row-gap: 20px;
 }
-
-/* this is the last image in the column - the third padding much be a number so that it goes to the bottom to seperate footer and image*/
-
 .portfolioColumn img.last {
-    padding: 35px 15px 20px 15px;
+    padding: 35px 15px 20px;
 }
 
-/*######## aboutText font style: includes colors, text style ########*/
-
-p.aboutText {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.6em;
-    text-transform: none;
-    letter-spacing: 0px;
-    margin: 0px 50px 30px;
+/*######## About Text ########*/
+p.aboutText, p.copyright {
+    padding: 20px 0;
+    margin: 0 auto;
     text-align: center;
-    color: #656565;
+    font-family: 'Asap', sans-serif;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+p.aboutText {
+    margin: 0 50px 30px;
 }
 p.copyright {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 1.6em;
-    text-align: center;
-    margin: 15px 50px 15px;
+    margin: 15px 50px;
 }
 
-/*######## footer background color and font color ########*/
-
+/*######## Footer ########*/
 footer {
     background-color: #2e3438;
     color: #fff;
-    display: block;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 50px;
 }
-
-/*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
-
-ul.bottomFooter li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-/*######## socialMediaIcon positioning ########*/
 
 ul.bottomFooter li {
     list-style: none;
     float: right;
 }
-
-/*######## socialMediaIcon hover effect ########*/
-
+ul.bottomFooter li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
 ul.bottomFooter li a:hover {
     color: #f4a482;
 }
+
 .footerGrid {
-    background-color: #2e3438;
     display: grid;
-    max-width: 100%;
-    height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "footer-mainMenu footer-newsletter";
-    margin: 0 auto;
-    padding: 60px 0px 0px;
-}
-footer {
-    background-color: #2e3438;
-    color: #fff;
-    display: block;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-top: 60px;
 }
 
-/*######## this gives socialMediaIcons the white colors and removes the bullet points ########*/
-
-ul.bottomFooter li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-/*######## socialMediaIcon positioning ########*/
-
-ul.bottomFooter li {
-    list-style: none;
-    float: right;
-}
-
-/*######## socialMediaIcon hover effect ########*/
-
-ul.bottomFooter li a:hover {
-    color: #f4a482;
-}
-p.footer-Newsletter {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    line-height: 40px;
-    width: 90%;
-}
-.footer-mainMenu {
-    grid-area: footer-mainMenu;
-}
-.footer-newsletter {
-    grid-area: footer-newsletter;
-    max-width: 100%;
-    line-height: 20px;
-}
-p.mainMenu {
+p.mainMenu, p.footer-Newsletter {
     font-family: 'Asap', sans-serif;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 16px;
     line-height: 40px;
-    width: 95%;
 }
 p.footer-Newsletter {
-    font-family: 'Asap', sans-serif;
-    font-size: 16.2px;
-    font-weight: bold
+    font-size: 16px;
 }
 p.newsletterMessage {
     font-family: 'Libre Baskerville', serif;
-    font-size: 11.4px;
+    font-size: 12px;
 }
-form {
-    position: relative;
-}
-
-/*email input box */
 
 #emailSubscriber-input {
-    padding: 10.5px 10px;
-    width: 85%;
     padding: 12px;
+    width: 85%;
     border: none;
     border-radius: 2.4px;
-    resize: vertical;
     font-family: 'Libre Baskerville', serif;
 }
 
-/* input button css */
-
 #joinSubscriber-button {
     padding: 8px 10px;
-    margin-top: 4.5px;
-    transform: translateY(-140%);
+    margin-top: 4px;
     border: none;
     border-radius: 2.7px;
     color: #fff;
     background-color: #585e71;
-    opacity: 87%;
+    opacity: 0.87;
     text-transform: uppercase;
-    font-size: 11.2px;
+    font-size: 11px;
     font-family: 'Asap', sans-serif;
+    transition: opacity 0.3s;
 }
 #joinSubscriber-button:hover {
     cursor: pointer;
-    opacity: 100%;
+    opacity: 1;
 }
-
-/*######## this is the footer list  ########*/
 
 .footer-mainMenu ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 11.4px;
+    font-size: 11px;
 }
 .footer-mainMenu ul a {
     text-transform: uppercase;
     font-family: 'Asap', sans-serif;
     text-decoration: none;
     color: #fff;
-    padding-bottom: 11px;
-}
-.footer-mainMenu ul li {
-    padding-bottom: 11px;
 }
 .footer-mainMenu ul a:hover {
     color: #f4a482;
 }
-
-/*######## copyright font styling ########*/
 
 p.copyright a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Asap', sans-serif;
-    font-size: 11.2px;
-    margin: auto;
+    font-size: 11px;
 }
-
-/* the placement of twitter and instagram icons */
 
 p.social-media-footer {
+    font-size: 40px;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
-}
-p.social-media-footer-copyright {
-    font-family: 'Asap', sans-serif;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
 }
 
-/*######## copyright hover effect ########*/
-
-p.copyright a:hover {
-    color: #f4a482;
+p.social-media-footer a {
+    color: #fff;
+    letter-spacing: 15px;
+    margin-bottom: 25px;
 }
 p.social-media-footer a:hover {
     color: #f4a482;
 }
-p.social-media-footer {
+
+p.social-media-footer-copyright {
+    padding: 20px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
 }
-p.social-media-footer a {
+
+p.social-media-footer-copyright a {
     color: #fff;
     letter-spacing: 15px;
-    min-height: 20px;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 
-/* this makes the background and column of images responsive */
-
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     .container {
         background-size: cover;
     }
     .portfolioColumn img {
-        display: block;
         max-width: 100%;
-        height: auto;
-        max-height: 100vh
-    }
-    .footerGrid {
-        max-width: 100%;
-        margin: 0;
-        padding: 60px 115px 0px;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-/* RESPONSIVE FOOTER for larger tablets */
-
-@media(max-width: 1019px) {
-    /*nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }*/
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
         max-height: 100vh;
-        margin: 0 auto;
-        padding: 60px 0px 0px;
     }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-/* RESPONSIVE FOOTER for tablets */
-
-@media(max-width: 843px) {
-    /*  nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }*/
     .footerGrid {
-        background-color: #2e3438;
+        padding: 60px 115px;
+    }
+}
+
+@media (max-width: 1019px) {
+    .footerGrid {
         display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        /*margin: 0 auto;*/
-        padding: 60px 0px 0px;
+        padding: 60px 0;
     }
 }
-
-/* mobile responsive navigation bar*/
-
-@media(min-width: 760px) {
-    .entireNavigation {
-        /* height: 100%;*/
-    }
-    .entireNavigation li {
-        float: left;
-    }
-    .entireNavigation li a {
-        padding: 20px 20px;
-    }
-    .entireNavigation .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    .entireNavigation .menu-icon {
-        display: none;
-    }
-    .entireNavigation .menu-icon .nav-icon {
-        height: 4px;
-        width: 20px;
-    }
-}
-
-/* mobile responsive navigation bar*/
 
 @media (max-width: 760px) {
-    /*nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }
-    .toggle-hamburger {
-        display: flex;
-        margin: 0px 0px 0px 0px;
-        padding: 15px;
-        transition: 0.4s ease;
-    }
-    .entireNavigation {
-        flex-direction: column;
-        align-items: flex-start;
-        transition: 0.4s ease;
-    }
-    .navBarLinks {
-        display: none;
-        width: 100%;
-        padding: 0px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks ul {
-        width: 100%;
-        flex-direction: column;
-        height: 100vh;
-    }
-    .navBarLinks li {
-        text-align: justify;
-        transition: 0.4s ease;
-    }
-    .navBarLinks a {
-        padding: 28px;
-        transition: 0.4s ease;
-    }
-    .navBarLinks.active {
-        display: flex;
-        transition: 0.4s ease;
-    }*/
-    /*this is the tbdrosa 'logo' styling*/
-    /*.logoLeftName a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-family: 'Asap', sans-serif;
-        color: #656565;
-        transition: 0.3s;
-        margin: 0px 0px 0px 0px;
-    }
-    .logoLeftName {
-        margin: 0px 0px 0px 0px;
-        padding: 30px;
-    }*/
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
+    .entireNavigation .menu-icon {
         display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
+    }
+    .entireNavigation .menu {
+        clear: both;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navBar-btn:checked ~ .menu {
+        max-height: 330px;
+    }
+    body {
+        font-size: 16px;
+    }
+    p.aboutText, p.copyright {
+        margin: 0 20px 30px;
     }
 }
-@media(max-width: 563px) {
-    /* nav {
-        position: sticky;
-    }
-    entireNavigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #f3f3f3;
-        margin: 0;
-        width: 100%;
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
-        position: sticky;
-        transition: 0.3s;
-        z-index: 3;
-    }*/
-    .container {
-        background-attachment: scroll;
-        background-size: cover;
-        max-width: 100%;
-        height: auto;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-    .footerGrid {
-        background-color: #2e3438;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 100vh;
-        margin: 0;
-        padding: 60px 0px 0px;
-    }
+
+@media (max-width: 444px) {
     p.newsletterMessage {
-        font-family: 'Libre Baskerville', serif;
         font-size: 9px;
     }
-}
-
-/* this decreases the size of newsletter message or phones*/
-
-@media(max-width: 444px) {
-    p.newsletterMessage {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 8.56px;
-    }
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
+    body {
+        font-size: 14px;
     }
 }
-@media(max-width: 375px) {
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
+
+@media (max-width: 375px) {
     p.social-media-footer-copyright {
-        font-family: 'Asap', sans-serif;
-        font-size: 10px;
+        padding: 20px 0;
         display: flex;
         justify-content: center;
-    }
-}
-@media (max-width: 322px) {
-    p.social-media-footer-copyright {
+        align-items: center;
+        text-align: center;
         font-family: 'Asap', sans-serif;
-        font-size: 10px;
+        font-size: 11px;
+        color: #fff;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    p.social-media-footer-copyright a {
+        color: #fff;
+        letter-spacing: 15px;
+        margin-bottom: 25px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 }
-@media (min-width: 321px) {
-    img {
-        /*padding: 65px 25px 0px;*/
-        max-width: 100%;
-        /*display: block;*/
-        /*padding: 20px 0px 20px 0px;*/
-        /*grid-row-gap: 20px;*/
-    }
-    /*######## image position: how they are centered in the screen and equal padding########*/
-    .portfolioColumn img {
-        display: block;
-        max-width: 92%;
-        max-height: 100vh;
-        /*height: auto;*/
-        /*max-height: 100vh;*/
-        margin: auto;
-        /*margin: 20px 0px 20px 0px;*/
-        /*    border: 20px 0px 20px 0px;*/
-        grid-row-gap: 20px;
-    }
-}
-
-/*######## Custom Styles ########*/
-
-
-/*
-#section-1-backgroundImage{
-    background-image: url(walking_away.jpg);
-    background-image: -webkit- url(walking_away.jpg);
-    background-image: -o- url(walking_away.jpg);
-    background-image: -moz- url(walking_away.jpg);  
-}
-*/
