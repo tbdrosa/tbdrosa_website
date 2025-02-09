@@ -144,12 +144,9 @@ img {
 }
 
 .portfolioColumn img {
-    padding: 35px 15px 0;
+    padding: 35px 15px 8px;
     display: block;
     max-width: 92%;
-}
-.portfolioColumn img.last {
-    padding: 35px 15px 20px;
 }
 
 /*######## About Text ########*/
