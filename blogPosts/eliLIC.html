@@ -87,6 +87,7 @@ font-family: 'Libre Baskerville', serif; -->
                 <br />
                 It’s been a while. A long long while since my previous post.
                 <br />
+                <br />
                 Can’t believe it’s been nearly two years.
                 <br />
                 <br />I thought I’d post some images using my new Sony α 7 iii. I have to say that prior to officially
@@ -96,7 +97,6 @@ font-family: 'Libre Baskerville', serif; -->
                 content with its delivery.
                 <br />
                 <br />
-
                 The Sony α6000 is a solid entry-level mirrorless camera and holds up quite well in most conditions. The
                 only cons are that it felt a bit lightweight and “<i>cheap</i>” - I use that word <i>cheap</i> rather
                 loosely because the camera itself was far from affordable. However, the tiny body and its design are
@@ -171,17 +171,20 @@ font-family: 'Libre Baskerville', serif; -->
                 src="/blogPosts/blogPhotoGallery/elijahxrod/longIslandCity/elijah-tree-26.jpg" />
         </div>
 
-        <div class="journalEntryBody">
+        <div class="journalEntryBody lazy-load">
             <p>
                 <br />
                 <br />
-                Now was this me suffering from <em>G</em>.<em>A</em>.<em>S</em>? Maybe? I am not even sure because if it
-                is, then I have allowed myself to become a hypocrite, so I guess we all are guilty of suffering from
-                <em>G</em>.<em>A</em>.<em>S</em>. Although, I will add that I wasn’t feeling the need to copy
-                <i>Peter McKinnon</i>, nor did I want to copy the former goat <i>Bleeblu</i> (now known as
-                <i>gitpuller</i>), or even the fantastic <i>dfreske</i>. All amazing artists I once followed have either
-                quit, lost their drive, or have cringely morphed themselves into Instagram bureaucrats catering to the
-                almighty algorithm.
+                Now was this me suffering from <em>G</em>.<em>A</em>.<em>S</em>? <br /><br />
+                <i>Mayyyybe </i>?
+                <br />
+                <br />
+                I am not even sure because if it is, then I have allowed myself to become a hypocrite, so I guess we all
+                are guilty of suffering from <em>G</em>.<em>A</em>.<em>S</em>. Although, I will add that I wasn’t
+                feeling the need to copy <i>Peter McKinnon</i>, nor did I want to copy the former goat
+                <i>Bleeblu</i> (now known as <i>gitpuller</i>), or even the fantastic <i>dfreske</i>. All amazing
+                artists I once followed have either quit, lost their drive, or have cringely morphed themselves into
+                Instagram bureaucrats catering to the almighty algorithm.
                 <br />
                 <br />
                 Always remember, when creating art, never do it for the likes, or the views, do it because you love it.
@@ -203,6 +206,7 @@ font-family: 'Libre Baskerville', serif; -->
                 camera. Here’s to pushing the limits to one’s own setup. 🥂
                 <br />
                 <br />
+
                 Until next time.
                 <br />
                 <br />
@@ -213,62 +217,55 @@ font-family: 'Libre Baskerville', serif; -->
 
                 Rosa
             </p>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const lazyElements = document.querySelectorAll(".lazy-load");
-                    const paginationLinks = document.querySelectorAll(".pagination a");
-
-                    // Determine threshold for lazy loading based on screen size
-                    const mobileThreshold = window.innerWidth <= 768 ? 0.1 : 0.5;
-
-                    // IntersectionObserver for lazy loading elements
-                    const observer = new IntersectionObserver(
-                        (entries) => {
-                            entries.forEach((entry) => {
-                                if (entry.isIntersecting) {
-                                    const element = entry.target;
-                                    if (element.tagName === "IMG" && element.dataset.src) {
-                                        element.src = element.dataset.src; // Load images
-                                    }
-                                    element.classList.add("fade-in"); // Trigger fade-in effect
-                                    observer.unobserve(element); // Stop observing once loaded
-                                }
-                            });
-                        },
-                        { threshold: mobileThreshold }
-                    );
-
-                    // Observe all lazy elements
-                    lazyElements.forEach((element) => observer.observe(element));
-
-                    // Handle pagination with fade-out effect on navigation
-                    paginationLinks.forEach((link) => {
-                        link.addEventListener("click", function (event) {
-                            event.preventDefault(); // Prevent immediate navigation
-                            document.body.classList.add("fade-out"); // Trigger fade-out effect
-
-                            // Wait for fade-out to complete, then navigate
-                            setTimeout(() => {
-                                window.location.href = this.href;
-                            }, 800);
-                        });
-                    });
-                });
-            </script>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <!-- pagination at the bottom -->
         <nav data-pagination>
             <a href="#">❮ PREV <i class="ion-chevron-left"></i></a>
 
             <a href="puertoRico.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
         </nav>
-        <br />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
+                const paginationLinks = document.querySelectorAll(".pagination a");
+
+                // Determine threshold for lazy loading based on screen size
+                const mobileThreshold = window.innerWidth <= 768 ? 0.15 : 0.15;
+
+                // IntersectionObserver for lazy loading elements
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                if (element.tagName === "IMG" && element.dataset.src) {
+                                    element.src = element.dataset.src; // Load images
+                                }
+                                element.classList.add("fade-in"); // Trigger fade-in effect
+                                observer.unobserve(element); // Stop observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: mobileThreshold }
+                );
+
+                // Observe all lazy elements
+                lazyElements.forEach((element) => observer.observe(element));
+
+                // Handle pagination with fade-out effect on navigation
+                paginationLinks.forEach((link) => {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent immediate navigation
+                        document.body.classList.add("fade-out"); // Trigger fade-out effect
+
+                        // Wait for fade-out to complete, then navigate
+                        setTimeout(() => {
+                            window.location.href = this.href;
+                        }, 800);
+                    });
+                });
+            });
+        </script>
         <div class="blogFooter">
             <footer>
                 <p>Copyright 2020 &copy; All Rights Reserved.</p>
