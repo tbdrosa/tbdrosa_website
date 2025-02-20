@@ -356,10 +356,17 @@ body {
     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 
-/* #### blog post card Rainbow Trees ####*/
+/* #### blog post card red shoes ####*/
+
 .card:nth-child(1):before {
+    background-image: url(/journalEntries/journalEntryGallery/unspoken/unspoken-cover.jpg);
+}
+/* #### blog post card pennsylvania home lamp ####*/
+.card:nth-child(2):before {
     background-image: url(/journalEntries/journalEntryGallery/hardestOfGoodbyes/hardestGoodbye-Cover.jpg);
 }
+
+
 
 /*
  #### blog post card Computer Lamp ####
