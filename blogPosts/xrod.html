@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title> Elijah Rodriguez - tbdrosa </title>
-    <!--#### favicon #### -->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles #### -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- ################################################
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Elijah Rodriguez - tbdrosa</title>
+        <!--#### favicon #### -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
+        <!-- #### CSS font styles #### -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <!-- ################################################
 use this to change fonts in the future
 font-family: 'Asap', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -17,155 +18,294 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Libre Baskerville', serif;
 
     <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+        <!-- #### CSS stylesheet #### -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <!--<link rel="stylesheet" href="404Styles.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* Cross-Fade & Lazy Load */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px);
+                transition:
+                    opacity 1s ease-in-out,
+                    transform 0.8s ease-in-out;
+            }
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <!-- <nav class="entireNavigation">
-        <div class="logoLeftName"><a href="index.html" class="href">tbdrosa</a>
-        </div>
-        <a href="#" class="toggle-hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navBarLinks">
-            <ul>
-                <li class="topNavigationRight"><a href="index.html">portfolio</a>
-                </li>
-                <li class="topNavigationRight"><a href="404.html">videos</a>
-                </li>
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /*
+             Cross-fade effect inside the column
+            .portfolioColumn img {
+                opacity: 0;
+                transition:
+                    opacity 1.5s ease-in-out,
+                    transform 0.8s ease-in-out;
+            }
+
+            .portfolioColumn img.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            */
+        </style>
+    </head>
+
+    <body>
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
                 <li class="topNavigationRight">
-                    <a href="blogBridge.html">blog</a>
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
                 </li>
-                <li class="topNavigationRight"><a href="about.html">about</a>
-                </li>
-                <li class="socialMediaIconRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-          </ul>
-    </nav>
-    <!-- ######### beginner image for Blogs ##########-->
-    <header>
-        <div class="eliBlogIntro" id="home">
-            <div class="blogHeader">
-                <!--                <h1>Blog Entries</h1>-->
+            </ul>
+        </nav>
+        <!-- ######### beginner image for Blogs ##########-->
+        <header>
+            <div class="eliBlogIntro" id="home">
+                <div class="blogHeader">
+                    <!--                <h1>Blog Entries</h1>-->
+                </div>
             </div>
+        </header>
+        <!-- #### beginning of blog entries ####-->
+
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">Test Shoot</h2>
+        <h3 class="lazy-load">Testing Out New Camera with Elijah Rodriguez</h3>
+        <h6 class="lazy-load">
+            10.13.2020<br /><br /><br />
+            <i> ~4 min read</i>
+        </h6>
+        <!-- journalEntry Body is where you put text-->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                This shoot was probably the week of March 15, 2020. I distinctly remember it being a Thursday
+                <em>right</em> before the United States and the rest of the world shut down. It had to have been a
+                Thursday because I had a massive Calculus exam the following week, and many of my classmates, along with
+                myself, were eager for the exam to be canceled and rescheduled to a later date. Little did we know what
+                would soon come to pass.
+                <br />
+                <br />That same day – after I arrived home from class, the camera I had purchased and ordered off Depop
+                about a month prior finally shipped and arrived at my house.
+                <br />
+                <br />My mother, of course, gave me about three Clorox-wipes to bathe in disinfectant. It was still the
+                early phases of the COVID Shutdown. Not many of us regular civilians were fully aware of the severity of
+                the situation – nor did we fully understand how the virus seemed to travel. I remember many conspiracy
+                theories: COVID lasts up to several weeks to months on a surface with no way of getting rid of it, it's
+                difficult to clean once it gets on your hands - the list is ridiculously endless. Of course, this was
+                largely due to the media trying to underwhelm and not cause massive panic, along with the lack of
+                leadership we had in the White House.
+                <br />
+                <br />While all of this was going on in the “background,” I texted one of my oldest friends, Elijah, if
+                he had wanted to go on a test shoot since I had just come into contact with my new camera and had no way
+                of knowing if the camera worked. I required a model, and he was surprisingly free. It's often the case
+                whenever I'm free, my friends are super busy – or working. After grabbing my film stock from the fridge,
+                we met underneath the One Train platform on 242nd and decided to walk through Van Courtland aimlessly.
+                <br />
+                All the shots were taken with my buddy and fellow photographer,
+                <a class="eliInsta" href="https://www.instagram.com/elijahxrod/"><b>Elijah Rodriguez</b></a> on my ‘new’
+                <b><em>Canon Sure Shot Max Date.</em></b>
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries ####-->
 
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Test Shoot</h2>
-    <h3>Testing Out New Camera with Elijah Rodriguez</h3>
-    <h6> 10.13.2020<br><br><br> <i> ~4 min read</i> </h6>
-    <h6></h6>
-    <!-- journalEntry Body is where you put text-->
-    <div class="journalEntryBody">
-        <p> This shoot was probably the week of March 15, 2020. I distinctly remember it being a Thursday <em>right</em> before the United States and the rest of the world shut down. It had to have been a Thursday because I had a massive Calculus exam the following week, and many of my classmates, along with myself, were eager for the exam to be canceled and rescheduled to a later date. Little did we know what would soon come to pass.
-            <br>
-            <br>That same day – after I arrived home from class, the camera I had purchased and ordered off Depop about a month prior finally shipped and arrived at my house.
-            <br>
-            <br>My mother, of course, gave me about three Clorox-wipes to bathe in disinfectant. It was still the early phases of the COVID Shutdown. Not many of us regular civilians were fully aware of the severity of the situation – nor did we fully understand how the virus seemed to travel. I remember many conspiracy theories: COVID lasts up to several weeks to months on a surface with no way of getting rid of it, it's difficult to clean once it gets on your hands - the list is ridiculously endless. Of course, this was largely due to the media trying to underwhelm and not cause massive panic, along with the lack of leadership we had in the White House.
-            <br>
-            <br>While all of this was going on in the "background," I texted one of my oldest friends, Elijah, if he had wanted to go on a test shoot since I had just come into contact with my new camera and had no way of knowing if the camera worked. I required a model, and he was surprisingly free. It's often the case whenever I'm free, my friends are super busy – or working. After grabbing my film stock from the fridge, we met underneath the One Train platform on 242nd and decided to walk through Van Courtland aimlessly.
-            <br> All the shots were taken with my buddy and fellow photographer, <a class="eliInsta" href="https://www.instagram.com/elijahxrod/"><b>Elijah Rodriguez</b></a> on my ‘new’ <b><em>Canon Sure Shot Max Date.</em></b></p>
-    </div>
+        <div class="portfolioColumn">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/oneTrainPlatform.jpg"
+                alt="xrod Test Shoot 1" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/greenBasement.jpg"
+                alt="xrod Test Shoot 2" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/green_Underground.jpg"
+                alt="xrod Test Shoot 3" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashBridge.jpg"
+                alt="xrod Test Shoot 4" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashLookBack.jpg"
+                alt="xrod Test Shoot 5" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/greenPortrait.jpg"
+                alt="xrod Test Shoot 6" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/bluePortrait.jpg"
+                alt="xrod Test Shoot 7" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/leaningFlash.jpg"
+                alt="xrod Test Shoot 8" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/leaningOrange.jpg"
+                alt="xrod Test Shoot 9" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/grafitiWalk.jpg"
+                alt="xrod Test Shoot 10" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/ticket.jpg"
+                alt="xrod Test Shoot 11" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg"
+                alt="xrod Test Shoot 12" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/elijahPhone.jpg"
+                alt="xrod Test Shoot 13" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/elijahVendingMachine.jpg"
+                alt="xrod Test Shoot 14" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/sittingStairs.jpg"
+                alt="xrod Test Shoot 15" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/coldHood.jpg"
+                alt="xrod Test Shoot 16" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashUnder.jpg"
+                alt="xrod Test Shoot 17" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafiti.jpg"
+                alt="xrod Test Shoot 18" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashPortraitGrafiti.jpg"
+                alt="xrod Test Shoot 19" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafitiPortrait2.jpg"
+                alt="xrod Test Shoot 20" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafitiPortrait3.jpg"
+                alt="xrod Test Shoot 21" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/cameraInCamera.jpg"
+                alt="xrod Test Shoot 22" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/elijahxrod/surpriseFlash.jpg"
+                alt="xrod Test Shoot 23" />
+        </div>
 
-    <div class="portfolioColumn">
-        <img src="/blogPosts/blogPhotoGallery/elijahxrod/oneTrainPlatform.jpg">
-        <img src="/blogPosts/blogPhotoGallery/elijahxrod/greenBasement.jpg">
-        <img src="/blogPosts/blogPhotoGallery/elijahxrod/green_Underground.jpg">
-        <img src="/blogPosts/blogPhotoGallery/elijahxrod/flashBridge.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashLookBack.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/greenPortrait.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/bluePortrait.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/leaningFlash.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/leaningOrange.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/grafitiWalk.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/ticket.jpg">
-        <img src="/blogPosts/blogPhotoGallery/elijahxrod/flashWalking.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/elijahPhone.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/elijahVendingMachine.JPG">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/sittingStairs.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/coldHood.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashUnder.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafiti.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashPortraitGrafiti.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafitiPortrait2.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/flashGrafitiPortrait3.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/cameraInCamera.jpg">
-        <img loading="lazy" src="/blogPosts/blogPhotoGallery/elijahxrod/surpriseFlash.jpg">
-    </div>
+        <div class="journalEntryBody lazy-load">
+            <br />
+            <p class="note"><em>** Kodak Color Plus film stock</em></p>
+            <p>
+                I loved each of these images despite some having a few imperfections. I am usually disappointed after
+                shooting an entire film roll and receiving photos with clowdy shadows or blown-out highlights. Yet, many
+                of these shots managed to turn out beautifully. I am not sure if it was the specific film stock that I
+                had used or the camera itself. As we were walking, I did not have much of an idea before shooting – the
+                <i>most</i> thinking I would do would have been to find some exciting backgrounds to frame my portrait.
+                The repetition in images is because I took two photos to thoroughly test the camera’s capabilities – one
+                with flash and one without it.
+                <br />
+                <br />I was taken aback by how good the camera ultimately worked under the grim low-lighting outdoors. I
+                took a lot of these images blindly. Whenever I looked through the viewfinder, I could hardly see any
+                detail and was using my iPhone flash for external light to frame the shot.
+                <br />
+                <br />I was also surprised by how well it seemed to capture movement. The cover image was taken when
+                Elijah ran to grab his bag and swerved around. The flash, of course, helped capture the movement, but at
+                the time I originally thought it would have been a blurry waste of a slide.
+                <br />
+                <br />Overall, really impressed with how the <em> Sure Shot</em> performed under its conditions.
+                <br />
+                <br />Until next time.
+                <br />
+                <br />Your friend,
+                <br />
+                <br />Rosa
+            </p>
+        </div>
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <a href="rhodeIsland.html">❮ PREV <i class="ion-chevron-left"></i></a>
 
-    <div class="journalEntryBody">
-        <br>
-        <p class="note"><em>** Kodak Color Plus film stock</em></p>
-        <p>I loved each of these images despite some having a few imperfections. I am usually disappointed after shooting an entire film roll and receiving photos with clowdy shadows or blown-out highlights. Yet, many of these shots managed to turn out beautifully. I am not sure if it was the specific film stock that I had used or the camera itself. As we were walking, I did not have much of an idea before shooting – the <i>most</i> thinking I would do would have been to find some exciting backgrounds to frame my portrait. The repetition in images is because I took two photos to thoroughly test the camera’s capabilities – one with flash and one without it.
-            <br>
-            <br>I was taken aback by how good the camera ultimately worked under the grim low-lighting outdoors. I took a lot of these images blindly. Whenever I looked through the viewfinder, I could hardly see any detail and was using my iPhone flash for external light to frame the shot.
-            <br>
-            <br>I was also surprised by how well it seemed to capture movement. The cover image was taken when Elijah ran to grab his bag and swerved around. The flash, of course, helped capture the movement, but at the time I originally thought it would have been a blurry waste of a slide.
-            <br>
-            <br>Overall, really impressed with how the <em> Sure Shot</em> performed under its conditions.
-            <br>
-            <br>Until next time.
-            <br>
-            <br>Your friend,
-            <br>
-            <br>Rosa</p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <a href=rhodeIsland.html>❮ PREV <i class=ion-chevron-left></i></a>
+            <a href="firstBlogPost.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+        </nav>
+        <br />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
 
-        <a href="firstBlogPost.html"> NEXT ❯<i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script src="app.js">
+                // Observer to fade in images as user scrolls
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("fade-in");
+                                observer.unobserve(entry.target); // Stops observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: 0.2 }
+                );
 
-
-    </script>
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
-</body>
-
+                lazyElements.forEach((el) => observer.observe(el));
+            });
+        </script>
+        <!-- bottom of page footer -->
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>
