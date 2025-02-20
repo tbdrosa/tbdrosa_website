@@ -15,7 +15,6 @@ body {
 
 /*######## Navigation Bar ########*/
 
-
 /*######## Navigation Bar ########*/
 
 a {
@@ -25,7 +24,7 @@ a {
 /* instead of nav its called header */
 
 .entireNavigation {
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, .09);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.09);
     background: #f3f3f3;
     position: fixed;
     width: 100%;
@@ -36,7 +35,7 @@ a {
 /* the list items underneath the logo*/
 
 .entireNavigation ul {
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap", sans-serif;
     text-transform: uppercase;
     /*font-size: 15px;*/
     margin: 0;
@@ -63,7 +62,7 @@ a {
 /* the positioning and styling of the tbdross logo*/
 
 .entireNavigation .logoLeftName {
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap", sans-serif;
     text-transform: uppercase;
     float: left;
     display: block;
@@ -132,17 +131,17 @@ a {
 .navBar-btn {
     display: none;
 }
-.entireNavigation .navBar-btn:checked~ .menu {
+.entireNavigation .navBar-btn:checked ~ .menu {
     max-height: 330px;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:before {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 }
-.entireNavigation .navBar-btn:checked~ .menu-icon .nav-icon:after {
+.entireNavigation .navBar-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 }
@@ -161,6 +160,10 @@ a {
     background-image: url("journalEntryGallery/hardestOfGoodbyes/hardestGoodbye-Cover.jpg");
     z-index: -1;
 }
+.unspokenIntro{
+    background-image: url("journalEntryGallery/unspoken/unspoken-cover.jpg");
+    z-index: -1;
+}
 
 /*#### titles for images ####*/
 
@@ -169,7 +172,7 @@ a {
     z-index: 1;
     text-align: center;
     color: #fff;
-    font-size: 1em
+    font-size: 1em;
 }
 h1 {
     font-size: 80px;
@@ -226,7 +229,7 @@ h6 {
 .journalEntryBody > * {
     grid-column: 2/-2;
 }
-.journalEntryBody>figure {
+.journalEntryBody > figure {
     grid-column: 1/-1;
 }
 
@@ -241,8 +244,8 @@ h6 {
     grid-gap: 10px 30px;
 }
 p {
-    line-height: 2.0;
-    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+    font-family: "Libre Baskerville", serif;
 }
 
 /* kodak note at the bottom */
@@ -267,7 +270,7 @@ p.disclaimer {
     text-align: center;
 }
 a.eliInsta {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     color: #77716d;
     flex-basis: 38%;
     /*padding: 15px 30px 15px 35px;*/
@@ -288,7 +291,7 @@ a.eliInsta {
     /*    border: 20px 0px 20px 0px;*/
     grid-row-gap: 20px;
 }
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     p.note {
         font-size: 11px;
         text-align: center;
@@ -300,7 +303,8 @@ p.disclaimer {
     /*text-align: justify;
     align-content: center;*/
 }
-@media(min-width: 1024px) {}
+@media (min-width: 1024px) {
+}
 h1 {
     font-size: 125px;
     font-style: italic;
@@ -359,7 +363,7 @@ h6 {
     letter-spacing: 1.7px;
 }
 p {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     color: #77716d;
     flex-basis: 38%;
     padding: 15px 30px 15px 35px;
@@ -382,21 +386,21 @@ footer {
     font-kerning: auto;
 }
 [data-pagination] {
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap", sans-serif;
     font-size: 8pt;
     line-height: 1;
     font-weight: 400;
     -webkit-text-size-adjust: 100%;
     margin: 1em auto;
     text-align: center;
-    transition: font-size .2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
 }
 [data-pagination] ul {
     list-style-type: none;
     display: inline;
     font-size: 100%;
     margin: 0;
-    padding: .5em;
+    padding: 0.5em;
 }
 [data-pagination] ul li {
     display: inline-block;
@@ -410,7 +414,7 @@ footer {
 [data-pagination] a {
     color: #777;
     font-size: 100%;
-    padding: .75em;
+    padding: 0.75em;
     text-decoration: none;
 }
 [data-pagination] a:focus,
@@ -418,12 +422,12 @@ footer {
     color: #f4a482;
 }
 [data-pagination] li.current {
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, 0.1);
 }
 Disabled & Hidden Styles [data-pagination] .disabled,
 [data-pagination] [hidden],
 [data-pagination] [disabled] {
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none;
 }
 @media (min-width: 350px) {
@@ -449,7 +453,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 
 /* this makes the background and column of images responsive */
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     .container {
         background-size: cover;
     }
@@ -460,7 +464,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
         display: block;
         max-width: 100%;
         height: auto;
-        max-height: 100vh
+        max-height: 100vh;
     }
     .footerGrid {
         max-width: 100%;
@@ -492,7 +496,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 
 /* RESPONSIVE FOOTER for larger tablets */
 
-@media(max-width: 1019px) {
+@media (max-width: 1019px) {
     /*    nav {
         position: sticky;
     }
@@ -543,7 +547,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 
 /* RESPONSIVE FOOTER for tablets */
 
-@media(max-width: 843px) {
+@media (max-width: 843px) {
     /*  nav {
         position: sticky;
     }
@@ -572,7 +576,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 
 /* mobile responsive navigation bar*/
 
-@media(min-width: 760px) {
+@media (min-width: 760px) {
     .entireNavigation {
         /* height: 100%;*/
     }
@@ -682,7 +686,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
         grid-row-gap: 20px;
     }
 }
-@media(max-width: 563px) {
+@media (max-width: 563px) {
     #home {
         background-attachment: scroll;
         background-size: cover;
@@ -764,7 +768,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
 
 /* this decreases the size of newsletter message or phones*/
 
-@media(max-width: 444px) {
+@media (max-width: 444px) {
     /*  p.newsletterMessage {
         font-family: 'Libre Baskerville', serif;
         font-size: 8.56px;
@@ -796,7 +800,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
     max-height: 100vh
 }*/
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
     img {
         /*padding: 65px 25px 0px;*/
         max-width: 100%;
@@ -816,7 +820,7 @@ Disabled & Hidden Styles [data-pagination] .disabled,
         grid-row-gap: 20px;
     }
 }
-@media(max-width: 321px) {
+@media (max-width: 321px) {
     p.note {
         text-align: center;
         font-size: 6px;

@@ -1,167 +1,270 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>First Blog Post - tbdrosa</title>
 
-<head>
-    <meta charset="utf-8">
-    <title> First Blog Post - tbdrosa </title>
-    <!--#### favicon #### -->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles #### -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- ################################################
-use this to change fonts in the future
-font-family: 'Asap', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Libre Baskerville', serif;
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
 
-    <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <!-- Font styles -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&family=Libre+Baskerville&display=swap"
+            rel="stylesheet" />
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <!--  <nav class="entireNavigation">
-        <div class="logoLeftName"><a href="index.html" class="href">tbdrosa</a>
-        </div>
-        <a href="#" class="toggle-hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navBarLinks">
-            <ul>
-                <li class="topNavigationRight"><a href="index.html">portfolio</a>
-                </li>
-                <li class="topNavigationRight"><a href="404.html">videos</a>
-                </li>
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <style>
+            /* CSS for 2-second fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.6s ease-in,
+                    transform 0.8s ease-in;
+            }
+
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
                 <li class="topNavigationRight">
-                    <a href="blogBridge.html">blog</a>
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
                 </li>
-                <li class="topNavigationRight"><a href="about.html">about</a>
-                </li>
-                <li class="socialMediaIconRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-</ul>
-    </nav>
+            </ul>
+        </nav>
 
-    <!-- ######### beginner image for Blogs ##########-->
-    <!-- #### beginning of blog entries ####-->
-    <header>
-        <div class="firstBlogIntro" id="home">
-            <div class="blogHeader">
-                <!--<h1>Blog Entries</h1>-->
+        <!-- ######### beginner image for Blogs ##########-->
+        <!-- #### beginning of blog entries ####-->
+        <header>
+            <div class="firstBlogIntro" id="home">
+                <div class="blogHeader"></div>
             </div>
+        </header>
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">First Blog Post:</h2>
+        <h3 class="lazy-load">Getting Started with Web Development</h3>
+        <h6 class="lazy-load">10.02.2020 <em>updated</em> <br /><br /><i> ~7 min read</i></h6>
+
+        <!-- Journal entry -->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                Dear Friend,
+                <br />
+                <br />
+                Welcome to my very first website! Pretty cool, huh? During quarantine, like most people, I was blessed
+                with the wonderful gift of time. And with more time than I was typically used to. In my boredom I
+                decided to be slightly more productive.. and voila - this is the result. Everything about this website,
+                down to the smallest minor details that many may overlook, was implemented with some markup text:
+                <b>HTML</b>, a styling sheet: <b>CSS</b> and a programming language of <b>JavaScript</b>.
+                <br />
+                <br />
+                For those who have absolutely no background in coding, let me first explain what each of those bolder
+                letters are because I was once in your footsteps. At some point in life, you may have come across the
+                words HTML, CSS and JavaScript. But what is this? Well, to put it simply they are what make up virtually
+                any, and probably all, websites you have ever used or visited in your lifetime. HTML - is the skeleton
+                of websites. When I first began researching and learning how to code I originally thought HTML was some
+                super complex coding language - and to be honest it was kind of daunting at the start, but after
+                countless hours spent on YouTube with some practice I soon became comfortable with how HTML works.
+                <br />
+                <br />
+                You may be scratching your head now thinking, skeleton? markup? This is perhaps the most cliché and
+                overused explanation for how websites operate. I tried thinking of another analogy to describe html and
+                the best I could come up with was a tree. That might be better used to describe something called git (I
+                have another link to a blog post about that here)
+                <br />
+                <br />
+                <em><b>What is HTML?</b></em>
+                <br />
+                <br />
+                To better understand what HTML is, I recommend you think back to early middle school - or whenever you
+                first took human anatomy. When you look at a skeleton of the human body you can see what your body looks
+                like from underneath. In the same way that the skeleton makes up your body - HTML makes up the
+                underneath of all websites. HTML dictates where things go in a web browser. In a skeleton, there is a
+                specific portion of bone that designates where the arm goes and where the arm connects to the torso,
+                from the torso to the abdomen. Each component connects outwards to different parts of the body. This is
+                of course a massive oversimplification, but I hope that this makes sense.
+                <br />
+                <br />
+                <em><b>What is CSS?</b></em>
+                <br />
+                <br />
+                Cascading stylesheet, or CSS, is basically what makes websites look pretty. Everything from the specific
+                font that is displayed, the size of the font, background coloring, how much spacing words have, you name
+                it. Anything that involves making a website go from looking like this:
+            </p>
         </div>
-    </header>
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>First Blog Post:</h2>
-    <h3>Getting Started with Web Development</h3>
-    <h6> 10.02.2020 <em>updated</em><br><br><br> <i> ~7 min read</i> </h6>
-    <h6></h6>
-    <div class="journalEntryBody">
-
-        <p>Dear Friend,</p>
-
-        <p>Welcome to my very first website! Pretty cool, huh? During quarantine, like most people, I was blessed with the wonderful gift of time. And with more time than I was typically used to. In my boredom I decided to be slightly more productive.. and voila - this is the result. Everything about this website, down to the smallest minor details that many may overlook, was implemented with some markup text: <b>HTML</b>, a styling sheet: <b>CSS</b> and a programming language of <b>JavaScript</b>. </p>
-        <br>
-        <p>For those who have absolutely no background in coding, let me first explain what each of those bolder letters are because I was once in your footsteps. At some point in life, you may have come across the words HTML, CSS and JavaScript. But what is this? Well, to put it simply they are what make up virtually any, and probably all, websites you have ever used or visited in your lifetime. HTML - is the skeleton of websites. When I first began researching and learning how to code I originally thought HTML was some super complex coding language - and to be honest it was kind of daunting at the start, but after countless hours spent on YouTube with some practice I soon became comfortable with how HTML works.</p>
-        <br>
-        <p>You may be scratching your head now thinking, skeleton? markup? This is perhaps the most cliché and overused explanation for how websites operate. I tried thinking of another analogy to describe html and the best I could come up with was a tree. That might be better used to describe something called git (I have another link to a blog post about that here) </p>
-        <br>
-        <p><b>What is HTML?</b></p>
-        <p>To better understand what HTML is, I recommend you think back to early middle school - or whenever you first took human anatomy. When you look at a skeleton of the human body you can see what your body looks like from underneath. In the same way that the skeleton makes up your body - HTML makes up the underneath of all websites. HTML dictates where things go in a web browser. In a skeleton, there is a specific portion of bone that designates where the arm goes and where the arm connects to the torso, from the torso to the abdomen. Each component connects outwards to different parts of the body. This is of course a massive oversimplification, but I hope that this makes sense.</p>
-        <p><b>What is CSS?</b></p>
-        <p>Cascading stylesheet, or CSS, is basically what makes websites look pretty. Everything from the specific font that is displayed, the size of the font, background coloring, how much spacing words have, you name it. Anything that involves making a website go from looking like this: </p>
-        <br>
-        <div class="portfolioColumn">
-            <img loading="lazy" src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/desktopNoCSS.png">
-            <p class="note"><em>*screenshot for desktop*</em></p>
-            <!--<p> </p>-->
-            <img loading="lazy" src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/mobileNoCSS.png">
-            <p class="note"><em>*screenshot for mobile*</em></p>
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/desktopNoCSS.png"
+                alt="Puerto Rico Photo 1" />
+            <p class="note lazy-load"><em>*screenshot for desktop*</em></p>
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/mobileNoCSS.png"
+                alt="Puerto Rico Photo 1" />
+            <p class="note lazy-load"><em>*screenshot for mobile*</em></p>
         </div>
-        <p>to looking like what you see <b>now</b></p>
-        <br>
-        <p>A handy trick that I haven’t gotten the full hang of yet is making simple animations with CSS. Simple animations may be a bit misleading due to some of the complications you can create. But with simple animations - for those reading this on a desktop - if you hover your mouse over the navigation bar, the titles change from a soft grey to a soft peach color.</p>
-        <br>
-        <p>This relatively simple “animation” took about a week to figure out. What’s even funnier - at least to me - is how it only takes up a few lines of code.</p>
-        <br>
-        <div class="portfolioColumn"><img loading="lazy" src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/colorHoverEffect.png"></div>
-        <br>
-        <p>You can go on to learn a lot of nifty other things with CSS – I’ve really only scratched the surface - but I hope this helps you understand what CSS is – even if its at a very basic level. I might go into more specifics sometime in the future. In short, CSS <b>ups</b> the presentation level of your websites significantly.</p>
-        <br>
-        <p><b>What is JavaScript?</b></p>
-        <p>Now onto the big boy, JavaScript. Unlike HTML and CSS, this one is the actual programming language that is often embedded within websites. Any website, or applications, that you have used that makes images move: if the website has active interactive features (<i> e.g. </i>the webpage may react to your cursor hovering over aspects of the website) , to flashing animations, Pop Up Alerts, or Warning Tabs, is usually created with JavaScript. My site is a mostly static site and I haven’t fully mastered the syntax of JavaScript, let alone have I been able to fully understand how it works, but with the mighty help of YouTube I was still able to implement a small bit of JavaScript.</p>
-        <br>
-        <p>As you first open the site you are welcomed by the portfolio and whether you scrol down on the index page or on this Blog page you may have noticed that the navBar disappears as you move down.
-            <br>
-            <br><i>[I removed this because it was causing problems with the mobile version of the site – once I trouble shoot the problem I will put this effect back]</i>
-            <br>
-            <br>Now, if you reverse the direction, the navBar will reappear. This small piece of code took <b>soo</b> long to figure out and implement within my own webpage because I was originally under the impression you could do this with CSS. (You might be able to, but I was unsuccessful in finding how) instead I found JavaScript to be far more successful and I’m pretty content with the result.</p>
-        <br>
-        <p>Overtime, I will hope to add more blog posts ranging from Web Development to Photography using this as a personal journal and record of my journey. I have no idea if anyone will read this, but for me that’s not important. What’s important to me is to keep a log of my progress. To use this as something I can look back upon once I’ve fully mastered JavaScript and the intricacies of Web Development.</p>
-        <br>
-        <p>Until next time.</p>
-        <br>
-        <p>Your friend,</p>
-        <p>Rosa</p>
+        <div class="journalEntryBody lazy-load">
+            <p>
+                to looking like what you see <b>now</b>
+                <br />
+                <br />
+                A handy trick that I haven’t gotten the full hang of yet is making simple animations with CSS. Simple
+                animations may be a bit misleading due to some of the complications you can create. But with simple
+                animations - for those reading this on a desktop - if you hover your mouse over the navigation bar, the
+                titles change from a soft grey to a soft peach color.
+                <br />
+                <br />
+                This relatively simple “animation” took about a week to figure out. What’s even funnier - at least to me
+                - is how it only takes up a few lines of code.
+                <br />
+                <br />
+            </p>
+        </div>
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/firstBlogScreenshots/colorHoverEffect.png"
+                alt="Color Hover Effect" />
+        </div>
+        <div class="journalEntryBody lazy-load">
+            <p>
+                You can go on to learn a lot of nifty other things with CSS – I’ve really only scratched the surface -
+                but I hope this helps you understand what CSS is – even if its at a very basic level. I might go into
+                more specifics sometime in the future. In short, CSS <b>ups</b> the presentation level of your websites
+                significantly.
+                <br />
+                <br />
+                <br />
+                <em><b>What is JavaScript?</b></em>
+                <br />
+                <br />
+                Now onto the big boy, JavaScript. This one is relatively intimidating to anyone new to the coding world.
+                Unlike HTML and CSS, this one is the actual programming language that is often embedded within websites.
+                Any website, or applications, that you have used that makes images move: if the website has active
+                interactive features (<i> e.g. </i>the webpage may react to your cursor hovering over aspects of the
+                website) , to flashing animations, Pop Up Alerts, or Warning Tabs, is usually created with JavaScript.
+                My site is a mostly static site and I haven’t fully mastered the syntax of JavaScript, let alone have I
+                been able to fully understand how it works, but with the mighty help of YouTube I was still able to
+                implement a small bit of JavaScript.
+                <br />
+                <br />
+                As you first open the site you are welcomed by the portfolio and whether you scrol down on the index
+                page or on this Blog page you may have noticed that the navBar disappears as you move down.
+                <br />
+                <br />
+                <i
+                    >[I removed this because it was causing problems with the mobile version of the site – once I
+                    trouble shoot the problem I will put this effect back]</i
+                >
+                <br />
+                <br />
+                Now, if you reverse the direction, the navBar will reappear. This small piece of code took
+                <b>soo</b> long to figure out and implement within my own webpage because I was originally under the
+                impression you could do this with CSS. (You might be able to, but I was unsuccessful in finding how)
+                instead I found JavaScript to be far more successful and I’m pretty content with the result.
+                <br />
+                <br />
+                Overtime, I will hope to add more blog posts ranging from Web Development to Photography using this as a
+                personal journal and record of my journey. I have no idea if anyone will read this, but for me that’s
+                not important. What’s important to me is to keep a log of my progress. To use this as something I can
+                look back upon once I’ve fully mastered JavaScript and the intricacies of Web Development.
+                <br />
+                <br />
+                Until next time.
+                <br />
+                <br />
+                Your friend,
+                <br />
+                <br />
+                Rosa
+            </p>
+        </div>
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <a href="xrod.html">❮ PREV <i class="ion-chevron-left"></i></a>
 
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <a href="xrod.html">❮ PREV <i class=ion-chevron-left></i></a>
+            <a href="#" disabled><i class="ion-chevron-right"></i></a>
+        </nav>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
+                const paginationLinks = document.querySelectorAll(".pagination a");
 
-        <a href=# disabled><i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+                // Determine threshold for lazy loading based on screen size
+                const mobileThreshold = window.innerWidth <= 768 ? 0.15 : 0.15;
 
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
+                // IntersectionObserver for lazy loading elements
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                if (element.tagName === "IMG" && element.dataset.src) {
+                                    element.src = element.dataset.src; // Load images
+                                }
+                                element.classList.add("fade-in"); // Trigger fade-in effect
+                                observer.unobserve(element); // Stop observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: mobileThreshold }
+                );
 
-    <script src="app.js">
+                // Observe all lazy elements
+                lazyElements.forEach((element) => observer.observe(element));
 
+                // Handle pagination with fade-out effect on navigation
+                paginationLinks.forEach((link) => {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent immediate navigation
+                        document.body.classList.add("fade-out"); // Trigger fade-out effect
 
-    </script>
-</body>
+                        // Wait for fade-out to complete, then navigate
+                        setTimeout(() => {
+                            window.location.href = this.href;
+                        }, 800);
+                    });
+                });
+            });
+        </script>
+        <!--bottom of page footer -->
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
 
+        <script src="app.js"></script>
+    </body>
 </html>

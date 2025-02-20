@@ -1,181 +1,303 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Rhode Island - tbdrosa</title>
 
-<head>
-    <meta charset="utf-8">
-    <title> Rhode Island - tbdrosa </title>
-    <!--#### favicon #### -->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles #### -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- ################################################
-use this to change fonts in the future
-font-family: 'Asap', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Libre Baskerville', serif;
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
 
-    <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <!-- Font Styles -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&family=Libre+Baskerville&display=swap"
+            rel="stylesheet" />
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <!-- <nav class="entireNavigation">
-        <div class="logoLeftName"><a href="index.html" class="href">tbdrosa</a>
-        </div>
-        <a href="#" class="toggle-hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navBarLinks">
-            <ul>
-                <li class="topNavigationRight"><a href="index.html">portfolio</a>
-                </li>
-                <li class="topNavigationRight"><a href="404.html">videos</a>
-                </li>
-                <li class="topNavigationRight">
-                    <a href="blogBridge.html">blog</a>
-                </li>
-                <li class="topNavigationRight"><a href="about.html">about</a>
-                </li>
-                <li class="socialMediaIconRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <!-- Font Awesome for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            /* Cross-Fade & Lazy Load */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px);
+                transition:
+                    opacity 1s ease-in-out,
+                    transform 0.8s ease-in-out;
+            }
+
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /*
+             Cross-fade effect inside the column
+            .portfolioColumn img {
+                opacity: 0;
+                transition:
+                    opacity 1.5s ease-in,
+                    transform 0.8s ease-in;
+            }
+
+            .portfolioColumn img.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            */
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="../index.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blogBridge.html">Blog</a></li>
+                <li><a href="../404.html">Videos</a></li>
+                <li>
+                    <a href="https://www.instagram.com/tbdrosa/" target="_blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
                 </li>
             </ul>
-        </div>
-    </nav>-->
+        </nav>
 
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li> -->
-          </ul>
-    </nav>
-    <!-- ######### beginner image for Blogs ##########-->
-    <header>
-        <div class="mansionBlogIntro" id="home">
-            <div class="blogHeader">
-                <!--                <h1>Blog Entries</h1>-->
+        <!-- Header -->
+        <header>
+            <div class="mansionBlogIntro" id="home">
+                <div class="blogHeader"></div>
             </div>
+        </header>
+
+        <!-- Blog Content -->
+        <h2 class="lazy-load">Family Road Trip</h2>
+        <h3 class="lazy-load">Visiting Rhode Island’s Most Extravagant Mansions</h3>
+        <h6 class="lazy-load">10.13.2020<br /><br /><i>~4 min read</i></h6>
+
+        <div class="journalEntryBody lazy-load">
+            <p>
+                About two years ago my family and I went on a trip to Rhode Island. On our trip we went to several
+                museums – my favorites were a part of the Newport Mansions. The Newport Mansions is an organization that
+                helps maintain and preserve the best architectural pieces located in Rhode Island. We visited a
+                collection of ‘museums’ that were once owned by the Vanderbilt family.
+                <br />
+                <br />
+                The series of mansions were apparently considered <em> cottages</em> – a very humble term if you ask me.
+                These were by no means what one would call a cottage today. They were massive in stature and each of the
+                rooms was as big as you could imagine. They were so big I am confident you could fit two or three
+                <b>full-sized</b> Hummer SUVs. Of course the Vanderbilt’s were one of <i>thee</i> wealthiest families in
+                the late 1800s.
+                <br />
+                <br />
+                Recently, I just finished <em> The Haunting of Hill House</em>, and looking back to my visit of these
+                mansions I would not be surprised if the Vanderbilt children were terrified of the long corridors and
+                passageways. The first twelve images were taken at <b> The Breakers</b>, I believe (it was a long time
+                ago so some images might be from one of the other houses :p).
+                <br />
+                <br />
+                To me, the images are a bit uninteresting and the framing is a bit poor because it was still in the
+                beginnings of my photography career.
+
+                <br />
+                <br />Still, hope you enjoy the thread!
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries ####-->
 
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Family Road Trip</h2>
-    <h3>Visiting Rhode Island’s Most Extravagant Mansions</h3>
-    <h6> 10.13.2020<br><br><br> <i> ~4 min read</i> </h6>
-    <h6></h6>
-    <!-- journalEntry Body is where you put text-->
-    <div class="journalEntryBody">
-        <p>About two years ago my family and I went on a trip to Rhode Island. On our trip we went to several museums – my favorites were a part of the Newport Mansions. The Newport Mansions is an organization that helps maintain and preserve the best architectural pieces located in Rhode Island. We visited a collection of ‘museums’ that were once owned by the Vanderbilt family.</p>
+        <!-- Portfolio Gallery (Cross-Fade in Column) -->
+        <div class="portfolioColumn">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/castleEntrancePath.jpg"
+                alt="Rhode Island 1" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/balconyArchVertical.jpg"
+                alt="Rhode Island 6" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/ceilingMural.jpg"
+                alt="Rhode Island 7" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/childrenDollhouse.jpg"
+                alt="Rhode Island 8" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/entertainmentHall.jpg"
+                alt="Rhode Island 9" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theBreakersBackyard.jpg"
+                alt="Rhode Island 10" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theBreakersBackyard-2.jpg"
+                alt="Rhode Island 11" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/TheExit.jpg"
+                alt="Rhode Island 12" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theMarbleHouse-2.jpg"
+                alt="Rhode Island 13" />
+            <img
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theMarbleHouse.jpg"
+                alt="Rhode Island 14" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/woodenCheeseTable.jpg"
+                alt="Rhode Island 15" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/woodenCuttingTable.jpg"
+                alt="Rhode Island 16" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg"
+                alt="Rhode Island 17" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenOvens.jpg"
+                alt="Rhode Island 18" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenCabinets.jpg"
+                alt="Rhode Island 19" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/castleEntrancePath.jpg"
+                alt="Rhode Island 20" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouseView.jpg"
+                alt="Rhode Island 21" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouseView-2.jpg"
+                alt="Rhode Island 22" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouse.jpg"
+                alt="Rhode Island 23" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouse-2.jpg"
+                alt="Rhode Island 24" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/pinkFlower.jpg"
+                alt="Rhode Island 25" />
+        </div>
 
-        <p>The series of mansions were apparently considered <em> cottages</em> – a very humble term if you ask me. These were by no means what one would call a cottage today. They were massive in stature and each of the rooms was as big as you could imagine. They were so big I am confident you could fit two or three <b>full-sized</b> Hummer SUVs. Of course the Vanderbilt’s were one of <i>thee</i> wealthiest families in the late 1800s.</p>
+        <div class="journalEntryBody lazy-load">
+            <br />
+            <br />
+            <p>
+                The last few images were taken from the balcony which was so beautiful. I tried best to capture the
+                lighting in all its shine, but no matter how many images I took it did not amount to the breathtaking
+                view one would see with their own eyes. Throughout the entire ‘tour’ I did not feel any images would do
+                the scenery justice.
+                <br />
+                <br />
+                The images after the exit sign were taken at the <b>Marble House</b>. This house was definitely my most
+                favorite simply because the interior design was far more interesting, and the kitchen was absolutely
+                breathtaking. Apparently, they had a large kitchen staff of chefs who would cook them various meals.
+                They would be served a series of dishes until they were completely stuffed. From what I remember, the
+                meals they received were not small courses but rather a full on plater. Each dish was purposely never
+                finished so the family could <em>save</em> room in their stomachs for the next coming entrée.
+                <br />Unfortunately, I don’t have that many images from this house simply because I was focusing on the
+                actual layout and design of the interior during the Marble House tour. The rooms were designed with
+                windows that were massive; this way they were able to take full advantage of the natural lighting. So,
+                this is all that I have from the trip.
+                <br />
+                <br />
+                I don't remember all the facts from each tour, but there were several that I found quite interesting.
+                First, the world-renowned architect, Richard Morris Hunt, was the genius behind Marble House’s design –
+                this might be one of the reasons why Marble House is often considered to be many peoples’ favorite. The
+                second fact that I distinctly remember was how no one really used this house even after its construction
+                was completed; however, the few times the Vanderbilt family did use the house, I believe it was mostly
+                to host parties. I could only imagine these parties being quite Gatsby-esque.
+                <br />
+                <br />
+                The last building near the water, the one that seems very out of place, is a Chinese Tea House built by
+                Ava Belmont, where she held meetings as she plotted and organized events with various other women that
+                would further her fight for women to earn the right to vote. I encourage anyone who reads this, if they
+                find themselves in Rhode Island sometime in the future after the pandemic’s stricter restrictions have
+                been uplifted and more museums and tourist attractions begin opening up, please do yourself a favor and
+                visit! <br />If you are interested you can find out more information
+                <a href="https://www.newportmansions.org/explore/the-breakers" target="_blank">here</a>.
+                <br />
+                <br />
+                Until next time.
+                <br />
+                <br />
+                Your friend,
+                <br />
+                <br />
+                Rosa
+            </p>
+        </div>
+        <!-- Pagination -->
+        <nav data-pagination>
+            <a href="malik.html">❮ PREV</a>
+            <a href="xrod.html">NEXT ❯</a>
+        </nav>
+        <!-- JavaScript for Lazy Loading & Staggered Fade -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
 
-        <p>Recently, I just finished <em> The Haunting of Hill House</em>, and looking back to my visit of these mansions I would not be surprised if the Vanderbilt children were terrified of the long corridors and passageways. The first twelve images were taken at <b> The Breakers</b>, I believe (it was a long time ago so some images might be from one of the other houses :p).
-            <br>
-            <br> To me, the images are a bit uninteresting and the framing is a bit poor because it was still in the beginnings of my photography career.</p>
+                // Observer to fade in images as user scrolls
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add("fade-in");
+                                observer.unobserve(entry.target); // Stops observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: 0.2 }
+                );
 
-        <p>Still, hope you enjoy the thread!</p>
-
-    </div>
-
-    <div class="portfolioColumn">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/castleEntrancePath.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/ceilingArt.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/balconyHorizon.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/balconyArchLookout.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/balconyArch.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/balconyArchVertical.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/ceilingMural.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/childrenDollhouse.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/entertainmentHall.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theBreakersBackyard.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theBreakersBackyard-2.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/TheExit.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theMarbleHouse-2.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/theMarbleHouse.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/woodenCheeseTable.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/woodenCuttingTable.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenPots.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenOvens.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/kitchenCabinets.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouseView.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouseView-2.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouse.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/backyardMarbleHouse-2.jpg">
-        <img src="/blogPosts/blogPhotoGallery/rhodeIslandMansions/pinkFlower.jpg">
-    </div>
-
-    <div class="journalEntryBody">
-        <br>
-        <br>
-        <p> The last few images were taken from the balcony which was so beautiful. I tried best to capture the lighting in all its shine, but no matter how many images I took it did not amount to the breathtaking view one would see with their own eyes. Throughout the entire ‘tour’ I did not feel any images would do the scenery justice.</p>
-
-        <p>The images after the exit sign were taken at the <b>Marble House</b>. This house was definitely my most favorite simply because the interior design was far more interesting, and the kitchen was absolutely breathtaking. Apparently, they had a large kitchen staff of chefs who would cook them various meals. They would be served a series of dishes until they were completely stuffed. From what I remember, the meals they received were not small courses but rather a full on plater. Each dish was purposely never finished so the family could <em>save</em> room in their stomachs for the next coming entrée.
-            <br>Unfortunately, I don’t have that many images from this house simply because I was focusing on the actual layout and design of the interior during the Marble House tour. The rooms were designed with windows that were massive; this way they were able to take full advantage of the natural lighting. So, this is all that I have from the trip.</p>
-        <p>I don't remember all the facts from each tour, but there were several that I found quite interesting. First, the world-renowned architect, Richard Morris Hunt, was the genius behind Marble House’s design – this might be one of the reasons why Marble House is often considered to be many peoples’ favorite. The second fact that I distinctly remember was how no one really used this house even after its construction was completed; however, the few times the Vanderbilt family did use the house, I believe it was mostly to host parties. I could only imagine these parties being quite Gatsby-esque.
-            <br>
-            <br> The last building near the water, the one that seems very out of place, is a Chinese Tea House built by Ava Belmont, where she held meetings as she plotted and organized events with various other women that would further her fight for women to earn the right to vote.</p>
-
-        <p>I encourage anyone who reads this, if they find themselves in Rhode Island sometime in the future after the pandemic’s stricter restrictions have been uplifted and more museums and tourist attractions begin opening up, please do yourself a favor and visit!
-            <br>If you are interested you can find out more information
-            <a href="https://www.newportmansions.org/explore/the-breakers" target="_blank">here</a>.
-            <br>
-            <br> Until next time.
-            <br>
-            <br> Your friend,
-            <br>
-            <br> Rosa</p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <!-- #### use this a link for future FIRST BLOG POSTS#### -->
-        <a href=malik.html>❮ PREV <i class=ion-chevron-left></i></a>
-
-        <a href="xrod.html"> NEXT ❯<i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <script src="app.js">
-
-
-    </script>
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
-</body>
-
+                lazyElements.forEach((el) => observer.observe(el));
+            });
+        </script>
+        <!-- Footer -->
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>
