@@ -1,103 +1,209 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title> Amber Montalvo - tbdrosa </title>
-    <!--#### favicon #### -->
-    <link rel="shortcut icon" type="image/png" href="../favicon_blue.png">
-    <!-- #### CSS font styles #### -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<!--
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Amber Montalvo - tbdrosa</title>
+        <!--#### favicon #### -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
+        <!-- #### CSS font styles #### -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <!--
 use this to change fonts in the future
 font-family: 'Asap', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Libre Baskerville', serif; -->
 
-    <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <!-- #### social media icon link section #### -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+        <!-- #### CSS stylesheet #### -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <!--<link rel="stylesheet" href="404Styles.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* CSS for 2-second fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.6s ease-in,
+                    transform 0.8s ease-in;
+            }
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--########## this is the navigation bar ########## -->
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
+                <li class="topNavigationRight">
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                </li>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-          </ul>
-    </nav>
-    <!-- ######### beginner image for Blogs ##########-->
-    <header>
-        <div class="amberMontalvoIntro" id="home">
-            <div class="blogHeader">
-      <!--<h1>Blog Entries</h1>-->
+            </ul>
+        </nav>
+        <!-- ######### beginner image for Blogs ##########-->
+        <header>
+            <div class="amberMontalvoIntro" id="home">
+                <div class="blogHeader">
+                    <!--<h1>Blog Entries</h1>-->
+                </div>
             </div>
+        </header>
+        <!-- #### beginning of blog entries ####-->
+
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">Amber Montalvo</h2>
+        <h3 class="lazy-load">Coney Island</h3>
+        <h6 class="lazy-load">
+            04.18.2022<br /><br /><br />
+            <i> ~1 min read</i>
+        </h6>
+
+        <!-- journalEntry Body is where you put text-->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                Dear Friend,
+                <br />
+                <br />
+                It's been a while. Thought I’d post a throwback to June 28, 2018. Hard to imagine it’s been seven years
+                since these images were taken. Almost seems as if they were taken last summer, if I’m being totally
+                honest with myself. Perhaps this has something to do with COVID situation and many of us have lost the
+                concept of time since we spend majority of our days in doors in the comfort of our homes.
+                <br />
+                <br />
+                I remember catching up with some of my friends and managed to squeeze in a photoshoot before I met up
+                with them. Right away we reminisced of our college experience and what we hoped to accomplish once we
+                are done with school. Happy to say Amber is doing very well now. At the time she had a poetry blog that
+                I really enjoyed reading from time to when when she would post. If you are interested in what she’s
+                doing now feel free to see her work at her site here.
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries ####-->
 
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Amber Montalvo</h2>
-    <h6> insert date<br><br><br> <i> ~1 min read</i> </h6>
-    <h6></h6>
-    <!-- journalEntry Body is where you put text-->
-    <div class="journalEntryBody">
-        <p> Dear Friend,
-            <br>
-            <br> It's been a while. Thought I’d post a throwback. to June 28, 2018. Hard to imagine it’s been four years since these images were taken. Almost seems as if they were taken last summer, if I’m being totally honest with myself. Perhaps this has something to do with COVID situation and many of us have lost the concept of time since we spend majority of our days in doors in the comfort of our homes.
-            <br>
-            <br> I remember catching up with some of my friends and managed to squeeze in a photoshoot before I met up with them. Right away we reminisced of our college experience and what we hoped to accomplish once we are done with school. Happy to say Amber is doing very well now. At the time she had a poetry blog that I really enjoyed reading from time to when when she would post. If you are interested in what she’s doing now feel free to see her work at her site here.</p>
-    </div>
-
-    <div class="portfolioColumn">
-        <img src="blogPhotoGallery/amberMontalvo/bridge-vertical.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bridge-sunny.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bridge-horizontal.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bridge-horizontal-3.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bikini-bridge-vertical-2.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bikini-bridge-vertical-3.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bikini-rocks-pose-3.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bikini-rocks-portrait.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/bikini-rocks-kneel.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/coney-Boardwalk-2.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/coney-Boardwalk-4.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/coney-boardwalk-portrait.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/coney-boardwalk-portrait-2.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-2.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-3.jpg">
-        <img src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-7.jpg">
-        <p class="note">
-            <em>“Wouldn’t it be funny if we took a photo right in the middle of the Boardwalk.
-            <br> Having everyone stare at us.”</em></p>
-            30
-        <img src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-6.jpg">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <a href=#>❮ PREV <i class=ion-chevron-left></i></a>
-        <!--
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bridge-vertical.jpg"
+                alt="Montalvo 1" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bridge-sunny.jpg"
+                alt="Montalvo 2" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bridge-horizontal.jpg"
+                alt="Montalvo 3" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bridge-horizontal-3.jpg"
+                alt="Montalvo 4" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bikini-bridge-vertical-2.jpg"
+                alt="Montalvo 5" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bikini-bridge-vertical-3.jpg"
+                alt="Montalvo 6" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bikini-rocks-pose-3.jpg"
+                alt="Montalvo 7" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bikini-rocks-portrait.jpg"
+                alt="Montalvo 8" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/bikini-rocks-kneel.jpg"
+                alt="Montalvo 9" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/coney-Boardwalk-2.jpg"
+                alt="Montalvo 10" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/coney-Boardwalk-4.jpg"
+                alt="Montalvo 11" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/coney-boardwalk-portrait.jpg"
+                alt="Montalvo 12" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/coney-boardwalk-portrait-2.jpg"
+                alt="Montalvo 13" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical.jpg"
+                alt="Montalvo 14" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-2.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-3.jpg" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-7.jpg" />
+            <p class="note lazy-load">
+                <em
+                    >“Wouldn’t it be funny if we took a photo right in the middle of the Boardwalk. <br />
+                    Having everyone stare at us.”</em
+                >
+            </p>
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="blogPhotoGallery/amberMontalvo/crowded-Boardwalk-vertical-6.jpg" />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <a href="eliLIC.html">❮ PREV <i class="ion-chevron-left"></i></a>
+            <!--
         <ul>
             <li><a href=kastler.html>1</a></li>
             <li><a href=malik.html>2</a></li>
@@ -105,32 +211,64 @@ font-family: 'Libre Baskerville', serif; -->
             <li class=current><a href=xrod.html>4</a></li>
             <li><a href=firstBlogPost.html>5</a></li>
 -->
-        <!--<li><a href=#5>5</a></li>
+            <!--<li><a href=#5>5</a></li>
             <li><a href=#6>6</a></li>
             <li><a href=#7>7</a></li>
             <li><a href=#8>8</a></li>
             <li><a href=#9>9</a></li>
             <li><a href=#10>…</a></li>
             <li><a href=#41>41</a></li>-->
-        <!--        </ul>-->
-        <a href="kastler.html"> NEXT ❯<i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script src="app.js">
+            <!--        </ul>-->
+            <a href="puertoRico.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+        </nav>
+        <!-- the script for the lazy loading -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
+                const paginationLinks = document.querySelectorAll(".pagination a");
 
+                // Determine threshold for lazy loading based on screen size
+                const mobileThreshold = window.innerWidth <= 768 ? 0.15 : 0.15;
 
-    </script>
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
-</body>
+                // IntersectionObserver for lazy loading elements
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                if (element.tagName === "IMG" && element.dataset.src) {
+                                    element.src = element.dataset.src; // Load images
+                                }
+                                element.classList.add("fade-in"); // Trigger fade-in effect
+                                observer.unobserve(element); // Stop observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: mobileThreshold }
+                );
 
+                // Observe all lazy elements
+                lazyElements.forEach((element) => observer.observe(element));
+
+                // Handle pagination with fade-out effect on navigation
+                paginationLinks.forEach((link) => {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent immediate navigation
+                        document.body.classList.add("fade-out"); // Trigger fade-out effect
+
+                        // Wait for fade-out to complete, then navigate
+                        setTimeout(() => {
+                            window.location.href = this.href;
+                        }, 800);
+                    });
+                });
+            });
+        </script>
+        <!-- bottom page footer-->
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>
