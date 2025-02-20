@@ -92,7 +92,6 @@
                 machine’s use optional, unfortunately, and ultimately useless.
                 <br />
                 <br />
-                <br />
                 The food was <i>amazing</i> as per usual; however, it was primarily fried foods with oil and grease, so
                 not the healthiest of foods if one wants to keep their health risk low. Still, it was a lovely cheat
                 week.
@@ -109,9 +108,8 @@
 
         <!-- Lazy-loaded note -->
         <p class="note lazy-load"><em>** Images below are all Kodak Color Plus</em></p>
-
         <!-- Portfolio images -->
-        <div class="portfolioColumn">
+        <div class="portfolioColumn lazy-load">
             <img
                 loading="lazy"
                 class="lazy-load"
@@ -209,7 +207,7 @@
         <p class="note lazy-load">
             <em>** <br />Images below are all Dubble film Apollo 200</em>
         </p>
-        <div class="portfolioColumn">
+        <div class="portfolioColumn lazy-load">
             <img
                 loading="lazy"
                 class="lazy-load"
@@ -301,6 +299,7 @@
                 src="../blogPosts/blogPhotoGallery/puertoRicoSummer/puertoRico-4.jpg"
                 alt="Puerto Rico Photo 29" />
         </div>
+
         <div class="journalEntryBody lazy-load">
             <p>
                 Hope you enjoyed these images, I highly recommend taking images with a film cmaera as opposed to the
@@ -312,13 +311,22 @@
             </p>
             <br />
             <br />
+            <br />
+            <br />
+            <!-- pagination at the bottom -->
+            <nav data-pagination>
+                <!-- #### use this a link for future FIRST BLOG POSTS#### -->
+                <a href="eliLIC.html">❮ PREV <i class="ion-chevron-left"></i></a>
+
+                <a href="kastler.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+            </nav>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const lazyElements = document.querySelectorAll(".lazy-load");
                     const paginationLinks = document.querySelectorAll(".pagination a");
 
                     // Determine threshold for lazy loading based on screen size
-                    const mobileThreshold = window.innerWidth <= 768 ? 0.2 : 0.5;
+                    const mobileThreshold = window.innerWidth <= 768 ? 0.15 : 0.15;
 
                     // IntersectionObserver for lazy loading elements
                     const observer = new IntersectionObserver(
@@ -354,15 +362,6 @@
                     });
                 });
             </script>
-
-            <!-- pagination at the bottom -->
-            <nav data-pagination>
-                <!-- #### use this a link for future FIRST BLOG POSTS#### -->
-                <a href="eliLIC.html">❮ PREV <i class="ion-chevron-left"></i></a>
-
-                <a href="kastler.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
-            </nav>
-
             <div class="blogFooter">
                 <footer>
                     <p>Copyright 2020 &copy; All Rights Reserved.</p>
