@@ -1,127 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - tbdrosa</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - tbdrosa</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="favicon_blue.png" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="favicon_blue.png">
+        <!-- Font styles -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&family=Libre+Baskerville&display=swap"
+            rel="stylesheet" />
 
-    <!-- Font styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="mainStyle.css" />
 
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="mainStyle.css">
+        <style>
+            /* CSS for fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.9s ease-in,
+                    transform 0.6s ease-in;
+            }
 
-    <style>
-        /* CSS for fade-in effect */
-        .lazy-load {
-            opacity: 0;
-            transform: translateY(20px); /* Optional: a slight slide-up effect */
-            transition: opacity 0.9s ease-in, transform 0.6s ease-in;
-        }
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
 
-        .fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+        <script src="navBar.js" defer></script>
+    </head>
 
-    <script src="navBar.js" defer></script>
-</head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="entireNavigation">
+            <a href="index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
 
-<body>
-    <!-- Navigation Bar -->
-    <nav class="entireNavigation">
-        <a href="index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blogGateway.html">Blog</a></li>
+                <li><a href="404.html">Videos</a></li>
+                <li>
+                    <a href="https://www.instagram.com/tbdrosa/" target="_blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
 
-        <ul class="menu">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blogGateway.html">Blog</a></li>
-            <li><a href="404.html">Videos</a></li>
-            <li><a href="https://www.instagram.com/tbdrosa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
-
-    <!-- Portfolio Section -->
-    <div class="container">
-        <div class="intro"></div>
-    </div>
-
-    <div class="arrow-down"></div>
-
-    <div class="portfolioColumn">
-        <img loading="lazy" src="img/portfolio/blueRoom.jpg" alt="Blue Room" class="lazy-load" data-src="img/portfolio/blueRoom.jpg">
-        <img loading="lazy" src="img/portfolio/williamAbandoned.jpg" alt="William Abandoned" class="lazy-load" data-src="img/portfolio/williamAbandoned.jpg">
-        <img loading="lazy" src="img/portfolio/amberConey-Island-bridge.jpg" alt="Amber at Coney Island Bridge" class="lazy-load" data-src="img/portfolio/amberConey-Island-bridge.jpg">
-        <img loading="lazy" src="img/portfolio/forestDown.jpg" alt="Forest Down" class="lazy-load" data-src="img/portfolio/forestDown.jpg">
-        <img loading="lazy" src="img/portfolio/estherPark.jpg" alt="Esther Park" class="lazy-load" data-src="img/portfolio/estherPark.jpg">
-        <img loading="lazy" src="img/portfolio/tennisCourt_floor.jpg" alt="Tennis Court Floor" class="lazy-load" data-src="img/portfolio/tennisCourt_floor.jpg">
-        <img loading="lazy" src="img/portfolio/sofiaChair.jpg" alt="Sofia Chair" class="lazy-load" data-src="img/portfolio/sofiaChair.jpg">
-        <img loading="lazy" src="img/portfolio/angelaRockAway.jpg" alt="Angela at Rockaway" class="lazy-load" data-src="img/portfolio/angelaRockAway.jpg">
-        <img loading="lazy" src="img/portfolio/clarissaPrism.jpg" alt="Clarissa Prism" class="lazy-load" data-src="img/portfolio/clarissaPrism.jpg">
-        <img loading="lazy" src="img/portfolio/annieDorm.jpg" alt="Annie Dorm" class="lazy-load" data-src="img/portfolio/annieDorm.jpg">
-        <img loading="lazy" src="img/portfolio/orangeTreeForest.jpg" alt="Orange Tree Forest" class="lazy-load" data-src="img/portfolio/orangeTreeForest.jpg">
-        <img loading="lazy" src="img/portfolio/tennisCourt.jpg" alt="Tennis Court" class="lazy-load" data-src="img/portfolio/tennisCourt.jpg">
-        <img loading="lazy" src="img/portfolio/karinaCentralPark.jpg" alt="Karina at Central Park" class="lazy-load" data-src="img/portfolio/karinaCentralPark.jpg">
-        <img loading="lazy" src="img/portfolio/basement.jpg" alt="Basement" class="lazy-load" data-src="img/portfolio/basement.jpg">
-        <img loading="lazy" src="img/portfolio/tennisArm.jpg" alt="Tennis Arm" class="lazy-load" data-src="img/portfolio/tennisArm.jpg">
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footerGrid">
-            <div class="footer-mainMenu">
-                <p class="mainMenu">Menu</p>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contactFormWeb/contactForm.html">Contact</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="404.html">Videos</a></li>
-                    <li><a href="blogGateway.html">Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-newsletter">
-                <p class="footer-Newsletter">Newsletter</p>
-                <p class="newsletterMessage"><em>Coming soon...</em></p>
-            </div>
+        <!-- Portfolio Section -->
+        <div class="container">
+            <div class="intro"></div>
         </div>
 
-        <p class="social-media-footer-copyright">tbdrosa 2020 &copy; All Rights Reserved.</p>
-        <p class="social-media-footer">
-            <a href="https://www.instagram.com/tbdrosa/" target="_blank"><i class="fa fa-instagram fa_custom"></i></a>
-        </p>
-    </footer>
+        <div class="arrow-down"></div>
 
-    <!-- JS for Lazy Loading and 2-second Fade-in Effect -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const lazyImages = document.querySelectorAll("img.lazy-load");
+        <div class="portfolioColumn">
+            <img
+                loading="lazy"
+                src="img/portfolio/blueRoom.jpg"
+                alt="Blue Room"
+                class="lazy-load"
+                data-src="img/portfolio/blueRoom.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/williamAbandoned.jpg"
+                alt="William Abandoned"
+                class="lazy-load"
+                data-src="img/portfolio/williamAbandoned.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/amberConey-Island-bridge.jpg"
+                alt="Amber at Coney Island Bridge"
+                class="lazy-load"
+                data-src="img/portfolio/amberConey-Island-bridge.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/forestDown.jpg"
+                alt="Forest Down"
+                class="lazy-load"
+                data-src="img/portfolio/forestDown.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/estherPark.jpg"
+                alt="Esther Park"
+                class="lazy-load"
+                data-src="img/portfolio/estherPark.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/tennisCourt_floor.jpg"
+                alt="Tennis Court Floor"
+                class="lazy-load"
+                data-src="img/portfolio/tennisCourt_floor.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/sofiaChair.jpg"
+                alt="Sofia Chair"
+                class="lazy-load"
+                data-src="img/portfolio/sofiaChair.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/angelaRockAway.jpg"
+                alt="Angela at Rockaway"
+                class="lazy-load"
+                data-src="img/portfolio/angelaRockAway.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/clarissaPrism.jpg"
+                alt="Clarissa Prism"
+                class="lazy-load"
+                data-src="img/portfolio/clarissaPrism.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/annieDorm.jpg"
+                alt="Annie Dorm"
+                class="lazy-load"
+                data-src="img/portfolio/annieDorm.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/orangeTreeForest.jpg"
+                alt="Orange Tree Forest"
+                class="lazy-load"
+                data-src="img/portfolio/orangeTreeForest.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/tennisCourt.jpg"
+                alt="Tennis Court"
+                class="lazy-load"
+                data-src="img/portfolio/tennisCourt.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/karinaCentralPark.jpg"
+                alt="Karina at Central Park"
+                class="lazy-load"
+                data-src="img/portfolio/karinaCentralPark.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/basement.jpg"
+                alt="Basement"
+                class="lazy-load"
+                data-src="img/portfolio/basement.jpg" />
+            <img
+                loading="lazy"
+                src="img/portfolio/tennisArm.jpg"
+                alt="Tennis Arm"
+                class="lazy-load"
+                data-src="img/portfolio/tennisArm.jpg" />
+        </div>
 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src; // Assign data-src to src for actual loading
-                        img.classList.add("fade-in"); // Trigger fade-in effect
-                        observer.unobserve(img); // Stop observing once loaded
-                    }
-                });
-            }, { threshold: 0.5 }); // Trigger when 50% of the image is visible
+        <!-- Footer Section -->
+        <footer>
+            <div class="footerGrid">
+                <div class="footer-mainMenu">
+                    <p class="mainMenu">Menu</p>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactFormWeb/contactForm.html">Contact</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="404.html">Videos</a></li>
+                        <li><a href="blogGateway.html">Blog</a></li>
+                    </ul>
+                </div>
 
-            lazyImages.forEach(img => observer.observe(img));
-        });
-    </script>
+                <div class="footer-newsletter">
+                    <p class="footer-Newsletter">Newsletter</p>
+                    <p class="newsletterMessage"><em>Coming soon...</em></p>
+                </div>
+            </div>
 
-</body>
+            <p class="social-media-footer-copyright">tbdrosa 2020 &copy; All Rights Reserved.</p>
+            <p class="social-media-footer">
+                <a href="https://www.instagram.com/tbdrosa/" target="_blank"
+                    ><i class="fa fa-instagram fa_custom"></i
+                ></a>
+            </p>
+        </footer>
 
+        <!-- JS for Lazy Loading and 2-second Fade-in Effect -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyImages = document.querySelectorAll("img.lazy-load");
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.src = img.dataset.src; // Assign data-src to src for actual loading
+                                img.classList.add("fade-in"); // Trigger fade-in effect
+                                observer.unobserve(img); // Stop observing once loaded
+                            }
+                        });
+                    },
+                    { threshold: 0.5 }
+                ); // Trigger when 50% of the image is visible
+
+                lazyImages.forEach((img) => observer.observe(img));
+            });
+        </script>
+    </body>
 </html>
