@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <!-- ################################################
+=======
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Shahnila Malik - tbdrosa</title>
+        <!--#### favicon #### -->
+        <link rel="shortcut icon" type="image/png" href="../favicon_blue.png" />
+        <!-- #### CSS font styles #### -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap&family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+        <!-- ################################################
+>>>>>>> mobile_edits
 use this to change fonts in the future
 font-family: 'Asap', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -17,141 +33,244 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Libre Baskerville', serif;
 
     <!-- #### social media icon link section #### -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- #### CSS stylesheet #### -->
-    <link rel="stylesheet" href="everyBlogStyles.css">
-    <!--<link rel="stylesheet" href="404Styles.css">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navBar.js" defer></script>
-</head>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
+        <!-- #### CSS stylesheet #### -->
+        <link rel="stylesheet" href="everyBlogStyles.css" />
+        <!--<link rel="stylesheet" href="404Styles.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* CSS for 2-second fade-in effect */
+            .lazy-load {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: a slight slide-up effect */
+                transition:
+                    opacity 0.6s ease-in,
+                    transform 0.8s ease-in;
+            }
 
-<body>
-    <!--########## this is the navigation bar ########## -->
-    <!-- <nav class="entireNavigation">
-        <div class="logoLeftName"><a href="index.html" class="href">tbdrosa</a>
-        </div>
-        <a href="#" class="toggle-hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navBarLinks">
-            <ul>
-                <li class="topNavigationRight"><a href="index.html">portfolio</a>
-                </li>
-                <li class="topNavigationRight"><a href="404.html">videos</a>
-                </li>
+            .fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="entireNavigation">
+            <a href="../index.html" class="logoLeftName">tbdrosa</a>
+            <input class="navBar-btn" type="checkbox" id="navBar-btn" />
+            <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
+                <li class="topNavigationRight"><a href="../about.html">about</a></li>
+                <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
+                <li class="topNavigationRight"><a href="../404.html">videos</a></li>
                 <li class="topNavigationRight">
-                    <a href="blogBridge.html">blog</a>
+                    <a href="https://www.instagram.com/tbdrosa/" target="blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
                 </li>
-                <li class="topNavigationRight"><a href="about.html">about</a>
-                </li>
-                <li class="socialMediaIconRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-
-    <nav class="entireNavigation">
-        <a href="../index.html" class="logoLeftName">tbdrosa</a>
-        <input class="navBar-btn" type="checkbox" id="navBar-btn">
-        <label class="menu-icon" for="navBar-btn"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li class="topNavigationRight"><a href="../index.html">portfolio</a></li>
-            <li class="topNavigationRight"><a href="../about.html">about</a></li>
-            <li class="topNavigationRight"><a href="../blogBridge.html">blog</a></li>
-            <li class="topNavigationRight"><a href="../404.html">videos</a></li>
-            <li class="topNavigationRight"><a href="https://www.instagram.com/tbdrosa/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <!-- <li class="socialMediaIconRightLast"> <a href="https://twitter.com/tbdrosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </li> -->
-          </ul>
-    </nav>
-    <!-- ######### beginner image for Blogs ##########-->
-    <header>
-        <div class="shahnilaBlogIntro" id="home">
-            <div class="blogHeader">
-                <!--<h1>Blog Entries</h1>-->
+            </ul>
+        </nav>
+        <!-- ######### beginner image for Blogs ##########-->
+        <header>
+            <div class="shahnilaBlogIntro" id="home">
+                <div class="blogHeader">
+                    <!--<h1>Blog Entries</h1>-->
+                </div>
             </div>
+        </header>
+        <!-- #### beginning of blog entries ####-->
+
+        <!--#### &bull; is a bullet point seporator ####-->
+        <h2 class="lazy-load">Shahnila Malik</h2>
+        <h3 class="lazy-load">Dorm Room Shoot - Summit 203</h3>
+        <h6 class="lazy-load">
+            11.07.2020<br /><br /><br />
+            <i> ~1 min read</i>
+        </h6>
+        <!-- journalEntry Body is where you put text-->
+        <div class="journalEntryBody lazy-load">
+            <p>
+                Dear friend,
+                <br />
+                <br />
+                I am writing this after the fantastic results on this historic day. For whatever reason that I cannot
+                seem to pinpoint, today has inspired me to write a mini blog post - I am dedicating this to my fellow
+                photographers – or artists in general.
+                <br />
+                <br />
+                Have you ever created a piece of art and had fun doing it, but afterward, when you looked it over, you
+                hated it all? <br /><br />I, too, have been there—far more times than I would be able to count. The best
+                advice I can give those of you who have also experienced this is to put it away. Put it somewhere safe
+                where you can <em>guarantee</em> it will not get lost or damaged.
+                <br />
+                <br />Leave it alone for a while.
+                <br />
+                <br />
+                <b>Don’t touch it.</b>
+                <br />
+                <br /><i>Please</i>, do not come back to it until you forget that you even made it.
+                <br />
+                <br />
+                I admit this is not revolutionary advice; however, it is something that I have been doing for the better
+                part of a year now. I often take a long time with my photo editing for any shoot that I have done for
+                free. The reason for my slow pace is all a part of my creative process. During these free shoots, I can
+                use this extra time to experiment with my editing of color tones and the overall mood of each image. I
+                don’t believe I have one specific style because, in my opinion, it is always changing.
+                <br />
+                <br />
+                With these photoshoots, I generally save them on my two hard drives
+            </p>
+            <h3 class="lazy-load">“Back up your images &#38; <br />back up your back ups!”</h3>
+            <h2 class="lazy-load">
+                <em><b>“ALWAYS”</b></em>
+            </h2>
+            <p>
+                and leave them there until I forget that I have them. But first, be sure to back up your images and back
+                up your back ups! <b><em>ALWAYS</em></b
+                >. <br />
+                <br />I have a Macbook, so I am unsure if there is a PC version to this method, but I can mark these
+                folders with a colored circle. I often use <b>red</b> and <b>purple</b>, where <b>red</b> indicates that
+                they are RAW files that I have not yet edited. <b>Purple</b> is for images I have yet to return to look
+                over. About a month or two later, I go over the photos; once completed, I export them to a folder with a
+                green circle indicating I have fully edited them.
+                <br />
+                <br />
+                I began this process because I, like most artists, am overly critical of my work – especially if they
+                are brand new. However, once I return to them after having forgotten, part of this forgetting removes
+                the work's critical nature, and looking at them with a set of <i>‘fresh’</i> eyes makes them look far
+                better than I initially thought. Unfortunately, for those painters, there might be limitations to this
+                since coming back and changing something is a bit more complicated – not impossible, but still a bit
+                more challenging than someone who is creating art digitally. Still, I feel the principal of this could
+                still apply. You may hate your piece, but come to love it later on. I hope this inspires you to create
+                something. To forget about it so that you can fall in love with your art all over again.
+
+                <br />
+                <br />
+                I can confirm that this works because after the shoot with Shahnila - she also wasn’t a fan of the
+                images. Shahnila said she felt that she didn’t look her best and that the lighting was quite dark. At
+                the time, these were still only RAW files, so her statements were all valid criticisms. Now about seven+
+                months have passed since the shoot, and I can say Shahnila loves them too! Try it out and let me know
+                how it goes :D
+                <br />
+                <br />
+                The following series of images are from a <em>while</em> ago. I hope you enjoy them just as much as I
+                did while editing them. <br /><br />
+            </p>
         </div>
-    </header>
-    <!-- #### beginning of blog entries ####-->
+        <p class="note lazy-load">
+            <em
+                >*Disclaimer: <br />
+                some friends of mine have reached out to say that some of the photos look orange. To be honest, I am not
+                sure why that is - on my computer the skin tones look perfectly fine. It might have something to do with
+                either the true tone on your device or retina display.</em
+            >
+        </p>
+        <!--<em><b>*disclaimer:</b></em-->
 
-    <!--#### &bull; is a bullet point seporator ####-->
-    <h2>Shahnila Malik</h2>
-    <h3>Dorm Room Shoot - Summit 203 </h3>
-    <h6> 11.07.2020<br><br><br> <i> ~1 min read</i> </h6>
-    <h6></h6>
-    <!-- journalEntry Body is where you put text-->
-    <div class="journalEntryBody">
-        <p> Dear friend,
-            <br>
-            <br> I am writing this after the fantastic results on this historic day. For whatever reason that I cannot seem to pinpoint, today has inspired me to write a mini blog post - I am dedicating this to my fellow photographers – or artists in general.
-            <br>
-            <br> Have you ever created a piece of art and had fun doing it, but afterward, when you looked it over, you hated it all? I, too, have been there—far more times than I would be able to count. The best advice I can give those of you who have also experienced this is to put it away. Put it somewhere safe where you can <em>guarantee</em> it will not get lost or damaged.
-            <br>
-            <br>Leave it alone for a while.
-            <br>Don’t touch it.
-            <br>Please, do not come back to it until you forget that you even made it.
-            <br>
-            <br> I admit this is not revolutionary advice; however, it is something that I have been doing for the better part of a year now. I often take a long time with my photo editing for any shoot that I have done for free. The reason for my slow pace is all a part of my creative process. During these free shoots, I can use this extra time to experiment with my editing of color tones and the overall mood of each image. I don’t believe I have one specific style because, in my opinion, it is always changing. With these photoshoots, I generally save them on my two hard drives
-            <blockquote>
-                <p>“Back up your images &#38; back up your back ups!”</p>
-                <p>“<b>ALWAYS</b>”. </p>
-            </blockquote>
+        <div class="portfolioColumn lazy-load">
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBackdrop-9.jpg"
+                alt="Malik Photo 1" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBlueBackground-4.jpg"
+                alt="Malik Photo 2" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBlueBackground-6.jpg"
+                alt="Malik Photo 3" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/hairRuffleBlue-6.jpg"
+                alt="Malik Photo 4" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/pillowBlue-12.jpg"
+                alt="Malik Photo 5" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/shoulderBlue-7.jpg"
+                alt="Malik Photo 6" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/hairRuffleBlue-3.jpg"
+                alt="Malik Photo 7" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/teethBlue-12.jpg"
+                alt="Malik Photo 8" />
+            <img
+                loading="lazy"
+                class="lazy-load"
+                src="/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg"
+                alt="Malik Photo 9" />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <!-- pagination at the bottom -->
+        <nav data-pagination>
+            <!-- #### use this a link for future FIRST BLOG POSTS#### -->
+            <a href="kastler.html">❮ PREV <i class="ion-chevron-left"></i></a>
 
-            <p>and leave them there until I forget that I have them. But first, be sure to back up your images and back up your back ups! <b>ALWAYS</b>. I have a Macbook, so I am unsure if there is a PC version to this method, but I can mark these folders with a colored circle. I often use <b>red</b> and <b>purple</b>, where <b>red</b> indicates that they are RAW files that I have not yet edited. <b>Purple</b> is for images I have yet to return to look over. About a month or two later, I go over the photos; once completed, I export them to a folder with a green circle indicating I have fully edited them.
-                <br>
-                <br> I began this process because I, like most artists, am overly critical of my work – especially if they are brand new. However, once I return to them after having forgotten, part of this forgetting removes the work's critical nature, and looking at them with a set of <i>‘fresh’</i> eyes makes them look far better than I initially thought. Unfortunately, for those painters, there might be limitations to this since coming back and changing something is a bit more complicated – not impossible, but still a bit more challenging than someone who is creating art digitally. Still, I feel the principal of this could still apply. You may hate your piece, but come to love it later on. I hope this inspires you to create something. To forget about it so that you can fall in love with your art all over again.</p>
-            <p> I can confirm that this works because after the shoot with Shahnila - she also wasn’t a fan of the images. Shahnila said she felt that she didn’t look her best and that the lighting was quite dark. At the time, these were still only RAW files, so her statements were all valid criticisms. Now about seven+ months have passed since the shoot, and I can say Shahnila loves them too! Try it out and let me know how it goes :D</p>
-            <br>
-            <br>
-            <p>The following series of images are from a <em>while</em> ago. I hope you enjoy them just as much as I did while editing them.</p>
-            <p class="disclaimer"><b>**disclaimer</b>: some have reached out to say that some of the photos look orange. To be honest, I am not sure why that is - on my computer the skin tones look perfectly fine. It might have something to do with either the true tone on your device or retina display.</p>
-    </div>
+            <a href="rhodeIsland.html"> NEXT ❯<i class="ion-chevron-right"></i></a>
+        </nav>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const lazyElements = document.querySelectorAll(".lazy-load");
 
-    <div class="portfolioColumn">
+                // Fallback for unsupported browsers
+                if (!("IntersectionObserver" in window)) {
+                    lazyElements.forEach((img) => {
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                        }
+                    });
+                    return;
+                }
 
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBackdrop-9.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBlueBackground-4.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/desertBlueBackground-6.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/hairRuffleBlue-6.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/pillowBlue-12.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/shoulderBlue-7.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/teethBlue-3.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/hairRuffleBlue-3.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/teethBlue-7.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/teethBlue-12.jpg">
-        <img src="/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg">
-    </div>
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                const element = entry.target;
+                                if (element.tagName === "IMG" && element.dataset.src) {
+                                    element.src = element.dataset.src; // Load actual image
+                                    element.removeAttribute("data-src"); // Clean up attribute
+                                }
+                                element.classList.add("fade-in");
+                                observer.unobserve(element);
+                            }
+                        });
+                    },
+                    { threshold: 0.1 } // Lower threshold for smoother triggering
+                );
 
-    <div class="journalEntryBody">
-        <p> </p>
-    </div>
-    <br>
-    <!-- pagination at the bottom -->
-    <nav data-pagination>
-        <!-- #### use this a link for future FIRST BLOG POSTS#### -->
-        <a href=kastler.html>❮ PREV <i class=ion-chevron-left></i></a>
-
-        <a href="rhodeIsland.html"> NEXT ❯<i class=ion-chevron-right></i></a>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script src="app.js">
-
-</script>
-    <div class="blogFooter">
-        <footer>
-            <p>Copyright 2020 &copy; All Rights Reserved.</p>
-        </footer>
-    </div>
-</body>
-
+                lazyElements.forEach((element) => observer.observe(element));
+            });
+        </script>
+        <div class="blogFooter">
+            <footer>
+                <p>Copyright 2020 &copy; All Rights Reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>

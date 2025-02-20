@@ -380,7 +380,7 @@ body {
 
 /* #### blog post card Shahnila teeth dorm Cover ####*/
 
-.card:nth-child(55):before {
+.card:nth-child(5):before {
     background-image: url(/blogPosts/blogPhotoGallery/shahnilaMalik/horizontalBlue-2.jpg);
 }
 
